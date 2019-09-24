@@ -1,0 +1,1411 @@
+\chapter{IN-JET ELECTRON IDENTIFICATION EFFICIENCIES}\label{c:eid}
+
+In early 2015 the LHC restarted after two years of shutdown, beginning what is
+referred to as Run 2. The new centre-of-mass energy was $13$ TeV, in place of
+the previous $8$ TeV. The higher energy opens up unexplored parameter space and
+allows further probe of supersymmetry (SUSY) and other
+beyond-the-Standard-Model processes~\cite{multib-c7, stop-c7, ttresonance-c7,
+	vlq-c7}. At ATLAS, many SUSY searches involve supersymmetric particles that
+decay into the standard model top quarks and we expect, with higher
+centre-of-mass energy, more massive supersymmetric particles and consequently
+an increase in the production of high $p_T$ top quarks. Since the top quarks
+also decay, in fact most of the time into a $W$ boson and a $b$ quark, we in
+turns expect boosted decay topology, in other words the daughter particles of
+the top quarks, which include the daughter particles of the $W$ boson and the
+$b$ quark, tend to stay close to each other (Figure~\ref{f:boosttop}). In the
+case of leptonic top quark decays, the lepton tends to be very close to the
+produced $b$-jet.
+
+
+This chapter describes the work to measure the identification efficiencies for
+electrons that are found inside $\Delta R = 0.4$ of high $p_T$ jets, which will
+also be referred to in the chapter as in-jet electrons. Prior to the work in
+this chapter, there was no attempt to measure the identification efficiencies
+for in-jet electrons. The chapter will be organized as follows. In
+section~\ref{s:eidmot} we motivate the need for the measurement of the
+identification efficiencies for in-jet electrons. Section~\ref{s:eidmet}
+describes the method used to perform the measurements. Section~\ref{s:eideff}
+presents the measured efficiencies for in-jet electrons and
+section~\ref{s:eidcon} gives some conclusions.
+
+The data used for this chapter was collected in the period 2015-2016 at $13$
+TeV center-of-mass and correponded to an integrated luminosity of
+$36.47~\text{fb}^{-1}$.
+
+\section{Motivation}\label{s:eidmot}
+
+At ATLAS, prior to Run 2, electrons found outside $\Delta R = 0.4$ of jets were
+used by most analyses. Indeed, although there were some attempts to select
+signal electrons inside jets~\cite{?}, at 7-8 TeV such electrons can hardly be
+expected; objects inside jets that are identified as electrons are mostly
+background electrons that are either hadrons faking jets or real electrons
+coming from heavy-flavour jet decays. As a result, most analyses rejected
+electrons inside $\Delta R = 0.4$ of jets and only worked with electrons
+outside jets, of which different efficiencies, among them identification
+efficiencies, are measured and provided by the ATLAS Egamma
+group~\cite{atlaselcid}.
+
+\vspace{3mm}
+
+\begin{figure}[H]
+	\includegraphics[width=12cm]{figures/boost}
+	\centering
+
+	\caption{An illustration of low $p_T$ top quark decay (left) and boosted top
+		decay (right) of a high $p_T$ top quark. In the case of high $p_T$ top quark
+		decay the daughter particles of the top quark, which include the daughter
+		particles of the $W$ and the $b$ quark, are expected to be found close to each
+		other~\cite{boostedtop-fig}.}
+
+	\label{f:boosttop}
+\end{figure}
+
+\vspace{3mm}
+
+In Run 2, as the centre-of-mass of the LHC reached $13$ TeV, high $p_T$ top
+quarks are expected to come from the decays of massive supersymmetric or other
+beyond-the-Standard-Model particles. As we have already mentioned, a top quark
+decays almost all of the time into a $W$ and a $b$ quark, and high $p_T$ top
+quarks are expected to undergo boosted decays where the produced particles,
+here the daughters of the $W$ and the $b$ quark, are found close to each other.
+In particular, there are two possible scenarios: either the $W$ decays
+hadronically, in which case the produced jets stay close to each other, or it
+may decay leptonically, in which case the leptons are expected to be found near
+the produced $b$-jets. Either scenario is important and the possibility of
+encountering boosted topology was assessed by several ATLAS physics groups,
+albeit most works focused on hadronic boosted top quark
+decays~\cite{hadronic01-ch7, hadronic02-ch7, bdis-figs}.
+Figure~\ref{f:drwbtoppt} shows the angular distance $\Delta R$
+(Formula~\ref{eq:angulardr}) between the $W$'s and the $b$-quarks as a function
+of the top $p_T$, in the context of a hypothetical particle $Z'$ at mass
+$m_{Z'}=1.6$ TeV~\cite{bdis-figs} that decays into a $t\bar{t}$ pair. It also
+shows the separation between the light quarks of the subsequent hadronic decay
+of the $W$ boson. As can be seen, the angular distance decreases as the top
+quark $p_T$ increases, and at high top quark $p_T$ a non-negligible fraction of
+the distances becomes very small. In the case of leptonic top quark decays, we
+should expect the decay products of the $W$'s to be found very near the
+$b$-jets.
+
+\begin{figure}[H]
+
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=7.5cm]{figures/fig_01a}
+		\caption{$t\to Wb$}
+		\label{drwbtoppta}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=7.5cm]{figures/fig_01b}
+		\caption{$W\to q\bar{q}$}
+		\label{drwbtopptb}
+	\end{subfigure}
+
+	\centering
+	\caption{(\ref{drwbtoppta})~The angular distance $\Delta R$ between
+		the $W$'s and the $b$ quarks as a function of the top quark $p_T$ simulated
+		PYTHIA~\cite{sjostrand:ch7}, in the context of a hypothetical particle $Z'$
+		($m_{Z'}=1.6$ TeV) that decays into a $t\bar{t}$ pair. At high top quark $p_T$
+		a non-negligible fraction of the distances is seen to be very
+		small.~(\ref{drwbtopptb})~The angular distance between two light quarks from
+		$t\to Wb$ decay as a function of the $p_T$ of the $W$ boson~\cite{bdis-figs}.}
+	\label{f:drwbtoppt}
+\end{figure}
+
+
+Taking advantage of the new topology, several SUSY searches which expect
+standard model top quarks from the decays of massive supersymmetric particles
+began to include electrons inside $\Delta R = 0.4$ of jets in their analyses.
+Considerable increases in signal acceptance were seen by different analysis
+groups, including the search for the gluinos discussed in
+Chapter~\ref{c:susys}, which in fact was the analysis that motivated the
+measurements described in this chapter.
+
+
+In the context of the work of this chapter, we also computed the fraction of
+in-jet electrons over isolated electrons as a function of the top quark $p_T$,
+at truth-level, in order to assess the significance of the number of electrons
+that are found inside jets. The measurement used PowhegPythia $t\bar{t}$ events
+simulated at $13$ TeV centre-of-mass energy (Chapter~\ref{c:susys},
+Section~\ref{mbdatasm}), where dilepton events consisting of a muon and an
+electron were selected. The selections made use of the $p_T$-dependent overlap
+removal (Chapter~\ref{c:susys}, Section~\ref{mbobjs})
+
+$$ \Delta R <  \text{min (0.4, 0.04 + 10 GeV} / p_T) $$
+
+where the overlap removal is also required to keep the overlapping $b$-jets.
+The formula takes advantage of the fact that the higher is the $p_T$ of an
+electron or a muon, the closer it is to some jet. It thus ensures that such
+electrons or muons that are found inside $\Delta R = 0.4$ are also selected,
+provided they are not closer than what their $p_T$ warrant. On the other hand,
+$b$-jets found within $\Delta R = 0.2$ of electrons or muons will not be
+rejected as is usually done in a standard overlap removal procedure.
+
+The results are shown in Table~\ref{t:injetfraction}, which lists several top
+quark $p_T$ along with the number of in-jet electrons, the number of isolated
+electrons, all at truth-level, and the fraction of the former over the latter.
+
+\vspace{3mm}
+
+
+\renewcommand{\arraystretch}{1.15}
+\begin{table}
+	\centering
+	\begin{tabular}{||c c||}
+		\hline
+		Top quark $p_T$ (GeV) & Fraction  \\ [0.5ex]
+		\hline\hline
+		\toprule
+		$\leq 300$            & $ 8.4\%$  \\
+		\hline
+		$\leq 425$            & $ 17.2\%$ \\
+		\hline
+		$\leq 500$            & $ 24.0\%$ \\
+		\hline
+		$ \leq 650$           & $ 39.0\%$ \\
+		\hline
+		$ \leq 750$           & $ 49.0\%$ \\
+		\hline
+		$ \leq 800$           & $ 53.0\%$ \\
+		\hline
+		$ \leq 900$           & $ 59.0\%$ \\
+		\hline
+		$ \leq 1000$          & $ 64.0\%$ \\
+		\hline
+	\end{tabular}
+
+	\caption{The fraction of in-jet electrons over the number of isolated
+		electrons, both at truth-level, as a function of the top quark $p_T$. The
+		fraction increases and becomes very significant at high top quark $p_T$.}
+
+	\label{t:injetfraction}
+\end{table}
+\renewcommand{\arraystretch}{1.0}
+
+It is seen that more and more electrons are found inside jets as the top quark
+$p_T$ increases. In fact, the number of in-jet electrons becomes quite
+significant from $500$ GeV, being approximately $25\%$ there and reaching
+nearly $40\%$ at $650$ GeV. If the top quark $p_T$ is allowed to go up to $1$
+TeV, the figure is $64\%$. This result supports the fact that different ATLAS
+analyses saw considerable increases in signal acceptance as they included
+in-jet electrons in their selections.
+
+This chapter develops a method and performs the initial measurements for the
+identification efficiencies of electrons found inside $\Delta R=0.4$ of jets.
+The measurements for electrons outside jets are done by the ATLAS Egamma
+group~\cite{atlaselcid, eleffme}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Method}\label{s:eidmet}
+
+In general, to measure the identification (ID) efficiencies of electrons we
+start from a sample of reconstructed electrons. The efficiency at a particular
+identification operating point (section~\ref{ss:elop}) is defined by the ratio
+
+$$
+	\text{ID efficiency} = \frac{\text{The number of identified
+			electrons}}{\text{The number of reconstructed electrons}}
+$$
+
+\vspace{3mm}
+
+The number of identified electrons, the numerator, is contaminated with
+background electrons, and so is the demoninator. As a result, part of the work
+to obtain a good sample of electrons inside high $p_T$ jets includes at the
+same time adequate background estimation methods, particularly because
+background electrons are expected to reside primarily inside jets.
+
+
+In this thesis, a sample of electrons was obtained by selecting boosted
+$t\bar{t}$ dilepton ($e\mu$) events, described below in
+Section~\ref{ss:eidtp},~\ref{ss:eidsp}, and ~\ref{ss:eidsr}. Background
+estimations will be described in Section~\ref{s:eidbe}.
+
+\subsection{Boosted Dilepton $e\mu$ Events}\label{ss:eidtp}
+
+The standard method for measuring electron identification efficiencies is the
+tag-and-probe method supported by the Egamma group at ATLAS~\cite{eleffme}.
+Such a measurement uses $Z\to e^+e^-$ events for high-energy electrons
+($E_{\text{T}} > 10$ GeV). The method is well-documented, and it is
+straight-forward to obtain a clean sample of electrons. It is expected,
+however, that because of the nature of the events, requiring electrons to be
+inside high $p_T$ jets would lead to a sample unrepresentative of events with a
+boosted topology, and moreover the resulting sample would be statistics-limited
+also.
+
+
+In this thesis, $t\bar{t}$ events at $13$ TeV centre-of-mass are used to select
+electrons inside high $p_T$ jets. In particular, dilepton $e\mu$ events will be
+selected; they are expected to be a source of reconstructed electrons that will
+be used for the measurement of the identification efficiencies. The selections
+will be such that the muon in an event will be a hard muon, while the electron
+on the other hand will remain almost untouched, i.e. it will be a reconstructed
+electron with a $p_T$ cut applied.
+
+Compared to $Z\to ee$ events, such $t\bar{t}$ events are expected to provide
+more statistics for electrons inside high $p_T$ jets. In addition, because
+they directly involve the top quarks, they will bear close topology to many
+SUSY and other beyond-the-Standard-Model searches.
+
+The remaining detail of the method is described below, including a discussion
+of the data as well as the simulations used, the definition of the signal
+region, and background subtractions.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Data and Monte Carlo Samples}\label{ss:eidsp}
+
+The data used for this chapter was collected in the period 2015-2016. The
+integrated luminosity was $36.47~\text{fb}^{-1}$. The following simulation
+samples, all at $13$ TeV centre-of-mass, are used (Chapter~\ref{c:susys},
+Section~\ref{mbdatasm}):
+
+\begin{itemize}[label=\ding{109}]
+
+	\item PowhegPythia $t\bar{t}$. This set is used for selecting electrons inside
+	      high $p_T$ jets. As will be discussed in Section~\ref{ss:eidsr}, $t\bar{t}$
+	      events will be partitioned into a semileptonic set (a muon from one top quark
+	      and all jets from the other top) and a dileptonic set ($e\mu$ events). The
+	      former will constitute a background and the latter a source of signal events.
+	      Indeed, in the semileptonic case, jets from one of the tops constitute a source
+	      of background electrons
+
+	\item W+jets. This is used as a background. Indeed, as a top quark almost
+	      always decays into a $W$ and a $b$-jet, $W$+jets naturally constitutes a
+	      background where the $W$ produces a hard muon and the jets are a source of
+	      background electrons
+
+	\item Single top. This includes the $Wt$ production as well as the $s$-channel
+	      and $t$-channel productions. The $Wt$ production is a source of signal
+	      electrons, while the other two productions provide a source of top+jets and are
+	      therefore background, as the top quark may be a source of a hard muon and the
+	      jets in the events are a source of background electrons.
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Signal Region}\label{ss:eidsr}
+
+The signal region will be the kinematic region in which the measurement of the
+identification efficiencies is performed. Before defining the signal region, we
+apply the following preliminary cuts, called pre-selection cuts:
+
+\paragraph{Pre-selection}
+
+\begin{itemize}[label=\ding{111}]
+	\item One primary vertex
+
+	\item Muon trigger. The following triggers were used for the periods $2015$
+	      and $2016$:
+
+	      \begin{itemize}
+		      \item $2015$: \texttt{HLT_mu26_imedium || HLT_mu40}
+		      \item $2016$:  \texttt{HLT_mu26_ivarmedium || HLT_mu50}
+	      \end{itemize}
+
+	\item $p_T$-dependent overlap removal, with the option of keeping overlapping
+	      $b$-jets turned on (Section~\ref{s:eidmot})
+
+	\item Veto events with bad or cosmic muons. Highly energetic jets could reach
+	      the muon spectrometer and create hits in the latter, or jet tracks in the inner
+	      detector could be erroneously matched to muon spectrometer segments, both cases
+	      of which are sources of bad muons. Thus events with these muons, along with
+	      those with muons coming from cosmic rays, are removed.
+
+	\item Each event is required to have exactly one tagged muon and $\geq 1$
+	      electrons inside jets, where
+
+	      \begin{itemize}
+
+		      \item The muon is required to have $p_T > 30$ GeV, $d_0 / \sigma(d_0) < 3.0$,
+		            $z_0 < 0.5$ in terms of the transverse impact paramater and the longitudinal
+		            impact parameter, and $\text{ptvarcone}30 / p_T < 0.06$, and be
+		            trigger-matched.
+
+		      \item The electrons have $p_T \geq 30$ GeV and must overlap with some jets,
+		            i.e. they must be found inside $\Delta R < 0.4$ of jets. There could be more
+		            than one electron in the event, however only the leading one in terms of $p_T$
+		            will be used as the probe. The $p_T$ cut is applied because it is applied in
+		            most analyses where in-jet electrons are actually used.
+
+	      \end{itemize}
+
+	\item $\geq 1$ $b$-tagged jet, instead of exactly $2$ $b$-tagged jets as is
+	      usually expected in $t\tbar$ events, since events with electrons inside jets
+	      are being selected and consequently $b$-tagging efficiency may suffer because
+	      the tracks of the electrons may confuse the $b$-tagging algorithm.
+
+\end{itemize}
+
+After these cuts, we arrive at a set of 3183 events with one hard muon and at
+least one electron found inside some jet. Several variables that were found to
+be discriminating are listed and discussed below, along with plots of their
+distributions. It is seen in the plots that the prominent source of background
+events is semileptonic events, whereas $W$+jets and single top $s$-channel and
+$t$-channel constitute two small sources of background, predicted by
+simulations to be $315.483$ and $19.120$ respectively.
+
+\begin{itemize}[label=\ding{109}]
+
+	\item The mass of the large radius jet that overlaps with the probe electron,
+	      shown in Figure~\ref{f:premrjet}. The large radius jet is reclustered from the
+	      small radius jets present in the events (Chapter~\ref{c:susys},
+	      Section~\ref{mbobjs}) and accordingly in semileptonic events it is expect to be
+	      more massive, as it picks up the masses of the jets from the hadronic decay of
+	      one of the tops. In dileptonic events, on the other hand, there are fewer jets
+	      due to the leptonic decays of both of the tops, and moreover there is also
+	      missing energy present from the neutrino accompanying the electron. Therefore
+	      this variable is expected to be discriminating. The figure shows a markedly
+	      higher distribution for semileptonic events, especially as we move towards the
+	      right of the distribution, where dileptonic events are seen less and less and
+	      become exceedingly small very quickly. In fact, the right side is mostly
+	      background-dominated.
+
+
+	\item The number of jets, which is shown in Figure~\ref{f:prenjets}. This is a
+	      discriminating variable simply because in the case of semileptonic events there
+	      are more jets coming from hadronic decay of one of the tops (the other top
+	      quark decays leptonically), whereas in dileptonic events the daughter jets of
+	      the tops are only the two $b$-jets coming the decays of both of the tops.
+	      Accordingly the semileptonic distribution is seen to be higher everywhere.
+
+
+
+
+
+	\item The sum of the transverse momenta of all jets, shown in
+	      Figure~\ref{f:prehtjet}. This is also expected to be discriminating because
+	      again more jets are found in semileptonic events due to hadronic decay of one
+	      of the tops, and fewer jets in dileptonic events due to leptonic decays of both
+	      tops, and as a result a sum over all transverse momenta of the jets leads to a
+	      discriminating distribution. Indeed, the figure shows that the semileptonic
+	      distribution is higher everywhere.
+
+
+
+
+	\item The transverse momenta of the jet closest to the probe, which is shown in
+	      Figure~\ref{f:preptcjet}. It is expected that jets having electrons inside
+	      $\Delta R = 0.4$ of themselves tend to be high-$p_T$ jets, as the selections
+	      are targeting boosted top quark decays. The figure not only shows that the
+	      semileptonic distribution is higher everywhere, but that there is also a class
+	      of very low $p_T$ jets closest to the probes.
+
+
+
+
+
+	\item The fraction of the transverse momentum of the probe over that of the
+	      closest jet (Figure~\ref{f:preptfractioncjet}). This variable is discriminating
+	      because it is expected that real electrons coming directly from the $W$'s which
+	      are produced from the tops tend to have higher $p_T$ than background electrons
+	      The figure shows indeed that the low $p_T$ region is dominated by semileptonic
+	      events.
+
+\end{itemize}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/nvariables_pt40_probes_pre_m0_pt100_mar05_loose_real_loose_fake_m_rjet_overlap_el_mar22}
+	\centering
+	\caption{$m_{\text{rjet}}^{\text{el}}$. The semileptonic contribution is higher everywhere, especially on the right side of the distribution where
+		there is little signal contamination.}
+	\label{f:premrjet}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/nvariables_pt40_probes_pre_m0_pt100_mar05_loose_real_loose_fake_njets_njets_mar22}
+	\centering
+	\caption{The number of jets. The semileptonic contribution is higher because of the hadronic decay of one of the tops.}
+	\label{f:prenjets}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/nvariables_pt40_probes_pre_m0_pt100_mar05_loose_real_loose_fake_ht_jet_ht_jet_mar22}
+	\centering
+	\caption{The sum of the transverse momenta of all jets.}
+	\label{f:prehtjet}
+\end{figure}
+
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/nvariables_pt40_probes_pre_m0_pt100_mar05_loose_real_loose_fake_pt_c_jet_pt_c_jet_mar22}
+	\centering
+	\caption{$p_T$ of the jet closest to the probe electron. }
+	\label{f:preptcjet}
+\end{figure}
+
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/nvariables_pt40_probes_pre_m0_pt100_mar05_loose_real_loose_fake_pt_fraction_c_jet_pt_fraction_c_jet_mar22}
+	\centering
+	\caption{Fraction of the $p_T$ of the probe electron over that of the closest jet. The lower $p_T$ region is dominated by semileptonic events.}
+	\label{f:preptfractioncjet}
+\end{figure}
+
+\paragraph{Further cuts to arrive at the signal region}\label{p:eidfurthercuts}
+
+Of all the discriminating variables shown above, $m_{\text{rjet}}^{\text{el}}$
+seems to be the most discriminating variable. In addition, its distribution
+shows two distinct regions, one abundant in signal electrons and one largely
+dominated by background electrons. As will be discussed later in the chapter,
+the region $< 60$ GeV will define the signal region where the identification
+efficiencies are measured, while the region $> 60$ GeV will define the control
+region for background estimation. With this in mind, we decided to apply cuts
+on the other discriminating variables to further remove the undesired
+background, while leaving $m_{\text{rjet}}^{\text{el}}$ untouched.
+
+The cuts are as follows:
+
+\begin{itemize}[label=\ding{111}]
+	\item MET $> 25$ GeV, to ensure that the QCD multi-jet background is negligible.
+
+	\item The number of jets $< 5$ and sum of $p_T$ of jets $< 700$ GeV, to remove
+	      semileptonic events (Figure~\ref{f:prenjets} and~\ref{f:prehtjet}).
+
+
+	\item $p_T$ of jet closest to the probe is between $150$ GeV and $500$ GeV, to
+	      remove semileptonic events (Figure~\ref{f:preptcjet}) and at the
+	      same time make sure that boosted $t\tbar$ dilepton events are selected.
+
+
+	\item $p_T(\text{probe})  / p_T(\text{closest jet}) > 0.16 $ (Figure~\ref{f:preptfractioncjet}).
+
+\end{itemize}
+
+The resulting distrution $m_{\text{rjet}}^{\text{el}}$ is shown in Figure~\ref{f:crmrjet}.
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/n_pt40_probes_cr1_m0_pt100_mar05_loose_real_loose_fake_m_rjet_overlap_el_mar22}
+	\centering
+
+	\caption{$m_{\text{rjet}}^{\text{el}}$ after the pre-selection cuts. The
+		region $< 60$ GeV will define the signal region, and the region $\geq 60$ GeV
+		will define the control region for background estimation.}
+
+	\label{f:crmrjet}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Background Estimation}\label{s:eidbe}
+
+We are looking to measure the identification efficiency for electrons inside
+jets at a particular operating point. If $\epsilon$ denotes such an efficiency,
+then it is the ratio of a numerator and a denominator (Section~\ref{s:eidmet}),
+both of which are expected to be contaminated with background electrons that
+will need to be estimated. We will write $P$ as the number of electron
+candidates passing a particular ID operating point, $B_P$ the number of
+background electrons passing the operating point, $N$ the total number of
+reconstructed electron candidates in the sample, and $B_N$ the number of
+background electrons present in the sample, so that the efficiency $\epsilon$
+is in fact
+
+\begin{equation}\label{eqn:effo}
+	\epsilon = \frac{P-B_P}{N-B_N}
+\end{equation}
+
+The identification efficiencies for the Medium and Tight ID operating points
+are the mosted widely used points in ATLAS analyses, especially in SUSY
+analyses, and accordingly they are the only points that are measured in this
+thesis. Thus, either a Medium or a Tight ID selection will be applied on top of
+the sample that represents the denominator, thereby the numerator is obtained.
+Background estimations will consist of estimating the term $B_P$ separately for
+Medium and Tight in the numerator, and estimating the common term $B_N$ in the
+denominator.
+
+\paragraph{Estimating $B_P$} We expect background electrons to rarely pass the
+Medium or Tight ID points, and as a result we expect the term $B_P$ to be very
+small in either case. Thus $B_P$ may be taken directly from simulation without
+significantly affecting the measurements.
+
+Indeed, Figure~\ref{f:eidmedium} and ~\ref{f:eidtight} show the $m_{\text{rjet}}^{\text{el}}$
+distributions for electrons that pass the Medium and Tight selections. They are
+obtained by applying either a Medium or a Tight ID selection on top of the set
+of selections that helps to arrive at the definition of the signal region
+(Section~\ref{p:eidfurthercuts}). As can be seen, the number of background
+electrons predicted by the simulation is indeed small in each case, accouting
+for only $0.3\%$ of the total number in the Medium case
+(Figure~\ref{f:eidmedium}), and $0.1\%$ in the Tight case (Figure~\ref{f:eidtight}).
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/pt40_probes_cr1_medium_m0_pt100_mar05_medium_real_medium_fake_m_rjet_overlap_el_mar22}
+	\centering
+
+	\caption{The distribution of $m_{\text{rjet}}^{\text{el}}$ for electrons passing
+		the Medium operating point. Background electrons figure $0.3\%$.}
+
+	\label{f:eidmedium}
+
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Estimating $B_N$}
+
+Since the term $B_P$ in Formula~\ref{eqn:effo} will be estimated by simulation
+prediction (for the Medium and Tight case separately), it remains to estimate
+the common term $B_N$ that represents background contamination from fake
+electrons found in $N$. In order to estimate this term, we will use the
+background-dominated region $> 60$ GeV in the distribution of
+$m_{\text{rjet}}^{\text{el}}$ (Figure~\ref{f:crmrjet}), as well as the set of
+electrons that fail the Loose ID selection, which we will call antiloose
+electrons from here. Antiloose electrons will be used as a fake template, to be
+normalized to the data to predict the the background in the denominator, and we
+will therefore denote them by $T$.
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/pt40_probes_cr1_tight_m0_pt100_mar05_tight_real_tight_fake_m_rjet_overlap_el_mar22}
+	\centering
+
+	\caption{The distribution of $m_{\text{rjet}}^{\text{el}}$ for electrons
+		passing the Medium operating point. Background electrons figure $0.1\%$.}
+
+	\label{f:eidtight}
+	\centering
+\end{figure}
+
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/probe_pt40_probes_contam_m0_pt100_mar05_antiloose_m_rjet_overlap_el_mar22}
+	\centering
+	\caption{The distribution $m_{\text{rjet}}^{\text{el}}$ for electrons that fail
+		the Loose ID point, also called antiloose electrons.}
+	\label{f:antiloosemrjet}
+\end{figure}
+
+
+The $m_{\text{rjet}}^{\text{el}}$ distribution of $T$ is shown in
+Figure~\ref{f:antiloosemrjet}. Simulation predicts it to be made up mostly of
+background electrons, in which semileptonic $t\tbar$ dominates, and there is
+about $10\%$ of signal electron contamination in the distribution.
+Figure~\ref{f:shapebeforeafter} shows $T$ against the set of background part in
+$N$, namely $B_N$, both normalized to unity. It shows that $T$ describes very
+well the shape of background electrons $B_N$, and therefore it is reasonable to
+estimate $B_N$ using $T$. However, instead of using the simulation distribution
+we will use the corresponding data distribution, so that in the following $T$
+will mean the corresponding distributions of $m_{\text{rjet}}^{\text{el}}$ in
+data. This is to ensure that that typical systematic uncertainties associated
+with simulation distributions could be avoided, because these systematic
+uncertainties are not small and are also often complicated to obtain.
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/w_allbn_probes_m_rjet_overlap_el_m0_pt100_antiloose_m_rjet_overlap_el_mar22}
+	\centering
+	\caption{The distribution $m_{\text{rjet}}^{\text{el}}$ of $B_N$ against that
+		of $T$, normalized to unity. $T$ describes very well $B_N$ and therefore it is
+		reasonable to estimate $B_N$ using $T$.}
+	\label{f:shapebeforeafter}
+\end{figure}
+
+
+In the actual measurement of the efficiency, we need to take into account the
+fact that $T$ itself is contaminated with some signal electrons, as already
+mentioned above. Thus, let $\overline{T}$ be $T$ minus this signal
+contamination, which we will obtain by taking the distribution of $T$ in data
+minus the signal contamination predicted in the simulation distribution of $T$.
+Then, the background-dominated region will be used to find a normalization
+factor such that
+
+%
+$$B_N = \overline{T} \times \text{normalization factor},$$
+%
+
+where the normalization factor will be found as follows. To start, to any
+quantity in the signal region $\leq 60$ GeV there corresponds a quantity in the
+background-dominated region $> 60$ GeV, which will be denoted with a subscript
+$>$. Thus to $N$ there corresponds $N_>$, and to $\overline{T}$ corresponds
+$\overline{T}_>$. The term $N_>$ is the set of reconstructed electron
+candidates in the background-dominated region. In order to use it in the
+following we will subtract any signal contamination it may have, the method of
+which will be described in the next section, and denote $\overline{N}_>$ to be
+the resulting term, i.e. $N_>$ minus the signal contamination. Then
+
+%
+$$\text{normalization factor} = \frac{\overline{N}_>}{\overline{T}_>} $$
+%
+
+so that
+
+\begin{equation}\label{eid:bne}
+	B_N =  \overline{T} \times \frac{\overline{N}_>}{\overline{T}_>}
+\end{equation}
+
+\subsection{The Measurements of the Identification Efficiency}\label{s:meffs}
+
+Formula~\ref{eqn:effo}, where $B_P$ will be taken from simulation and $B_N$
+evaluated according to Formula~\ref{eid:bne}, leads to the following formula
+for the efficiency:
+
+\begin{equation}\label{eid:efff}
+	\epsilon = \frac{P-B_P}{N - \overline{T} \times \frac{\overline{N}_>}{\overline{T}_>}}.
+\end{equation}
+
+
+$\overline{T}$ will be the set of antiloose electrons, $T$, minus signal
+contamination. As already mentioned, Figure~\ref{f:shapebeforeafter} shows that
+there is a $10\%$ signal contamination expected in $T$. This signal
+contamination as predicted by simulation will be subtracted from $T$, resulting
+in $\overline{T}$. The term $\overline{T}_>$ will be obtained analogously in
+the background-dominated region of the $m_{\text{rjet}}^{\text{el}}$
+distribution.
+
+On the other hand, signal contamination in $N_>$ (Figure~\ref{f:crmrjet}), from
+which $\overline{N}_>$ is obtained, is larger, and to reduce the contribution
+from the estimation of this signal contamination to the uncertainty in the
+efficiency we will use data directly for signal contamination subtraction.
+Specifically, from Figure~\ref{f:eidmedium} and~\ref{f:eidtight} we expect
+negligible background electrons after a Medium or Tight ID is applied. This
+means $P$, and the corresponding quantity $P_>$ in the background-dominated
+region, is expected to be relatively free of background electrons. We will
+therefore write
+
+%
+$$\overline{N}_> = N_> - P_> / \epsilon $$
+%
+
+where the efficiency in~\ref{eid:efff}, which is being measured, is used again
+here. The efficiency will be evaluated iteratively, until the change from one
+iteration to the next is less than $0.5\%$. The $0.5\%$ will be taken as the
+uncertainty due to signal contamination subtraction in $N_>$.
+
+The next section discusses in detail the treatment of statistical and
+systematic uncertainties.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Uncertainties}\label{s:eidunc}
+
+The efficiency is accompanied by statistical and systematic uncertainties, both
+of which are discussed in the following.
+
+\paragraph{Statistical Uncertainties} According to Formula~\ref{eid:efff}, the
+efficiency will be measured according to the formula
+
+
+$$
+	\epsilon = \frac{P-B_P}{N - \overline{T} \times \frac{\overline{N}_>}{\overline{T}_>}}
+$$
+
+where
+
+\begin{itemize}
+	\item $P$ is the number of electrons that pass Medium or Tight.
+
+	\item $B_P$ is background contamination due to fake electrons in $P$.
+
+	\item $N$ is the set of reconstructed electron candidates, and $\overline{N}_>$
+	      the corresponding quantity in the background-dominated region minus signal
+	      contamination.
+
+	\item $\overline{T}$ is the set of antiloose electrons minus signal
+	      contamination, and $\overline{T}_>$ the corresponding quantity in the
+	      background-dominated region.
+
+\end{itemize}
+
+Since $N$ contains $P$, and $\overline{N}_>$ contains $\overline{T}_>$, the
+quantities in the formula are not all independent. We may remove the
+correlation between $N$ and $P$ by writing $N = P + F$, where $F$ is the set of
+electrons that fail a particular ID point. Then
+
+$$
+	\epsilon = \frac{P-B_P}{P + F - \overline{T} \times \frac{\overline{N}_>}{\overline{T}_>}}
+$$
+
+
+The correlation between $\overline{N}_>$ and $\overline{T}_>$ remains, and
+moreover $F$ and $\overline{T}$ are also correlated, because in the Medium case
+or in the Tight case, $F$ represents electrons failing Medium or Tight
+respectively, and since $\overline{T}$ represents electrons failing Loose
+(minus signal contamination), in each case $\overline{T}$ is a subset of $F$
+and there is accordingly a correlation.
+
+In order to remove all the correlations and write the efficiency completely in
+terms of statistically independent quantities we will first multiply both the
+numerator and the denominator by $\overline{T}_>$, to write
+
+$$
+	\epsilon = \frac{(P-B_P)\overline{T}_>}{P\overline{T}_> + F\overline{T}_> - \overline{T}\times \overline{N}_>}.
+$$
+
+Then we will add and subtract $\overline{T} \times \overline{T}_>$, to have
+
+
+\begin{equation*}
+	\begin{split}
+		\epsilon & = \frac{(P-B_P)\overline{T}_>}{P\overline{T}_> + F\overline{T}_> - \overline{T}\times \overline{T}_>
+			+ \overline{T}\times \overline{T}_> - \overline{T}\times \overline{N}_>}  \\
+		&  =  \frac{(P-B_P)\overline{T}_>}{P\overline{T}_> + (F - \overline{T})\overline{T}_>
+			- (\overline{N}_> - \overline{T}_>)\overline{T}}
+	\end{split}
+\end{equation*}
+
+The difference $F - \overline{T}$ represents the set of electrons that fail
+Medium or Tight but pass the Loose identification, and the difference
+$\overline{N}_> - \overline{T}_>$ represents the set of electrons that pass the
+Loose identification. If we treat each of the differences as a single term, and
+set $S = F - \overline{T}$ and $\overline{R}_> = \overline{N}_> -
+	\overline{T}_>$ respectively, the efficiency becomes
+
+\begin{equation}\label{eq:effco}
+	\epsilon = \frac{(P-B_P)\overline{T}_>}{P\overline{T}_> + S\overline{T}_>
+		- \overline{R}_>\times \overline{T}}
+\end{equation}
+
+which is now a function of six independent quantities, $\epsilon=\epsilon(P,
+	B_P, \overline{T}_>, S, \overline{R}_>, T)$. The statistical uncertainty of the
+efficiency then follows the standard error propagation formula,
+
+\begin{equation}\label{eq:statprop}
+	\Delta \epsilon^2 = \bigg(\frac{\partial \epsilon}{\partial P}\bigg)^2\Delta P^2 + \cdots +
+	\bigg(\frac{\partial \epsilon}{\partial T}\bigg)^2\Delta T^2
+\end{equation}
+
+
+Let $A$ denote the numerator in Formula~\ref{eq:effco} and $B$ the denominator.
+The terms in the formula above are then
+
+$$\frac{\partial \epsilon}{\partial P} = \frac{B \overline{T}_> - A \overline{T}_> }{B^2},
+	\quad
+	\frac{\partial \epsilon}{\partial B_P} = \frac{- B \overline{T}_> }{B^2},
+	\quad
+	\frac{\partial \epsilon}{\partial \overline{T}_>} = \frac{B (P - B_P) - A(P + S) }{B^2},
+$$
+
+$$\frac{\partial \epsilon}{\partial S} = \frac{- A \overline{T}_> }{B^2},
+	\quad
+	\frac{\partial \epsilon}{\partial \overline{R}_>} = \frac{AT }{B^2},
+	\quad
+	\frac{\partial \epsilon}{\partial \overline{T}} = \frac{A \overline{R}_> }{B^2}.
+$$
+
+The statistical uncertainty contribution due to the term $B_P$ will be treated
+as negligible, as this term comes from simulation. Then, among the remaining
+terms, only $P$ and $S$ are present in the signal region that are not used for
+background estimation, and as a result the statistical uncertainty of the
+efficiency will be taken from the contributions of these two terms. The
+contributions to the uncertainty from other terms will be taken as
+contributions to the total systematic uncertainty, which is discussed below.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\paragraph{Systematic Uncertainties} Contributions to the total systematic
+uncertainty from different sources will be added in quadrature. The sources are
+listed below.
+
+\begin{itemize}[label=\ding{111}]
+
+
+	\item The variation of the signal region, i.e. instead of marking the signal
+	      region at $60$ GeV, we may mark it at $50$ or $80$ GeV, the asymmetry is due to
+	      the fact that signal distributions on both sides of the $60$ GeV mark are not
+	      equal in equal intervals.
+
+
+	\item The term $B_P$ which represents the background contamination in $P$ is
+	      taken from simulation and may be varied up and down. To be conservative, we
+	      have decided to make a $50\%$ variation.
+
+
+	\item The uncertainty due to signal contamination subtraction from $T$ and
+	      $T_>$, from which result $\overline{T}$ and $\overline{T}_>$, may be obtained
+	      by conservatively varying the signal contamination $25\%$ up and down.
+
+	\item The template $T$, which is the distribution of antiloose electrons, may
+	      be replaced by the distribution of antiloose electrons in events with exactly 2
+	      $b$-jets.
+
+
+	\item In addition, the contributions from the counting of $\overline{T}_>$,
+	      $\overline{R}_>$, and $\overline{T}$ in Formula~\ref{eq:effco} are treated as
+	      contributions to the total systematic uncertainty as well.
+
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Identification Efficiencies}\label{s:eideff}
+
+In this section the integrated efficiencies as well as the binned efficiencies
+for the Medium and Tight operating points are presented, along with the
+associated uncertainties.
+
+
+\subsection{Integrated Efficiencies}
+
+The identification efficiencies for electrons inside jets are measured for the
+Medium and Tight operating points; they are evaluated iteratively according to
+Formula~\ref{eid:efff}, which is
+
+$$
+	\epsilon = \frac{P-B_P}{N - \overline{T} \times \frac{\overline{N}_>}{\overline{T}_>}}.
+$$
+
+where
+
+$$\overline{N}_> = N_> - P_> / \epsilon $$
+
+The integrated efficiencies are presented in the following, along with the
+associated uncertainties.
+
+\subsubsection{The efficiencies}
+
+The efficiencies, as well as the total statistical and systematic
+uncertainties, are listed in Table~\ref{t:inteffss}. It is seen that the
+efficiency is higher for Medium than for Tight, consistent with expectation.
+The statistical uncertainties are slightly larger for Tight, also consistent
+with expectation, as the stats for Tight is slightly less than that for Medium.
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{}  &  \thead{MEDIUM \\ \textbf{0.870}}   &  \thead{TIGHT \\ \textbf{0.784}} \\[1.0ex]
+		\hline\hline
+		\toprule
+		Statistical Uncertainty & $\pm 0.017$  & $ \pm 0.019$ \\
+		\hline\hline
+		Systematic Uncertainty  & $\pm 0.031 $ & $ \pm 0.020$ \\
+		\hline
+	\end{tabularx}
+	\caption{Efficiencies, Statistical and Systematic Uncertainties in Data for the
+		Medium and Tight operating points.}
+	\label{t:inteffss}
+\end{table}
+
+The relevant quantities in Formula~\ref{eid:efff} that are used to compute the
+efficiencies in data are listed in Table~\ref{t:inteffq}.
+
+\renewcommand{\arraystretch}{1.15}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{} & MEDIUM & TIGHT   \\[1.0ex]
+		\hline\hline
+		\toprule
+		~~~~~~$P$~~~~~~        & $ 392$ & $ 356$  \\
+		\hline
+		$B_P$                  & $1.47$ & $ 0.40$ \\
+		\hline
+		$N$                    & $734$  & $ 734$  \\
+		\hline
+		$\thead{\overline{N_>} \\ }$ & $368$ &  $ 368$ \\
+		\hline
+		$P_>$                  & $49$   & $ 48$   \\
+		\hline
+		$\thead{\overline{T} \\ }$  & $267.35$ &  $ 267.35$ \\
+		\hline
+		$\thead{\overline{T_>} \\ }$  & $292.52$ &  $ 292.52$ \\
+		\hline
+		\toprule
+	\end{tabularx}
+	\caption{The relevant quantities for computing the efficiencies according to
+		Formula~\ref{eid:efff}.}
+	\label{t:inteffq}
+\end{table}
+\renewcommand{\arraystretch}{1}
+
+The efficiencies in simulation for the Medium and Tight operating points
+are also computed and are listed in
+Table~\ref{t:inteffssmc} along with the statistical uncertainties. The relevant
+quantites are displayed in Table~\ref{t:inteffssmcq}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{|*{2}{Y|} }
+		\hline
+		\thead{MEDIUM \\ \textbf{ 0.871}}   &  \thead{TIGHT \\ \textbf{0.807}} \\[1.0ex]
+		\hline\hline
+		\toprule
+		$\pm 0.010$ & $ \pm 0.011$ \\
+		\hline
+	\end{tabularx}
+	\caption{The integrated efficiencies in simulations for the Medium and Tight
+		operating points, along with the associated statistical uncertainties.}
+	\label{t:inteffssmc}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{} & MEDIUM & TIGHT  \\[1.0ex]
+		\hline\hline
+		\toprule
+		\multicolumn{3}{|c|}{Numerator}\\
+		\hline
+		Dilepton               & 435.45 & 403.31 \\
+		\hline
+		Single top signal      & 12.39  & 11.81  \\
+		\hline
+		\toprule
+		\multicolumn{3}{|c|}{Denominator}\\
+		\hline
+		Dilepton               & 484.53 & 484.53 \\
+		\hline
+		Single top background  & 29.66  & 29.66  \\
+		\toprule
+	\end{tabularx}
+	\caption{The relevant quantities for computing the efficiencies in simulations for
+		the Medium and Tight operating points.}
+	\label{t:inteffssmcq}
+\end{table}
+
+
+\subsubsection{Statistical Uncertainties}
+
+As has been discussed in Section~\ref{s:eidunc}, when evaluating the
+efficiencies in data, the quantities in the signal region that are not used for
+background estimation are $P$ and $S$, and the statistical uncertainty of the
+efficiency is taken from the contributions of these two terms, computed
+according to Formula~\ref{eq:effco} and shown in Table~\ref{t:inteffss}. Of the
+two, the contribution from $S$ is the dominant one; the contribution from $P$
+is small ($< 0.5\%$).
+
+\subsubsection{Systematic Uncertainties}
+
+The total systematic uncertainty receives contributions from different sources,
+as discussed in Section~\ref{s:eidunc}. The individual contributions are shown
+below.
+
+\paragraph{Contributions from $\overline{T}_>$, $\overline{R}_>$, and
+	$\overline{T}$} The contributions to the total systematic uncertainty that come
+from the counting of $\overline{T}_>$, $\overline{R}_>$, and $\overline{T}$ in
+Formula~\ref{eq:effco} are listed in Table~\ref{t:statsources} below. They each
+contributes $< 1\%$ to the total uncertainty. The relevant quantities used for
+the calculations are listed in Table~\ref{t:syssourcesstats}. The term
+$\overline{R}_>$ is computed as the difference $\overline{N}_> -\overline{T}_>$
+(Section~\ref{s:eidunc}), where $\overline{N}_> = N_> - P_> /\epsilon $ as
+discussed in Section~\ref{s:meffs}.
+
+\renewcommand{\arraystretch}{1.20}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{}                          & MEDIUM      & TIGHT        \\[1.0ex]
+		\hline\hline
+		\toprule
+		$\Delta \overline{R}_> = \sqrt{\overline{R}_>}$ & $\pm 0.008$ & $ \pm 0.006$ \\
+		\hline
+		$\Delta \overline{T} = \sqrt{\overline{T}}$     & $\pm 0.002$ & $ \pm 0.001$ \\
+		\hline
+		$\Delta \overline{T}_> = \sqrt{\overline{T}_>}$ & $\pm 0.002$ & $ \pm 0.001$ \\
+		\hline
+	\end{tabularx}
+	\caption{Contributions to the total systematic uncertainty from the individual
+		sources.}
+	\label{t:statsources}
+\end{table}
+\renewcommand{\arraystretch}{1.0}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c |*{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{}       & \thead{MEDIUM } & \thead{TIGHT } \\[1.0ex]
+		\hline\hline
+		\toprule
+		~~~~~~$\overline{R}_>$~~~~~~ & 19.11           & 14.24          \\
+		\hline
+		$\overline{T} $              & 267.35          & 267.35         \\
+		\hline
+		$\overline{T}_>$             & 292.52          & 292.52         \\
+		\hline
+	\end{tabularx}
+	\caption{The quantities $\overline{R}_>$, $\overline{T}_>$, and $\overline{T}$
+		that are used to compute the contributions of these terms to the total
+		systematic uncertainty according to Formula~\ref{eq:effco}. The term
+		$\overline{R}_>$ is computed as the difference $\overline{N}_> -
+			\overline{T}_>$ (Section~\ref{s:eidunc}).}
+	\label{t:syssourcesstats}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Contribution from $B_P$}
+
+The contribution to the total systematic uncertainty from varying the term
+$B_P$ (Formula~\ref{eq:effco}) is shown below in Table~\ref{t:syssourcesbp}.
+The total contribution is taken to be the sum in quadrature of the two
+variations. The countings of $B_P$ in each of the variations are shown in
+Table~\ref{t:syssourcesb}. We see that the contribution from $B_P$ is very
+small.
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{}   & MEDIUM & TIGHT \\[1.0ex]
+		\hline\hline
+		\toprule
+		$B_P\times 1.5$          & 0.002  & 0.000 \\
+		\hline
+		$B_P\div 1.5$            & 0.001  & 0.000 \\
+		\hline
+		\toprule
+		$B_P$ total contribution & 0.002  & 0.000 \\
+		\hline
+	\end{tabularx}
+	\caption{Contributions to the total systematic uncertainty from the term $B_P$.}
+	\label{t:syssourcesbp}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| l |*{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{} & \thead{MEDIUM } & \thead{TIGHT } \\[1.0ex]
+		\hline\hline
+		\toprule
+		Semileptonic $t\tbar$  & 1.13            & 0.40           \\
+		\hline
+		Background single top  & 0.34            & 0.00           \\
+		\hline
+		W+jets                 & 0.00            & 0.00           \\
+		\toprule
+		\hline
+		$B_P\times 1.5$        & 2.2             & 0.61           \\
+		\hline
+		$B_P\div 1.5$          & 0.98            & 0.27           \\
+		\hline
+		%\toprule 
+		%Uncertainty &  &   \\
+		\hline
+	\end{tabularx}
+	\caption{Contributions to the systematic uncertinty from $B_P$.}
+	\label{t:syssourcesb}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\paragraph{Contribution from signal contaminations in $T$ and $T_>$} The
+contributions due to signal comtamination in the terms $T$ and $T_>$ are listed
+in Table~\ref{t:syssourcestn}. These are a major sources of contribution to the
+total systematic uncertainty. The signal contaminations in the two terms $T$
+and $T_>$ are varied simultaneously, either up or down by $25\%$. The countings
+obtained from the variations are shown in Table~\ref{t:syssourcest}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{} & MEDIUM & TIGHT \\[1.0ex]
+		\hline\hline
+		\toprule
+		$\times 1.25$          & 0.014  & 0.012 \\
+		\hline
+		$\div 1.25$            & 0.010  & 0.010 \\
+		\toprule
+		\hline
+		Total contribution     & 0.017  & 0.015 \\
+		\hline
+	\end{tabularx}
+	\caption{}
+	\label{t:syssourcestn}
+\end{table}
+
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c |*{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{}          & \thead{MEDIUM } & \thead{TIGHT } \\[1.0ex]
+		\hline\hline
+		\toprule
+		$T$                             & 312             & 312            \\
+		\hline
+		Dilepton contamination          & 28.43           & 28.43          \\
+		\hline
+		Single top signal contamination & 16.23           & 16.23          \\
+		\hline
+		$\overline{T} \times 1.5$       & ?               & ?              \\
+		\hline
+		$\overline{T} \div 1.5$         & ?               & ?              \\
+		\hline\hline
+		\toprule
+		$T_>$                           & 317             & 317            \\
+		\hline
+		Dilepton contamination          & 5.45            & 5.45           \\
+		\hline
+		Single top signal contamination & 19.03           & 19.03          \\
+		\hline
+		$\overline{T}_> \times 1.5$     & ?               & ?              \\
+		\hline
+		$\overline{T}_> \div 1.5$       & ?               & ?              \\
+		\hline
+	\end{tabularx}
+	\caption{}
+	\label{t:syssourcest}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\paragraph{Contribution from changing the template to antiloose+2b} The
+contribution to the total systematic uncertainty from the template change is
+shown in Table~\ref{t:syssources2b}. The template change leads to changes in
+quantities $\overline{T}$ and $\overline{T}_>$, which are listed in
+Table~\ref{t:syssources2bc}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{} & MEDIUM & TIGHT \\[1.0ex]
+		\hline\hline
+		\toprule
+		antiloose+2b           & 0.008  & 0.007 \\
+		\hline
+	\end{tabularx}
+	\caption{Contributions to the total systematic uncertainty from changing the template to
+		antiloose+2b}
+	\label{t:syssources2b}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| l |*{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{}       & \thead{MEDIUM } & \thead{TIGHT } \\[1.0ex]
+		\hline\hline
+		\toprule
+		~~~~~~$\overline{T}$~~~~~~   & 106.03          & 106.03         \\
+		\hline
+		~~~~~~$\overline{T}_>$~~~~~~ & 114.49          & 114.49         \\
+		\hline
+	\end{tabularx}
+	\caption{}
+	\label{t:syssources2bc}
+\end{table}
+
+\paragraph{Contributions from re-marking the signal region} The contribution to
+the total systematic uncertainty from re-marking the signal region is shown in
+Table~\ref{t:syssourcessn}. It is another major contribution to the total
+systematic uncertainty. The signal region is marked, in place of at $60$ GeV,
+at 50 GeV and 80 GeV in turn. The total contribution is computed as a sum of
+quadrature of the two individual contributions. The relevant quantities used
+for the calculations of the efficiencies are listed in Table~\ref{t:inteffq50}
+and~\ref{t:inteffq80}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{} & MEDIUM & TIGHT \\[1.0ex]
+		\hline\hline
+		\toprule
+		50 GeV                 & 0.010  & 0.004 \\
+		\hline
+		80 GeV                 & 0.020  & 0.001 \\
+		\toprule
+		\hline
+		Total contribution     & 0.022  & 0.010 \\
+		\hline
+	\end{tabularx}
+	\caption{Contributions to the total systematic uncertainty re-marking the signal
+		region at 50 GeV and 80 GeV.}
+	\label{t:syssourcessn}
+\end{table}
+
+\renewcommand{\arraystretch}{1.15}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{}  & MEDIUM & TIGHT   \\[1.0ex]
+		\hline\hline
+		\toprule
+		~~~~~~~~~~$P$~~~~~~~~~~ & $ 350$ & $ 314$  \\
+		\hline
+		$B_P$                   & $1.47$ & $ 0.40$ \\
+		\hline
+		$N$                     & $593$  & $ 593$  \\
+		\hline
+		$\thead{\overline{N_>} \\ }$ & $509$ &  $ 368$ \\
+		\hline
+		$P_>$                   & $91$   & $ 90$   \\
+		\hline
+		$\thead{\overline{T} \\ }$  & $182.76$ &  $ 182.76$ \\
+		\hline
+		$\thead{\overline{T_>} \\ }$  & $377.11$ &  $ 377.11$ \\
+		\hline
+		\toprule
+	\end{tabularx}
+
+	\caption{The relevant quantities to compute the efficiencies for the Medium and
+		Tight operating points when marking the signal region at 50 GeV.}
+
+	\label{t:inteffq50}
+
+\end{table}
+\renewcommand{\arraystretch}{1.0}
+
+
+\renewcommand{\arraystretch}{1.15}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+		\cline{2-3}
+		\multicolumn{1}{c |}{}  & MEDIUM & TIGHT   \\[1.0ex]
+		\hline\hline
+		\toprule
+		~~~~~~~~~~$P$~~~~~~~~~~ & $ 420$ & $ 384$  \\
+		\hline
+		$B_P$                   & $1.56$ & $ 0.43$ \\
+		\hline
+		$N$                     & $734$  & $ 734$  \\
+		\hline
+		$\thead{\overline{N_>} \\ }$ & $238$ &  $ 238$ \\
+		\hline
+		$P_>$                   & $21$   & $ 20$   \\
+		\hline
+		$\thead{\overline{T} \\ }$  & $355.54$ &  $ 355.54$ \\
+		\hline
+		$\thead{\overline{T_>} \\ }$  & $204.33$ &  $ 204.33$ \\
+		\hline
+		\toprule
+	\end{tabularx}
+
+	\caption{The relevant quantities to compute the efficiencies for the Medium and
+		Tight operating points when marking the signal region at 80 GeV.}
+
+	\label{t:inteffq80}
+
+\end{table}
+\renewcommand{\arraystretch}{1.0}
+
+\subsection{Efficiencies in Bins}
+
+In addition to the integrated efficiencies, binned efficiencies are also
+measured, to check the possible dependencies of the efficiencies on certain
+variables. The variables and their associated binnings are:
+
+\begin{itemize}[label=\ding{109}]
+	\item $p_T$ of the probe, in five bins
+	      \begin{itemize}
+		      \item 30-60 GeV,
+		      \item 60-80 GeV,
+		      \item 80-110 GeV,
+		      \item 110-140 GeV,
+		      \item $> 140$ GeV.
+	      \end{itemize}
+	\item $\abs{\eta}$ of the probe, in five bins
+	      \begin{itemize}
+		      \item 0.0-0.3,
+		      \item 0.3-0.6,
+		      \item 0.6-0.9,
+		      \item 0.9-1.3,
+		      \item $> 1.3$.
+	      \end{itemize}
+	\item $\Delta R $ between the probe and the closest overlapping jet, in five bins
+	      \begin{itemize}
+		      \item 0.0-0.15,
+		      \item 0.15-0.19,
+		      \item 0.19-0.23,
+		      \item 0.23-0.27,
+		      \item 0.27-0.4.
+	      \end{itemize}
+	\item $p_T$ of the closest overlapping jet, in five bins
+	      \begin{itemize}
+		      \item 150-220 GeV,
+		      \item 220-280 GeV,
+		      \item 280-340 GeV,
+		      \item 340-400 GeV,
+		      \item 400-500 GeV.
+	      \end{itemize}
+\end{itemize}
+
+The distributions of these variables are shown in Figure~\ref{f:bins01} and~\ref{f:bins02}.
+The binned efficiencies are shown in Figure~\ref{f:binspt01} and~\ref{f:binspt02}.
+
+
+\begin{figure}[H]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=8cm]{figures/nvariables_pt40_probes_cr1_m0_pt100_mar05_loose_real_loose_fake_dr_el_cjet_dr_el_cjet_mar22}
+		\label{bfptprobe}
+		\caption{$\Delta R $ }
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=8cm]{figures/nvariables_pt40_probes_cr1_m0_pt100_mar05_loose_real_loose_fake_el_eta_el_eta_mar22}
+		\caption{$\abs{\eta}$ of the probe}
+	\end{subfigure}
+
+	\centering
+
+	\caption{The distributions of $\Delta R $ between the probe and the closest
+		overlapping jet and $\abs{\eta}$ of the probe.}
+
+	\label{f:bins01}
+\end{figure}
+
+\begin{figure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=8cm]{figures/nvariables_pt40_probes_cr1_m0_pt100_mar05_loose_real_loose_fake_el_pt_el_pt_mar22}
+		\caption{$p_T$ of the probe}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=8cm]{figures/nvariables_pt40_probes_cr1_m0_pt100_mar05_loose_real_loose_fake_pt_c_jet_pt_c_jet_mar22}
+		\caption{$p_T$ of the closest overlapping jet}
+	\end{subfigure}
+
+	\centering
+
+	\caption{The distributions of $p_T$ of the probe and $p_T$ of the closest
+		overlapping jet.}
+
+	\label{f:bins02}
+\end{figure}
+
+
+\begin{figure}[H]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=8cm]{figures/sep04_bins_probe_pt_medium_tight_dt_mc}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=8cm]{figures/sep04_bins_probe_eta_medium_tight_dt_mc}
+	\end{subfigure}
+
+	\centering
+	\caption{The binned efficiencies in $p_T$ of the probe as well as in $\abs{eta}$ of the
+		probe.}
+	\label{f:binspt01}
+\end{figure}
+
+\begin{figure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=8cm]{figures/sep04_bins_dr_medium_tight_dt_mc}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=8cm]{figures/sep04_bins_jetpt_medium_tight_dt_mc}
+	\end{subfigure}
+
+	\centering
+	\caption{The binned efficiencies in $\Delta R$ between the probe and the closest jet,
+		as well as in $p_T$ of the closest overlapping jet.}
+	\label{f:binspt02}
+\end{figure}
+
+
+\section{Conclusions}\label{s:eidcon}
+
+This chapter describes the work to measure the identification efficiencies for
+in-jet electrons. It was the first attempt to perform such a measurement since
+Run 2 began. The measurement used the data collected in the period 2015-2016,
+at $13$ TeV center-of-mass and totalled $36.47~\text{fb}^{-1}$ in integrated
+luminosity. A sample of electrons for the measurements was obtained by
+selecting boosted $t\bar{t}$ dilepton ($e\mu$) events. Background estimations
+used both simulations and data, and the efficiencies were evaluated
+iteratively. The efficiencies were measured for the Medium and Tight operating
+points, both on data and simulation. Efficiencies in bins were also measured.
+In all of the results, the efficiencies predicted by simulation are quite close
+to those obtained from the measurements on data.
+
+
