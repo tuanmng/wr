@@ -1,4 +1,4 @@
-# THESIS WRITING
+# WR 
 
 There are eight chapters: 
 
