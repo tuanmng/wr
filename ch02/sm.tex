@@ -1,0 +1,514 @@
+
+\chapter{THE STANDARD MODEL OF PARTICLE PHYSICS AND SUPERSYMMETRY}\label{c:sm}
+
+The LHC was designed to explore Higgs physics and some beyond-Standard-Model
+physics accessible at the TeV scale. Three among the four currently known
+fundamental interactions\footnote{Gravitational interactions are negligible at
+the LHC energy scale. However, as will be discussed later in the chapter, they
+are no longer negligible at the Planck scale where fundamental questions not
+only about gravity but also about other aspects of the Standard Model arise.},
+namely quantum electrodynamics (QED), the weak and the strong interactions
+(also known as quantum chromodynamics, or QCD), are expected to come into full
+play --- indeed abundantly, providing physicists with ample opportunities to
+explore what had not been possible before. The theoretical foundation
+underlying these interactions has been worked out by physicists in the second
+half of the $20$th century and laid out in the Standard Model of particle
+physics, a mathematical framework that makes possible quantitative predictions
+of particle interactions. This chapter touches on some aspects of the Standard
+Model, including the principle of symmetry, which is an important organizing
+principle of the Standard Model.
+
+The Standard Model, on the other hand, has a number of problems, and some of
+them are reviewed in the present chapter. Supersymmetry, one among several
+attempts to go beyond the Standard Model, provides solutions to these problems;
+it has been and still is being actively pursued at the LHC. The theory of
+supersymmetry, including some key points on phenomenology, is discussed briefly
+at the end of the chapter.
+
+
+\section{The Standard Model of Particle Physics}
+
+Elementary particles and their fundamental interactions, excluding gravity, are
+fully represented in the Standard Model~\cite{smtheo01, smtheo02, smtheo03}.
+The concept of symmetry plays an essential role, as each component of the
+Standard Model --- QED, the weak interaction, and the strong interaction ---
+can be obtained by imposing an appropriate symmetry, a so-called local gauge
+symmetry; in addition, each component also respects spacetime
+symmetries~\cite{smtheo04}. Section~\ref{s:smsymmetries} discusses briefly
+spacetime symmetries as well as the local gauge symmetries that underline the
+Standard Model, while Section~\ref{s:smpf} discusses in more detail the
+particle contents of the Standard Model as well as several of its aspects.
+
+\subsection{Symmetries}\label{s:smsymmetries}
+
+A symmetry is mathematically represented by a group. Spacetime symmetries are
+represented by the Poincar\'{e} group, and local gauge symmetries local gauge
+groups, both of which are discussed in the following.
+
+\subsubsection{The Poincar\'{e} Group}\label{sm:poincareg}
+
+Spacetime symmetries include the Lorentz symmetry, which refers to the
+equivalence between inertial observers with regard to physical laws. If $K$ and
+$K'$ are inertial frames, the relativity principle requires physical laws as
+observed in $K$ to be also physical laws as observed in $K'$. Thus, let $x, y,
+	z$ and $t$ be the coordinates of an event as measured in $K$, and $x', y', z'$
+and $t'$ those of the same event as measured in $K'$. According to special
+relativity, these coordinates are related by a Lorentz transformation
+
+$${x'}^\mu = \Lambda^\mu_\nu x^\nu$$
+
+The Lorentz transformations form a group, called the Lorentz group. It is made
+up of transformations that leave the four-dimensional distance
+
+
+$$\eta_{\mu\nu} x^\mu x^\nu = (ct)^2 - x^2 -y^2 -z^2 $$
+
+invariant. Physically, Lorentz symmetry concerns rotations and boosts between
+inertial frames.
+
+To the Lorenzt symmetry may be added possible displacements of the origins of
+the frames, including time and spatial displacements,
+
+$${x'}^\mu = x^{\mu} + a^{\mu} $$
+
+In this way, we obtain the full spacetime symmetry, or Poincar\'{e} symmetry.
+The corresponding group is called the Poincar\'{e} group.
+
+A physical theory is said to be constrained by spacetime symmetry if its
+Lagrangian is invariant with respect to the Poincar\'{e} group. This concept
+will be illustrated below when we discuss gauge groups.
+
+\subsubsection{Gauge Groups}
+
+The known fundamental interactions in the Standard Model, namely quantum
+electrodynamics, the weak force, and the strong force, have been discovered to
+follow the principle of symmetry, in the sense that each of them can be
+obtained when an appropriate symmetry is required. The corresponding symmetry
+groups can be classified into abelian groups and non-abelian groups. In this
+section we review some general considerations in the use of such groups.
+
+
+
+\paragraph{The Abelian group $U(1)$} The global $U(1)$ group arises when we
+consider a transformation of the form
+
+\begin{equation}\label{eq:uoneglobal}
+	\psi \to e^{i\theta}\psi,
+\end{equation}
+
+where $\theta$ is a real number. The gauge principle turns $\theta$ into a
+function of spacetime coordinates, $\theta(x)$, and the resulting
+transformation is called a local gauge transformation. The Lagrangian of the
+theory is then required to be invariant under the local gauge transformation.
+
+We will consider as an example the Dirac Lagrangian
+
+$$L = \bar{\psi}(i\gamma^{\mu}\partial_{\mu} - m)\psi,$$
+
+which conforms to spacetime symmetry, but which is not invariant under the
+local gauge transformation, since the transformed Lagrangian is
+
+$$ L' = L + \bar{\psi} \gamma_{\mu} \psi(\partial^{\mu}\theta).$$
+
+To come up with the new Lagrangian that would be invariant, we introduce a new
+field, called a gauge field and denoted $A_{\mu}$, together with the covariant
+derivative operation
+
+$$ D_{\mu} = \partial_{\mu} + ieA_{\mu},$$
+
+and the requirement that under the local gauge transformation, the $A_{\mu}$
+would have to transform according to
+
+$$A_{\mu} \to A'_{\mu} = A_{\mu} + \frac{1}{e}\partial_{\mu}\theta.$$
+
+The kinematics of $A_{\mu}$ will be taken into account in the new Lagrangian
+through the term
+
+$$ -\frac{1}{4}F_{\mu\nu}F^{\mu\nu},$$
+
+where, by definition,
+
+$$F_{\mu\nu} = \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}.$$
+
+The new Lagrangian that would be invariant under the local gauge transform is
+
+$$L = \bar{\psi}(i\gamma^{\mu}D_{\mu} - m)\psi -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}.$$
+
+This Lagrangian is actually the Lagrangian of QED. The field $A_{\mu}$
+represents the photon. If the covariant derivative is expanded we will see in
+the Lagrangian the term $e\bar{\psi}\gamma_{\mu}\psi A^{\mu}$ which involves
+not only the photon term $A_{\mu}$ but also the charged fermion terms
+$\bar{\psi}$ and $\psi$; it represents the elementary electromagnetic
+interaction and expresses the fact that at the most fundamental level currently
+known, electrodynamic interactions are to be understood in terms of one simple
+elementary interaction that always involves a photon and a pair of charged
+fermions. This knowledge is also usually expressed graphically in
+Figure~\ref{f:smqedvertex} where the wiggly line represents the photon, and the
+two straight lines with arrows represent the charged particles. This single
+diagram encodes different possibilities, we may understand it as the
+annihilation of two charged particles in which a photon is seen at the end, or
+a process in which a charged particle radiates a photon and turns to an
+antiparticle, or a process where the photon radiates a pair of
+particle-antiparticle.\footnote{The last process, more particularly photon to
+	electron-positron pair, is important to physics at the LHC.}
+
+
+\begin{figure}[h]
+	\includegraphics[width=8cm]{figures/feynman_QED_vertex}
+	\centering
+	\caption{The Elementary QED vertex}
+	\label{f:smqedvertex}
+\end{figure}
+
+\paragraph{Non-Abelian Groups $SU(n)$}
+
+$SU(n)$ may be understood as the group of all $n\times n$ unitary matrices
+whose determinants equal $1$. Such a matrix, say $U$, may be written in the
+form
+
+$$U = \exp\bigg(-i \frac{T^a}{2}\alpha^a \bigg) $$
+
+The gauge principle turns the parameters $\alpha^a$'s into functions of
+spacetime coordinates $\alpha^a(x)$'s. The $T^{\alpha}$ are called the
+generators of the group and satisfy the relations
+
+$$[T^a, T^b] = if^{ab}_cT^c $$
+
+As in the case of QED discussed earlier, in order to write down a Lagrangian
+that would be invariant under the local gauge transformation $SU(n)$, we are
+forced to introduce new fields that represent bosons in the theory, the number
+of bosons correspond to the number of generators of the group, plus the
+covariant derivative operation and the kinematic terms involving these fields.
+The possible elementary interactions of the theory may then be read off by
+looking at the various terms in the Lagrangian. In QCD, for example, where the
+gauge group is $SU(3)$, there are eight generators that correspond to eight
+gluons in the theory. Here, in addition to a quark-gluon vertex, in
+Figure~\ref{f:qcdv1}, of the type seen in QED, there are the three-point vertex
+and four-point vertex, in Figure~\ref{f:qcdv23}, that correspond to gluon
+self-interactions; these additional self-interactions are characteristic of
+non-Abelian interactions.
+
+\begin{figure}[H]
+	\includegraphics[width=6cm]{figures/qcdv1}
+	\centering
+	\caption{The QCD quark-gluon vertex}
+	\label{f:qcdv1}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=6cm]{figures/qcdv2}
+	\includegraphics[width=6cm]{figures/qcdv3}
+	\centering
+	\caption{The QCD gluon self-interactions}
+	\label{f:qcdv23}
+\end{figure}
+
+
+\subsection{The Standard Model Particles and Forces}\label{s:smpf}
+
+The Standard Model is the quantitative implementation of the idea that physics
+is to be understood in terms of a small number elementary particles and their
+fundamental interactions. The elementary particles are classified into fermions
+and bosons. Fermions are further classfied into three families, each family is
+made up of a pair of leptons and two quarks; they are listed in
+table~\ref{t:smfparticles}.
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l l c l c l c l c}
+		& \multicolumn{4}{c}{Leptons} & \multicolumn{4}{c}{Quarks} \\
+		\hline\hline
+		    & Particle        &              & Mass          & Charge & Particle &     & Mass         & Charge         \\
+		\hline\hline
+		I   & electron        & $e$          & $0.511$ MeV   & -1     & Up       & $u$ & $2.3$ MeV    & $+\frac{2}{3}$ \\
+		    & $e$ neutrino    & $\nu_e$      & $<2$ eV       & 0      & Down     & $d$ & $4.8$ MeV    & $-\frac{1}{3}$ \\
+		\hline
+		II  & muon            & $\mu$        & $105.658$ MeV & -1     & Charm    & $c$ & $1.275$ GeV  & $+\frac{2}{3}$ \\
+		    & $\mu$ neutrino  & $\nu_{\mu}$  & $<2$ eV       & 0      & Strange  & $s$ & $95$ MeV     & $-\frac{1}{3}$ \\
+		\hline
+		III & tau             & $e$          & $1776.82$ MeV & -1     & Top      & $t$ & $173.07$ GeV & $+\frac{2}{3}$ \\
+		    & $\tau$ neutrino & $\nu_{\tau}$ & $<2$ eV       & 0      & Bottom   & $b$ & $4.18$ MeV   & $-\frac{1}{3}$ \\
+		\hline
+	\end{tabular}
+	\caption{The Standard Model fermions. All are spin $1/2$ particles}
+	\label{t:smfparticles}
+\end{table}
+
+The only difference between the families is the masses of the particles, and it
+is still an open question why three families in fact exist.
+
+The bosons, on the other hand, mediate the forces between the fermions. They
+carry integer spins, and are listed in table~\ref{t:smbparticles}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c l c c}
+		Particle  &          & Mass        & Charge  & Spin \\
+		\hline\hline
+		Photon    & $\gamma$ & \_          & 0       & 1    \\
+		$W^{\pm}$ &          & 80.385 GeV  & $\pm 1$ & 1    \\
+		$Z$       &          & 91.1876 GeV & 0       & 1    \\
+		Gluon     & $g$      & \_          & 0       & 1    \\
+		Higgs     & $h$      & 125.9 GeV   & 0       & 0    \\
+		\hline
+	\end{tabular}
+	\caption{The Standard Model bosons. All have integer spins}
+	\label{t:smbparticles}
+\end{table}
+
+
+The fundamental interactions are QED, QCD, and weak interactions, mediated by
+the photon, the gluons, and the weak gauge bosons respectively. QED and the
+weak theory have been unified into a single electroweak theory. The relevant
+gauge groups are $SU(2) \otimes U(1)$ for electroweak and $SU(3)$ for QCD. It
+is a general property of gauge theories that the gauge bosons are massless. The
+photon and the gluons are massless, but the weak bosons are not. This
+discrepancy was resolved with a mechanism known as spontaneous symmetry
+breaking~\cite{higgsssb, higgsssb1, higgsssb2}. The result is the introduction
+of a new scalar field, the Higgs field, whose interactions with elementary
+particles would give them masses. Electroweak symmetry is said to be broken
+into QED symmetry around the energy $246$ GeV. The Higgs particle was
+discovered in 2012~\cite{higgsdis01, higgsdis02}, its mass has been measured to
+be $\sim 125$ GeV, giving a confirmation of electroweak unification and, at the
+same time, motivates the hope for the unification of all three Standard Model
+interactions.
+
+\section{Beyond the Standard Model}\label{s:smsusy}
+
+The Standard Model has been tested very extensively in terms of its
+quantitative predictions of elementary particle interactions, and has hitherto
+withstood all the tests. It, however, is not a physics theory where many of our
+important questions about the physical world can be understood satisfactorily.
+This section discusses some problems that cannot be answered within the
+framework of the Standard Model; it also discusses supersymmetry, an attempt to
+go beyond the Standard Model to address some of the questions that we still
+have.
+
+\subsection{Problems with the Standard Model}
+
+\paragraph{Gravity} Gravitational interactions were first proposed by Newton. A
+mass $M$ was postulated to exert an attractive force on another mass $m$, given
+by
+
+$$ \Fv = -G \frac{Mm}{r^2}\hat{\rv} $$
+
+where $\hat{\rv}$ is the unit vector pointing from $M$ to $m$, and $G$ the
+gravitational constant. Einstein proposed a fundamental change to gravitational
+interactions where forces are completely eliminated. In general relativity
+there is a direct link between the distribution of matter and energy in a
+spacetime region to the geometry of spacetime, the link being given according
+to the equation
+
+$$G_{\mu\nu} = -\kappa T_{\mu\nu} $$
+
+where $\kappa = 8\pi G / c^4$, and
+
+$$G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu}$$
+
+is the Einstein tensor, which has been written in terms of the Ricci tensor
+$R_{\mu\nu}$ and the curvature scalar $R$, both of which are functions of the
+metric tensor $g_{\mu\nu}$ which characterizes a geometry. In this new scheme
+the paths of objects follow the geodesics of a spacetime geometry.
+
+At present, gravitational interactions are not accounted for in the Standard
+Model. Thus, as long as we are still searching for a single, all-encompassing
+theoretical framework to address all of our questions about the physical world,
+the Standard Model is not a complete theory.
+
+\paragraph{The hierachy problem~\cite{hier01, hier02}} At the energy scale of
+the LHC, gravitational interactions are completely negligible. A rough
+comparison between the gravitational force between two equal masses $M$
+separated by a distance $r$, which is $GM^2 / r^2$, with the electrostatic
+force between two charges $\abs{e}$ separated by a distance $r$, which is $e^2/
+	r^2$, will indicate the relative weakness of gravity. Indeed, taking as the
+unit of mass $Mc^2 = 1$ GeV, the electromagnetic coupling
+
+$$ \alpha = \frac{e^2}{4\pi \hbar c} = \frac{1}{136.036}$$
+
+is to be compared with
+
+$$ \frac{GM^2}{4\pi\hbar c} = 5.3\times 10^{-40}.$$
+
+It follows that gravity is negligible at the GeV or TeV scale. In fact,
+gravitational interactions are negligible up to the Planck scale $(hc/ G)^{1/2}
+	\sim 10^{19}$ GeV. Given that there are only four forces currently known that
+span from the scale of a few hundreds GeV to the Planck scale, it might seem
+reasonable to assume that the Standard Model physics is valid up to Planck
+scale, i.e. there is no new physics up to Planck scale. However, it has been
+pointed out that this assumption leads to the following issue.
+
+In quantum field theory the physical mass of an elementary particle is a sum of
+its bare mass plus corrections due to interactions. The Higgs is
+self-interacting and due to its mass receives a major correction from
+self-interaction; in addition it receives a major correction from its
+interaction with the top quark, the heaviest Standard Model particle. If $\mu$
+denotes the Higgs mass, $\mu_B$ its bare mass, then the corrections have been
+determined to take the form
+
+$$\mu^2  \simeq \mu_{B}^2 +  \frac{\lambda}{8\pi^2}\Lambda^2 -
+	\frac{3y_t^2}{8\pi^2}\Lambda^2 + \dots $$
+
+where $\Lambda$ is the momentum scale up to which corrections are applied,
+$\lambda$ is the Higgs coupling strength, and $y_t$ is the coupling strengh
+between the top and the Higgs. If $\Lambda$ is taken to be the Planck scale,
+the corrections have to be extremely precise to fit the physical Higgs mass
+$\mu \sim 100$ GeV. This has been judged to be very unnatural; in addition, the
+fact that the corrections are so much bigger than the Higgs mass itself has
+also been considered unsatisfactory.
+
+
+\paragraph{Dark matter} Astronomical and cosmological measurements accumulated
+over the years~\cite{darkmt01, darkmt02, darkmt03, darkmt04} have argued
+overwhelmingly for the inadequacy of ordinary matter to account for the total
+matter in the universe. Indeed, it is currently estimated that Standard Model
+particles account for about only $5\%$ of all matter in the universe, while
+dark matter and dark energy account for the rest, about $27\%$ and $68\%$
+respectively~\cite{darkmt05, darkmt06}. At present, the nature of dark matter
+is still unknown, even though there have been many indirect cosmological
+evidences that point to its existence. Thus, for instance, theoretically we
+expect to see smaller rotational velocity of objects that are increasingly
+distant from the galaxy to which they belong, shown by the dashed line in
+Figure~\ref{f:darkmatterrot}. Actual measurements, however, have shown that the
+rotational curve is rather flat, as indicated by the solid line in the same
+figure. It is thus concluded that there is invisible mass that not only cannot
+be seen but is also distributed differently from ordinary matter.
+
+There are many other examples as well, among which gravitational lensing
+furnishes another convincing evidence that indicates the existence of dark
+matter. The amount of deflection of light from distant galaxies may be used to
+estimate the amount of matter in the galaxy clusters between the Earth and the
+distant galaxies, and has led to the conclusion that the galaxy clusters are in
+co-existence with an enormous amount of dark matter~\cite{darkmt01, darkmt02,
+	darkmt03, darkmt04, darkmt05, darkmt06}.
+
+
+\begin{figure}[H]
+	\includegraphics[width=6cm]{figures/mond}
+	\centering
+	\caption{The rotational velocity of spiral galaxy with distance~\cite{darkmfig01}.}
+	\label{f:darkmatterrot}
+\end{figure}
+
+The majority of dark matter is expected to be cold dark matter made up of
+unrelativistic particles. Most Standard Model particles are not dark matter
+candidates except neutrinos, which are both stable and weakly interacting.
+However, neutrinos are relativistic particles and might only account for the
+so-called hot dark matter, which is only a fraction of the total amount of dark
+matter.
+
+\subsection{Supersymmetry}
+
+
+Supersymmetry~\cite{Golfand:1971iw,Volkov:1973ix,Wess:1974tw,Wess:1974jb,Ferrara:1974pu,Salam:1974ig}
+is an extension of the Standard Model that offers potential solutions to many
+currently unsolved problems~\cite{susysol01, susysol02, susysol03, susysol04,
+	susysol05}. It started with the question whether or not spacetime symmetry, the
+Poincar\'{e} group, can be extended in a non-trivial way. This is to be
+contrasted with gauge symmetries, which are trivial extensions of spacetime
+symmetries, in the sense that the generators of the gauge groups commute with
+the generators of the Poincar\'{e} group.
+
+This section gives a brief discussion of supersymmetry. For a full reference,
+see~\cite{susytext01}.
+
+\paragraph{The Poincar\'{e} Algebra and Supersymmetry} The Poincar\'{e} group,
+as discussed in Section~\ref{sm:poincareg}, is made up of the Lorentz group and
+the group of spacetime translations. The elements of the groups are functions
+of ten real continuous parameters, six coming from rotations and boosts in the
+Lorentz group, and four from the translation group. Mathematically the
+Poincar\'{e} group is associated with a set of ten generators, six associated
+with the Lorentz group and usually denoted $J^{\mu\nu}$, and four associated
+with the translation group, which will be denoted $P^{\mu}$. Among these
+generators there exist commutation relations
+
+$$[P^\mu, J^{\rho\sigma}], \quad [P^{\mu}, P^{\nu}], \quad [J^{\mu\nu},
+		J^{\rho\sigma}]$$
+
+whose expressions involve only the generators $J^{\mu\nu}$ and $P^{\mu}$. The
+generators and the commutation relations are said to form the Poincar\'{e}
+algerba. The question of the extension of the Poincar\'{e} group becomes the
+question of whether or not new generators could be added to the existing set of
+generators, such that the new commutation relations that arise are not all
+trivial, and that they are expressions that involve only the old and the new
+generators.
+
+The Poincar\'{e} algebra was found to be extensible, but on the condition that,
+when adding the new generators, we have to consider not only the commutation
+relations between the old and the new generators, but also the anticommutation
+relations among the new generators themselves. The result is a set of
+generators and commutation and anticommutation relations among them that form a
+system called the super-Poincar\'{e} algebra. One of the consequences that
+follows is that the new generators map bosons into fermions and vice versa.
+Theoretical considerations then require supersymmetric theory to contain only
+two possible multiplets, the chiral supermultiplet that consists of two scalar
+and two spinor fields, or the vector supermultiplet that consists of two spinor
+and two vector fields. It was found necessary, also on theoretical ground, to
+introduce one or more new particles for every Standard Model particle that
+differs by spin $1/2$, called its superparners. The particles in a multiplet
+otherwise have the same mass and other quantum numbers.
+
+Supersymmetry may be classified depending to the number of new generators that
+are added to the Poincar\'{e} generator. The case where there is only one new
+generator added is called $N=1$ supersymmetry. The Minimal Supersymmetric
+Standard Model (MSSM) is $N=1$ supersymmetry~\cite{susytext01, susytext02}, it
+is the extension of the Standard Model with the least possible number of new
+particles that need to be introduced. The particle contents are listed in
+Table~\ref{t:mssmchiral}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l l | l l | c}
+		\multicolumn{2}{c}{Boson} & \multicolumn{2}{c}{Fermions} & $SU(3), SU(2), U(1)$ \\
+		\hline\hline
+		Gluons       & $g$                          & Gluinos   & $\tilde{g}$                    & $(8, 1, 0)$            \\
+		Gauge bosons & $W^{\pm}, W^0$               & Gauginos  & $\tilde{W}^{\pm}, \tilde{W}^0$ & $(1, 3, 0)$            \\
+		B boson      & $B$                          & Bino      & $\tilde{B}$                    & $(1, 1, 0)$            \\
+		\hline
+		Sleptons     & $\tilde{\nu}_L, \tilde{e}_L$ & Leptons   & $\nu_L, e_L$                   & $(1, 2, -1)$           \\
+		             & $\tilde{\bar{e}}_L$          &           & $\bar{e}_L$                    & $(1, 1, -2)$           \\
+		\hline
+		Squarks      & $\tilde{u}_L, \tilde{d}_L$   & Quarks    & $u_l, d_L$                     & $(3, 2, \frac{1}{3})$  \\
+		             & $\tilde{u}_R$                &           & $u_R$                          & $(3, 1, \frac{4}{3})$  \\
+		             & $\tilde{d}_R$                &           & $d_R$                          & $(3, 1, \frac{-2}{3})$ \\
+		\hline
+		Higgs        & $H_d^0, H_d^-$               & Higgsinos & $\tilde{H}_d^0, \tilde{H}_d^-$ & $(1, 2, -1)$           \\
+		             & $H_d^+, H_u^0$               &           & $\tilde{H}_u^+, \tilde{H}_u^0$ & $(1, 2, 1)$            \\
+		\hline\hline
+	\end{tabular}
+	\caption{Particles in the MSSM}
+	\label{t:mssmchiral}
+\end{table}
+
+If supersymmetry exists, it has to be broken, for otherwise supersymmetric
+particles would have been detected alongside Standard Model particles.
+Supersymmetry is thought be broken spontaneously, in the same way the Standard
+Model electroweak theory is broken spontaneously. A more detail discussion on
+supersymmetry breaking is provided in~\cite{susytext01}.
+
+\paragraph{Supersymmetry Phenomenology at the LHC} At the LHC, a class of MSSM
+models known as $R$-parity conserving models figure predominantly.
+$R$-parity~\cite{susytext01, susytext02} is a multiplicative quantum number
+defined by
+
+$$P_R = (-1)^{3(B-L)+2S}$$
+
+where $B$ is the baryon number, $L$ the lepton number, and $S$ the spin. Then
+each Standard Model is assigned the value $+1$ while each supersymmetric
+particle the value $-1$. Phenomenologically, $R$-parity conservation implies
+that
+
+\begin{itemize}
+	\item The lightest supersymmetric particle (LSP) is stable;
+	\item All other supersymmetric particles decay into a state that has an odd
+	      number of LSPs;
+	\item Supersymmetric particles are produced in pairs.
+\end{itemize}
+
+The LSP does not participate in known interactions and manifests as missing
+transverse energy, it is a good candidate for dark matter. At the LHC, both
+strong and electroweak interactions are expected to be sources of
+supersymmetric particles. Many searches for supersymmetric particles have been
+carried out since the start of the LHC, one of which will be discussed in
+Chapter~\ref{c:susys} of this thesis.
+
