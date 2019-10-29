@@ -1,63 +1,130 @@
 \chapter{LHC AND THE ATLAS DETECTOR}\label{c:detector}
 
-Among the principal instruments of modern experimental particle physicists are
-accelerators and detectors. This chapter begins with a general introduction to
-two basic collider parameters, the centre-of-mass energy and luminosity. Then,
-CERN is introduced and the Large Hadron Collider (LHC) is presented. Finally,
-the ATLAS detector, including its trigger system, is discussed.
+Among the principal instruments of modern experimental particle physics are
+accelerators and detectors. In accelerators, particles are accelerated to some
+energy before being made to collide, and the collision debris in the form of
+new particles are collected and analysed in the detectors. A high
+centre-of-mass energy, which is required in order that high mass scale physics
+may be reached, leads to many technical challenges that need to be overcome as
+well as the overall complexity of modern accelerators and detectors.
+
+This chapter discusses the Large Hadron Collider (LHC) based at CERN and the
+ATLAS detector, one among the four main detectors located at the LHC.
+
+% \subsection{Luminosity}
+
+% In addition to the centre-of-mass energy, luminosity is also an important basic
+% collider parameter. The higher is the luminosity, the better is the chance a
+% clean signal may be extracted out of the undesired backgrounds. Indeed, given a
+% physics cross section $\sigma$, the number of events $N$ that is produced is
+% given by
+
+% $$N  = L \sigma$$
+
+% where the quantity $L$ is referred to as the luminosity. The number of events
+% is thus directly proportional to the luminosity.
+
+% We often speak of the number of events produced per unit time. Then, the
+% relevant quantity is the instantaneous luminosity $L_I$, and
+
+% $$ L = \int L_I dt $$
+
+% Colliders are built to achieve high luminosity. Consider two colliding beams
+% with $N_1$ and $N_2$ number of particles. A general formula for the
+% instantaneous luminosity, assuming Gaussian profiles of the beams, is
+
+% $$L_I = f \frac{N_1N_2}{4\pi \sigma_x\sigma_y} $$
+
+% where
+
+% \begin{itemize}
+% 	\item $f$ is the frequency at which the beams collide
+
+% 	\item $\sigma_x$ and $\sigma_y$ are the root-mean-square horizontal and
+% 	      vertical beam sizes.
+
+% \end{itemize}
+
+% On the other hand, we need to deal with so-called pileup events that come from
+% high luminosity. They are undesired events on top of the hard scattering, and
+% may occur in two scenarios. Either many interactions occur in each collision,
+% in which case we have in-time pileup, or interactions that belong to different
+% collisions are (incorrectly) recorded together, in which case we have
+% out-of-time pileup.
 
 
-\section{BASIC COLLIDER  PARAMETERS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{CERN AND THE LARGE HADRON COLLIDER}
 
-Modern collider experiments make use of accelerators and detectors, where
-particles are accelerated to some energy before being made to collide. The
-higher is the energy, the higher is the mass scale which an experiment can
-reach. Accordingly, an important collider parameter is the centre-of-mass
-energy.
 
-\subsection{Centre-of-Mass Energy}
+Broadly speaking, the development of physics rests upon two sources, the first,
+the availability of a set of physical phenomena and the second, active
+theoretical investigations. At the turn of the $20$th century, atomic phenomena
+confirmed the discrete nature of physical quantities previously thought to be
+continuous and motivated the development of quantum mechanics. Subsequently,
+the quest to unify quantum mechanics and special relativity, in parallel with
+probes into sub-atomic phenomena, led to the development of quantum field
+theory and eventually gave birth to the Standard Model of particle physics. At
+present, more than ever before, both technological advances and active
+theoretical investigations are being pushed to the limit to scrutinize the
+Standard Model and go beyond it. In this respect, the Large Hadron Collider
+based at CERN has been playing a leading role, being the most powerful collider
+at the moment.
 
-To begin, consider two particles with four-momenta $p_1$ and $p_2$. The total
-momentum squared, which is a Lorentz invariant quantity, is
+CERN \cite{cernlink}, also known as European Organization for Nuclear Research,
+was established in the post-war era, the $1940$s, to foster physics development
+and scientific collaboration in Europe. The Large Hadron Collider
+\cite{lhclink}, built in the period 1984-1989 at CERN, was designed to explore
+physics beyond the Standard Model. It is a complex of successive accelerators
+that increase the accelerated particle energy by approximately an order of
+magnitude at each pass from one accelerator to the next.
 
-$$
-	s = (p_1 + p_2)^2  = (E_1 + E_2)^2 - (\pv_1 + \pv_2)^2.
-$$
 
-In the centre-of-mass frame, the three-momenta are opposite, and $\pv_1+\pv_2 =
-	0$. As a result, assuming the particles have the same energy $E$, we may write
+The LHC reuses the Large Electron Position (LEP) tunnel, which produced
+$e^+e^-$ collisions, and is $26.7$ km in circumference and lies between $45$ m
+and $170$ m underground. The designed centre of mass energy is 14 TeV, at which
+Higgs physics and some beyond the Standard Model physics become accessible. It
+has two rings with counter-rotating proton beams. The beams are accelerated by
+a high-frequency standing wave, and by design take the form of bunches of
+particles, which are spaced by $25$ ns and each of which contains up to
+$1.1\times 10^{11}$ protons. The beam particles are kept along a circular
+trajectory and are focused near the collision points using dipole and
+quadrupole magnets. Notable at the LHC is the use of superconducting magnets
+that operate at 2K and lower.
 
-\begin{equation}
-	\sqrt{s} = 2E.
-\end{equation}
+Figure~\ref{f:lhcmap} shows the CERN's accelerator complex. The four main
+detectors are ATLAS, CMS, ALICE, and LHCb, all located at different collision
+points. Among them, the high luminosity experiments are ATLAS and CMS.
 
-This quantity, $\sqrt{s}$, is referred to as the centre-of-mass energy. The
-higher are the energies of the participating particles, the higher is the
-centre-of-mass energy. Modern colliders are therefore designed to be able to
-accelerate the colliding particles to a very high energy.
+\begin{figure}[H]
+	\includegraphics[width=12cm]{figures/CERN-accelerator-complex-9}
+	\centering
+	\caption{CERN's Accelerator Complex} \cite{acccomplex}
+	\label{f:lhcmap}
+\end{figure}
 
-A discussion of the LHC accelerator at CERN will be given in later sections.
 
-\subsection{Luminosity}
+Initially in Run-1 (2010-2012), the LHC was operating at $7$ and $8$ TeV
+center-of-mass energy. The superconducting beampipe magnets were upgraded
+during the long shutdown 2012-2015, helping to reach $13$ TeV center-of-mass
+energy in Run-2 (2015-2018). Followng Run-2 is another shutdown (2019-2020),
+during which upgrades are performed in preparation for Run-3 (2021-2013).
 
-In addition to the centre-of-mass energy, luminosity is also an important basic
-collider parameter. The higher is the luminosity, the better is the chance a
-clean signal may be extracted out of the undesired backgrounds. Indeed, given a
-physics cross section $\sigma$, the number of events $N$ that is produced is
-given by
+At the end Run-2 a total of approximately $160\text{fb}^{-1}$ of data was
+delivered by the LHC. This total luminosity, denoted $L$, is proportional to
+the number of events $N$ produced for a physics process with cross section
+$\sigma$, according to the formula
 
-$$N  = L \sigma$$
+$$ N = \sigma L$$
 
-where the quantity $L$ is referred to as the luminosity. The number of events
-is thus directly proportional to the luminosity.
-
-We often speak of the number of events produced per unit time. Then, the
-relevant quantity is the instantaneous luminosity $L_I$, and
+The number of events produced per unit time is a function of the instantaneous
+luminosity $L_I$ which is related to $L$ by
 
 $$ L = \int L_I dt $$
 
-Colliders are built to achieve high luminosity. Consider two colliding beams
-with $N_1$ and $N_2$ number of particles. A general formula for the
+The LHC was designed to achieve high luminosity. In general,
+given two colliding beams
+with $N_1$ and $N_2$ number of particles, a general formula for the
 instantaneous luminosity, assuming Gaussian profiles of the beams, is
 
 $$L_I = f \frac{N_1N_2}{4\pi \sigma_x\sigma_y} $$
@@ -79,91 +146,6 @@ in which case we have in-time pileup, or interactions that belong to different
 collisions are (incorrectly) recorded together, in which case we have
 out-of-time pileup.
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{CERN AND THE LARGE HADRON COLLIDER}
-
-
-Broadly speaking, the development of physics rests upon two sources, the first,
-the availability of a set of physical phenomena and the second, active
-theoretical investigations. At the turn of the $20$th century, atomic phenomena
-confirmed the discrete nature of physical quantities previously thought to be
-continuous and motivated the development of quantum mechanics. Subsequently,
-the quest to unify quantum mechanics and special relativity, in parallel with
-probes into sub-atomic phenomena, led to the development of quantum field
-theory and eventually gave birth to the Standard Model of particle physics. At
-present, more than ever before, both technological advances and active
-theoretical investigations are being pushed to the limit to scrutinize the
-Standard Model and go beyond it. In this respect, the Large Hadron Collider
-based at CERN has been playing a leading role, being the most powerful collider
-at the moment.
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{CERN}
-
-CERN \cite{cernlink}, also known as European Organization for Nuclear Research,
-was established in the post-war era, the $1940$s, to foster physics development
-and scientific collaboration in Europe.
-
-CERN's core mission is fundamental physics, to uncover what the universe is
-made of and how it works. It relies on the participation and funding of a
-number of parties, which are classified into
-
-\begin{itemize}
-
-	\item Member states: These are countries that provide financial and managerial
-	      assistance and responsibility to CERN.
-
-	\item Non-member states: These are countries that contribute to the financing,
-	      construction, and operation of the experiments on which they collaborate.
-
-	\item Observers: These are countries that have made significant contributions
-	      to the CERN infrastructure, and organizations which maintain close links with
-	      CERN.
-
-\end{itemize}
-
-In addition, CERN has scientific contact with a number of countries not
-belonging to the above groups.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{The Large Hadron Collider}
-
-The Large Hadron Collider \cite{lhclink} was designed to explore physics beyond
-the Standard Model. It reuses the Large Electron Position (LEP) tunnel, $26.7$
-km in circumference, that was built in the period 1984-1989 at CERN. The tunnel
-lies between $45$ m and $170$ m underground.
-
-The LHC has two rings with counter-rotating proton beams. The beams are
-accelerated by a high-frequency standing wave, and by design take the form of
-bunches of particles. The beam particles are kept along a circular trajectory
-and focused near the collision points using dipole and quadrupole magnets.
-Notable at the LHC is the use of superconducting magnets that operate at 2K and
-lower.
-
-The LHC is part of a system that consists of one accelerator and four
-detectors. The designed centre of mass energy is 14 TeV. At this energy, Higgs
-physics and some beyond the Standard Model physics become accessible.
-
-Figure~\ref{f:lhcmap} shows the CERN's accelerator complex. The four detectors
-are ATLAS, CMS, ALICE, and LHCb, all located at different collision points.
-Among them, the high luminosity experiments are ATLAS and CMS, where the target
-instantaneous luminosity is around $L_I=2 \times
-	10^{34}\text{cm}^{-12}\text{s}^{-1}$.
-
-In this thesis we will focus exclusively on the ATLAS detector.
-
-\begin{figure}[H]
-	\includegraphics[width=12cm]{figures/CERN-accelerator-complex-9}
-	\centering
-	\caption{CERN's Accelerator Complex} \cite{acccomplex}
-	\label{f:lhcmap}
-\end{figure}
-
-
 \section{THE ATLAS DETECTOR}
 
 ATLAS \cite{lhcaccexp} is a general-purpose detector located at one among
@@ -175,18 +157,10 @@ be able to identify and measure important physics objects such as photons,
 electrons, muons, taus, hadronic jets, and neutrinos and other weakly
 interacting particles in the form of missing transverse energy. In addition,
 with regard to jets, it needs to be able to distinguish between heavy flavour
-jets (b and c quarks) and other light jets.
+jets ($b$ and $c$ quarks) and other light jets.
 
 An overview of the ATLAS detector is shown in Figure~\ref{f:atlasd}. It is $25$
 m in diameter and $44$ m in length, and weights approximately $7000$ tons.
-
-\begin{figure}[H]
-	\includegraphics[width=12cm]{figures/The-ATLAS-detector-and-subsystems}
-	\centering
-	\caption{The ATLAS Detector}\cite{atlasdetector}
-	\label{f:atlasd}
-\end{figure}
-
 
 In conformity with modern detector design, ATLAS is made up of a number of
 subsystems that surround one another in layers. Innermost is the inner
@@ -196,6 +170,13 @@ combination to provide detection capability in many possible physics scenarios.
 They are built out of components that are fast, precise, and that can stand
 against high radiation. Moreover, they are supplemented by an efficient trigger
 system.
+
+\begin{figure}[H]
+	\includegraphics[width=12cm]{figures/The-ATLAS-detector-and-subsystems}
+	\centering
+	\caption{The ATLAS Detector}\cite{atlasdetector}
+	\label{f:atlasd}
+\end{figure}
 
 The entire detector is nominally forward-backward symmetric with respect to the
 interaction point. The magnet configuration, which determines the overall
@@ -243,15 +224,19 @@ Figure~\ref{f:atlasc}, which also illustrates the ATLAS coordinate system.
 		      y = \frac{1}{2}\ln\bigg( \frac{E + p_z}{E - p_z}\bigg),
 	      $$
 
+	      whose difference is invariant with respect to boosts along the $z$-direction.
+	      In high-energy collisions the produced particles are expected to be more and
+	      more perpendicular to the beam-axis, and their rapidities will then be closer
+	      and closer to zero.
+
 	\item The pseudorapidity
 
 	      $$
 		      \eta = -\ln\bigg( \tan \frac{\theta}{2}\bigg),
 	      $$
 
-	      The pseudorapidity is thus zero on the axis perpendicular to the beam axis, and
-	      is infinite along the beam axis. At ATLAS, pseudorapidity is reachable up to
-	      $4.9$.
+	      For a highly-energetic particle $\eta$ almost coincides with $y$ but is much
+	      easier to measure.
 
 \end{itemize}
 
@@ -263,7 +248,7 @@ Figure~\ref{f:atlasc}, which also illustrates the ATLAS coordinate system.
 \end{figure}
 
 
-The transverse plan plays an important role and there the transverse momenta
+In the transverse plane perpendicular to the beam-axis the transverse momenta
 and the transverse energy are defined according to the formulas
 
 $$p_T = p\sin\theta, \qquad E_{\text{T}} = E\sin\theta $$
@@ -303,9 +288,9 @@ $6.2$ m in length.
 \end{figure}
 
 
-The ID is surrounded by a $2$T magnetic field parallel to the beam axis. It is
-this field that deflects the paths of charged particles. The tracks are bent,
-and their curvatures are then used to compute momenta of charged particles.
+The ID is surrounded by a $2$T magnetic field parallel to the beam axis. This
+field deflects the paths of charged particles the curvatures of which are used
+for the measurements of their momenta and charges.
 
 To achieve the desired performance, the ID is built up of semiconductor pixel
 and strip detectors in the inner part and straw-tube tracking detectors in the
@@ -328,9 +313,9 @@ terms of arrangement:
 
 \paragraph{The Pixel Detector} The Pixel Detector surrounds the beam pipe. Made
 up of silicon pixel detectors, it is able to cope with very high track density
-that is expected. It is constructed in the form of segmented layers of
+that is typically expected. It is constructed in the form of segmented layers of
 identical sensors in the $R-\phi$ plane and along the $z$-axis, where the
-sensors are of size $500\times$\SI{400}{\micro\meter^2}. Typically, a track is
+sensors are of size $50\times$\SI{400}{\micro\meter^2}. Typically, a track is
 expected to cross three such layers. The achieved accuracies in the barrel are
 approximately \SI{10}{\micro\meter} in the $R-\phi$ plane and
 \SI{115}{\micro\meter} in the $z$ direction. The Pixel Detector has
@@ -361,12 +346,10 @@ The Pixel Detector and the SCT function at small radii.
 
 \vspace{5mm}
 
-\paragraph{TRT} The TRT is only in the $R-\phi$ plane and covers the region
-$\abs{\eta} < 2.0$. It consists of straw tubes, 4mm in diameter, that typically
-register $36$ hits per track. Each straw tube achieves an accuracy of
-\SI{130}{\micro\meter}.
-
-In terms of arrangement:
+\paragraph{TRT} The TRT measures only $R-\phi$ coordinates and covers the
+region $\abs{\eta} < 2.0$. It consists of straw tubes, 4mm in diameter, that
+typically register $36$ hits per track. Each straw tube achieves an accuracy of
+\SI{130}{\micro\meter}. In terms of arrangement:
 
 \begin{itemize}
 
@@ -378,28 +361,25 @@ In terms of arrangement:
 
 \end{itemize}
 
-The TRT is installed at a larger radius, and has approximately $351000$ readout
-channels. High precision momentum measurement is achieved with a large number
-of measurements and longer track length.
+% The TRT is installed at a larger radius, and has approximately $351000$ readout
+% channels. High precision momentum measurement is achieved with a large number
+% of measurements and longer track length.
 
 \vspace{5mm}
 
 
-The ID system supplements the calorimeters and the muon detector, to be
+The ID system supplements the calorimeters and the muon detector, which will be
 discussed below.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{The Calorimeters}
 
-Calorimeters are built to measure energies of particles. As particles traverse
-the calorimeters, they interact with the materials in the calorimeters, losing
-their energies and exhibiting characteristics that enable themselves to be
-identified.
-
-The ATLAS calorimeters \cite{lhcaccexp, atlasdreport} consist of two systems,
-the Electromagnetic Calorimeter and the Hadronic Calorimeter. Electromagnetic
-particles develop shower shapes in the former, whereas hadronic particles
-penetrate the latter and also develop shower shapes.
+Calorimeters are built to measure energies of particles, using the facts that
+particles interact with the detector materials along their paths and cause
+radiation in the process. The ATLAS calorimeters \cite{lhcaccexp, atlasdreport}
+consist of two systems, the Electromagnetic Calorimeter and the Hadronic
+Calorimeter, designed to measure the energies of electrons/photons and hadrons
+respectively.
 
 An outline of the calorimeter system is shown in Figure~\ref{f:emc}. The
 required resolutions are
@@ -410,13 +390,16 @@ required resolutions are
 		      0.7\%$
 
 	\item The Hadronic Calorimeter: $\sigma_E / E = 50\% /\sqrt{E} \oplus 3\%$
-	      (barrel and end-cap regions)
+	      (barrel and end-cap regions), $\sigma_E / E = 100\% /\sqrt{E} \oplus 10\%$
+	      (forward region).
 
 \end{itemize}
 
-Each resolution is a quadratic combination of two separation terms, one coming
-from the statistical nature of the shower shape, and one constant term
-reflecting other uncertainties such as calibration etc.
+where each resolution is a quadratic combination of two separation terms, one,
+called the stochastic term, that takes into acount the statistical nature of
+the shower shape, and one constant term that includes the effects of detector
+instabilities and mis-calibration. The effect of the stochastic term decreases
+with growing energy.
 
 \begin{figure}[H]
 	\includegraphics[width=12cm]{figures/The-calorimeter-system-in-the-ATLAS-experiment-at-the-Large-Hadron-Collider}
@@ -426,10 +409,11 @@ reflecting other uncertainties such as calibration etc.
 \end{figure}
 
 \paragraph{The Electromagnetic Calorimeter}\label{p:emc} The Electromagnetic
-Calorimeter provides electron and photon identification and measurements. These
-particles lose their energies mainly through bremsstrahlung, pair production,
-and ionization, where the first two dominate for high-energy particles, leading
-to the development of shower shapes in the calorimeter.
+Calorimeter provides electron and photon identification and kinematic
+measurements. These particles lose their energies mainly through
+bremsstrahlung, pair production, and ionization, where the first two dominate
+for high-energy particles, leading to the development of shower shapes in the
+calorimeter.
 
 By design, the Electromagnetic Calorimeter is a lead-LAr (Liquid Argon)
 detector. The lead, in the form of lead plates, functions as an absorber, and
@@ -472,13 +456,8 @@ Electromagnetic Calorimeter. It is built to measure energy of hadronic
 particles, which also show up in the form of showers in the calorimeter.
 
 In terms of thickness, the Hadronic Calorimeter is approximately 10 interaction
-lengths in the barrel region as well as in the end-cap regions. This not only
-provides a good containment but also helps with measurement of missing
-transverse energy.
-
-\vspace{5mm}
-
-The Hadronic Calorimeter is divided into three parts:
+lengths in the barrel region as well as in the end-cap regions. It is divided
+into three parts:
 
 \begin{itemize}
 
@@ -486,37 +465,43 @@ The Hadronic Calorimeter is divided into three parts:
 	      absorber and scintillating tiles as the active material. It is placed directly
 	      outside the EM calorimeter envelope. It has a barrel that covers the region
 	      $\abs{\eta} < 1.0$ and two extended barrels which cover the region $0.8 <
-		      \abs{\eta} < 1.7$. The barrel as well as the extend barrels have three layers,
-	      designed with sufficient interaction lengths.
+		      \abs{\eta} < 1.7$, each made up of three layers.
 
-	\item LAr hadronic end-cap calorimeter: The Hadronic End-cap Calorimeter is
-	      also a sampling calorimeter, where copper in the form of plates functions as
-	      the absorber and LAr gaps as the active medium. It has two independent wheels
-	      per end-cap. The wheels are put directly behind the end-cap electromagnetic
-	      calorimeters. Those closest to the interaction points use $25$ mm parallel
-	      copper plates, and the rest uses $50$ mm copper plates. The copper plates
-	      extend a radius from approximately $0.4$ m to approximately $2$ m, and in
-	      between are gaps of LAr materials.
 
-	\item LAr forward calorimeter: The Forward Calorimeter is approximately 10
-	      interaction lengths in depth. It has three modules in each end-cap, with one
-	      (copper) optimized for electromagnetic measurements and the remaining two
-	      (tungsten) hadronic measurements. Each module is a metal matrix of longitudinal
-	      channels, where the channels are filled with electrode structure which are in
-	      turns made up of concentric rods and tubes parallel to the beam axis, with LAr
-	      between them.
+	\item LAr hadronic end-cap calorimeter: The Hadronic End-cap Calorimeter covers
+	      the pseudorapidity range $1.4 < \abs{\eta} < 3.2$. It is also a sampling
+	      calorimeter, where copper in the form of plates functions as the absorber and
+	      LAr gaps as the active medium. It has two independent wheels per end-cap. The
+	      wheels are put directly behind the end-cap electromagnetic calorimeters. Those
+	      closest to the interaction points use $25$ mm parallel copper plates, and the
+	      rest uses $50$ mm copper plates. The copper plates extend a radius from
+	      approximately $0.4$ m to approximately $2$ m, and in between are gaps of LAr
+	      materials.
+
+	\item LAr forward calorimeter: The Forward Calorimeter extends the coverage up
+	      to $\abs{\eta}=5$, and is approximately 10 interaction lengths in depth. It has
+	      three modules in each end-cap, with one (copper) optimized for electromagnetic
+	      measurements and the remaining two (tungsten) hadronic measurements. Each
+	      module is a metal matrix of longitudinal channels, where the channels are
+	      filled with electrode structure which are in turns made up of concentric rods
+	      and tubes parallel to the beam axis, with LAr between them.
 
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{The Muon Spectrometer}\label{s:decmuons}
 
-The Muon Spectrometer \cite{lhcaccexp} provides muon identification as well as
-muon momentum and charge measurement. It surrounds the hadronic calorimeter and
-defines the overall dimensions of the ATLAS detector.
+Muons, being more massive than electrons (approximately $200$ times), are
+subject to reduced bremsstrahlung as compared to electrons, and are able to
+pass through the ATLAS calorimeters with minimal interactions. The Muon
+Spectrometer \cite{lhcaccexp} provides muon identification as well as muon
+momentum and charge measurement. It is capable of identifying muon candidates
+with $p_T$ from $3$ GeV and has a design resolution of $10\%$ for muons with
+$p_T = 1$ TeV.
 
-The Muon Spectrometer is illustrated in Figure~\ref{f:muons}. It is made up of
-three layers of precision tracking chambers plus trigger chambers.
+The Muon Spectrometer surrounds the hadronic calorimeter and defines the
+overall dimensions of the ATLAS detector (Figure~\ref{f:muons}). It is made up
+of three layers of precision tracking chambers plus trigger chambers.
 
 Deflection of the muon tracks is effected by the built-in superconducting
 magnets, which is a system of three large air-core toroids. In detail,
@@ -531,11 +516,6 @@ magnets, which is a system of three large air-core toroids. In detail,
 		      \abs{\eta} < 1.6$ (also called the transition region)
 
 \end{itemize}
-
-The magnetic field created by this configuration is approximately orthogonal to
-the muon trajectories. At the same time, this setting minimizes the effect of
-multiple scattering on momentum resolution.
-
 
 Muon tracks are measured in the tracking chambers. They are the Monitored Drift
 Tubes over most of the $\abs{\eta}$-range, and Cathode Strip Chambers at large
@@ -572,45 +552,27 @@ end-cap regions, provide the following functionalities:
 
 \subsection{The ATLAS Trigger System}
 
-Due to the high luminosity of the LHC, ATLAS, with limited storage capacity and
-technology, is only able to record potentially interesting physics events. An
-event is classified as potentially interesting or not by a trigger system that
-is made up of three distinct levels, L1, L2, and the event filter. L1 is a
-hardware level trigger, while L2 and the event filter make up the high-level
-software trigger (HTL) at ATLAS.
+Due to the high luminosity of the LHC, the ATLAS detector, with limited storage
+capacity and technology, is only able to record potentially interesting physics
+events. This is achieved in Run-2 with a trigger system made up of two levels,
+the hardware level L1 and the High Level Trigger (HTL) software trigger, which
+together helps reducing the event rate from approximately $30$ MHz to
+approximately $1$ kHz~\cite{atlastrigger}.
 
-The trigger system helps reducing the event rate from approximately $1$ GHz at
-the designed luminosity of $10^{34}\text{cm}^2\text{s}^{-1}$ to approximately
-$200$ Hz.
-
-\subsubsection{The Hardware L1 Trigger}
-
-At L1, a decision is made in less than \SI{2.5}{\micro\second}. L1 helps
-reducing the rate to about $75$ kHz.
-
-L1 identifies high transverse-momentum muons, electrons, photons, jets, and
-taus that decay into hadrons. It also searches for events with large missing
-and total transverse energy. To achieve its purpose, L1 is implemented using
+L1 helps reducing the rate to about $100$ kHz, taking $2.5$ $\mu\text{s}$
+for each event. It identifies high transverse-momentum muons, electrons,
+photons, jets, and taus that decay into hadrons. It also searches for events
+with large missing and total transverse energy. L1 is implemented using
 custom-made electronics, and uses low-resolution information from the
-calorimeters and the muon spectrometer.
+calorimeters and the muon spectrometer. An event passing L1 is defined one or
+more regions of interests --- for examples the $\eta$ and $\phi$ coordinates
+where something potentially useful has been seen --- before being passed to the
+HLT.
 
-An event passing L1 is forwarded to the subsequent triggers. In addition, the
-event is also defined one or more regions of interests --- for examples the
-$\eta$ and $\phi$ coordinates where something potentially useful has been seen
---- which will subsequently be checked by the high level trigger.
-
-\subsubsection{The L2 and Event Filters}
-
-The events that pass the L1 trigger are sent to the L2 trigger. L2 reduces the
-event rate to approximately $3.5$ kHz and takes, on average, about $40$ ms to
-process an event. It looks at the regions of interests defined by L1 where it
-uses the best possible information available from the calorimeters and the
-muon spectrometer for its selections.
-
-Those events that pass L2 are sent to the event filter, which further reduces
-the event rate to about $200$ Hz. Here events are processed using offline
-analysis procedures, and on average each event takes approximately four
-seconds.
+On the other hand, the HLT is a software-based trigger. It helps to reduce the
+event rate to about $1$ kHz, using information either in the regions of
+interests defined by L1 or the whole event. At the HTL each event takes on
+average about $200$ms.
 
 
 
