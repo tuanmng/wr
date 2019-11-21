@@ -6,44 +6,64 @@ the previous $8$ TeV. The higher energy opens up unexplored parameter space and
 allows further probe of supersymmetry (SUSY) and other
 beyond-the-Standard-Model processes~\cite{multib-c7, stop-c7, ttresonance-c7,
 	vlq-c7}. At ATLAS, many SUSY searches involve supersymmetric particles that
-decay into the standard model top quarks and we expect, with higher
-centre-of-mass energy, more massive supersymmetric particles and consequently
-an increase in the production of high $p_T$ top quarks. Since the top quarks
-also decay, in fact most of the time into a $W$ boson and a $b$ quark, we in
-turns expect boosted decay topology, in other words the daughter particles of
-the top quarks, which include the daughter particles of the $W$ boson and the
-$b$ quark, tend to stay close to each other (Figure~\ref{f:boosttop}). In the
-case of leptonic top quark decays, the lepton tends to be very close to the
-produced $b$-jet.
+decay into the Standard Model top quarks and we expect, with higher
+centre-of-mass energy, higher sensitivity to more massive supersymmetric
+particles and consequently an increase in the production of high $p_T$ top
+quarks. Since the top quarks also decay --- essentially most of the time ---
+into a $W$ boson and a $b$ quark, we in turn expect boosted decay topology, in
+other words the daughter particles of the top quarks, which include the
+daughter particles of the $W$ boson and the $b$ quark, tend to stay close to
+each other (Figure~\ref{f:boosttop}).
 
 
 This chapter describes the work to measure the identification efficiencies for
 electrons that are found inside $\Delta R = 0.4$ of high $p_T$ jets, which will
-also be referred to in the chapter as in-jet electrons. Prior to the work in
-this chapter, there was no attempt to measure the identification efficiencies
-for in-jet electrons. The chapter will be organized as follows. In
-section~\ref{s:eidmot} we motivate the need for the measurement of the
-identification efficiencies for in-jet electrons. Section~\ref{s:eidmet}
-describes the method used to perform the measurements. Section~\ref{s:eideff}
-presents the measured efficiencies for in-jet electrons and
-section~\ref{s:eidcon} gives some conclusions.
+also be called in-jet electrons in the chapter, using $t\tbar$ events. Prior to
+the work in this chapter, there was no attempt to measure the identification
+efficiencies for in-jet electrons in a $t\tbar$ topology. The chapter will be
+organized as follows. In section~\ref{s:eidmot} we motivate the need for the
+measurement of the identification efficiencies for in-jet electrons.
+Section~\ref{s:eidmet} describes the method used to perform the measurements.
+Section~\ref{s:eideff} presents the measured efficiencies for in-jet electrons
+and section~\ref{s:eidcon} gives some conclusions.
 
 The data used for this chapter was collected in the period 2015-2016 at $13$
 TeV center-of-mass and correponded to an integrated luminosity of
-$36.47~\text{fb}^{-1}$.
+$36.5~\text{fb}^{-1}$.
 
 \section{Motivation}\label{s:eidmot}
 
-At ATLAS, prior to Run 2, electrons found outside $\Delta R = 0.4$ of jets were
-used by most analyses. Indeed, although there were some attempts to select
-signal electrons inside jets~\cite{?}, at 7-8 TeV such electrons can hardly be
-expected; objects inside jets that are identified as electrons are mostly
-background electrons that are either hadrons faking jets or real electrons
-coming from heavy-flavour jet decays. As a result, most analyses rejected
-electrons inside $\Delta R = 0.4$ of jets and only worked with electrons
-outside jets, of which different efficiencies, among them identification
-efficiencies, are measured and provided by the ATLAS Egamma
-group~\cite{atlaselcid}.
+Prior to Run 2, ATLAS center-of-mass energy 7-8 GeV allows limited sensitivity
+to high mass resonances. Because many beyond-Standard-Model particles are
+predicted to decay into the Standard Model top quarks, the limited sensitivity
+reduces the chance in which we could expect boosted top quark decays. Such
+decays, however, are expected to become significant as the centre-of-mass of
+the LHC reached $13$ TeV starting from Run 2. In a boosted top quark decay
+scenario, the produced particles, which in this case are the daughters of the
+$W$ and the $b$ quark that come from the top quark, are found close to each
+other~\cite{hadronic01-ch7, hadronic02-ch7, bdis-figs}.
+Figure~\ref{f:drwbtoppt} shows the angular distance $\Delta R$
+(Formula~\ref{eq:angulardr}) between the $W$'s and the $b$-quarks as a function
+of the top $p_T$, in the context of a hypothetical particle $Z'$ at mass
+$m_{Z'}=1.6$ TeV~\cite{bdis-figs} that decays into a $t\bar{t}$ pair. Also
+shown in the same figure is the separation between the light quarks of the
+subsequent hadronic decay of the $W$ boson. As can be seen, the angular
+distance decreases as the top quark $p_T$ increases, and at high top quark
+$p_T$ a non-negligible fraction of the distances becomes very small.
+
+
+% At ATLAS, prior to Run 2, electrons found outside $\Delta R = 0.4$ of jets were
+% used by most analyses. Indeed, although there were some attempts to select
+% signal electrons inside jets~\cite{?}, at 7-8 TeV such electrons can hardly be
+% expected; objects inside jets that are identified as electrons are mostly
+% background electrons that are either hadrons faking jets or real electrons
+% coming from heavy-flavour jet decays. As a result, most analyses rejected
+% electrons inside $\Delta R = 0.4$ of jets and only worked with electrons
+% outside jets, of which different efficiencies, among them identification
+% efficiencies, are measured and provided by the ATLAS Egamma
+% group~\cite{atlaselcid}.
+
+
 
 \vspace{3mm}
 
@@ -62,29 +82,33 @@ group~\cite{atlaselcid}.
 
 \vspace{3mm}
 
-In Run 2, as the centre-of-mass of the LHC reached $13$ TeV, high $p_T$ top
-quarks are expected to come from the decays of massive supersymmetric or other
-beyond-the-Standard-Model particles. As we have already mentioned, a top quark
-decays almost all of the time into a $W$ and a $b$ quark, and high $p_T$ top
-quarks are expected to undergo boosted decays where the produced particles,
-here the daughters of the $W$ and the $b$ quark, are found close to each other.
-In particular, there are two possible scenarios: either the $W$ decays
-hadronically, in which case the produced jets stay close to each other, or it
-may decay leptonically, in which case the leptons are expected to be found near
-the produced $b$-jets. Either scenario is important and the possibility of
-encountering boosted topology was assessed by several ATLAS physics groups,
-albeit most works focused on hadronic boosted top quark
-decays~\cite{hadronic01-ch7, hadronic02-ch7, bdis-figs}.
-Figure~\ref{f:drwbtoppt} shows the angular distance $\Delta R$
-(Formula~\ref{eq:angulardr}) between the $W$'s and the $b$-quarks as a function
-of the top $p_T$, in the context of a hypothetical particle $Z'$ at mass
-$m_{Z'}=1.6$ TeV~\cite{bdis-figs} that decays into a $t\bar{t}$ pair. It also
-shows the separation between the light quarks of the subsequent hadronic decay
-of the $W$ boson. As can be seen, the angular distance decreases as the top
-quark $p_T$ increases, and at high top quark $p_T$ a non-negligible fraction of
-the distances becomes very small. In the case of leptonic top quark decays, we
-should expect the decay products of the $W$'s to be found very near the
-$b$-jets.
+Leptonic boosted top quark decay is also an important
+channel in searches for beyond-Standard-Model particles that decay into the
+Standard-Model top quarks. Table~\ref{t:injetfraction} shows the fraction of
+in-jet electrons over signal electrons as a function of the top quark $p_T$, at
+truth-level. The measurement used PowhegPythia $t\bar{t}$ events simulated at
+$13$ TeV centre-of-mass energy (Chapter~\ref{c:susys}, Section~\ref{mbdatasm}),
+where dilepton events consisting of a muon and an electron were selected. The
+selections made use of the $p_T$-dependent overlap removal
+
+\begin{equation}\label{c7overlapr}
+	\Delta R <  \text{min (0.4, 0.04 + 10 GeV} / p_T)
+\end{equation}
+
+where the overlap removal is also required to keep the overlapping $b$-jets
+(Chapter~\ref{c:susys}, Section~\ref{mbobjs}). As is shown, more and more
+electrons are found inside jets as the top quark $p_T$ increases. The number of
+in-jet electrons becomes quite significant from $500$ GeV, being approximately
+$25\%$ there and reaching nearly $40\%$ at $650$ GeV. If the top quark $p_T$ is
+allowed to go up to $1$ TeV, the figure is $64\%$. This result supports the
+fact that different ATLAS analyses searching for heavy beyond-Standard-Model
+particles decaying into top quarks was able to increase signal acceptances
+considerably when in-jet electrons were selected.
+
+This chapter develops a method and performs the initial measurements for the
+identification efficiencies of electrons found inside $\Delta R=0.4$ of jets.
+The measurements for electrons outside jets are done by the ATLAS Egamma
+group~\cite{atlaselcid, eleffme}.
 
 \begin{figure}[H]
 
@@ -109,41 +133,6 @@ $b$-jets.
 		$t\to Wb$ decay as a function of the $p_T$ of the $W$ boson~\cite{bdis-figs}.}
 	\label{f:drwbtoppt}
 \end{figure}
-
-
-Taking advantage of the new topology, several SUSY searches which expect
-standard model top quarks from the decays of massive supersymmetric particles
-began to include electrons inside $\Delta R = 0.4$ of jets in their analyses.
-Considerable increases in signal acceptance were seen by different analysis
-groups, including the search for the gluinos discussed in
-Chapter~\ref{c:susys}, which in fact was the analysis that motivated the
-measurements described in this chapter.
-
-
-In the context of the work of this chapter, we also computed the fraction of
-in-jet electrons over isolated electrons as a function of the top quark $p_T$,
-at truth-level, in order to assess the significance of the number of electrons
-that are found inside jets. The measurement used PowhegPythia $t\bar{t}$ events
-simulated at $13$ TeV centre-of-mass energy (Chapter~\ref{c:susys},
-Section~\ref{mbdatasm}), where dilepton events consisting of a muon and an
-electron were selected. The selections made use of the $p_T$-dependent overlap
-removal (Chapter~\ref{c:susys}, Section~\ref{mbobjs})
-
-$$ \Delta R <  \text{min (0.4, 0.04 + 10 GeV} / p_T) $$
-
-where the overlap removal is also required to keep the overlapping $b$-jets.
-The formula takes advantage of the fact that the higher is the $p_T$ of an
-electron or a muon, the closer it is to some jet. It thus ensures that such
-electrons or muons that are found inside $\Delta R = 0.4$ are also selected,
-provided they are not closer than what their $p_T$ warrant. On the other hand,
-$b$-jets found within $\Delta R = 0.2$ of electrons or muons will not be
-rejected as is usually done in a standard overlap removal procedure.
-
-The results are shown in Table~\ref{t:injetfraction}, which lists several top
-quark $p_T$ along with the number of in-jet electrons, the number of isolated
-electrons, all at truth-level, and the fraction of the former over the latter.
-
-\vspace{3mm}
 
 
 \renewcommand{\arraystretch}{1.15}
@@ -172,7 +161,7 @@ electrons, all at truth-level, and the fraction of the former over the latter.
 		\hline
 	\end{tabular}
 
-	\caption{The fraction of in-jet electrons over the number of isolated
+	\caption{The fraction of in-jet electrons over the number of signal
 		electrons, both at truth-level, as a function of the top quark $p_T$. The
 		fraction increases and becomes very significant at high top quark $p_T$.}
 
@@ -180,25 +169,34 @@ electrons, all at truth-level, and the fraction of the former over the latter.
 \end{table}
 \renewcommand{\arraystretch}{1.0}
 
-It is seen that more and more electrons are found inside jets as the top quark
-$p_T$ increases. In fact, the number of in-jet electrons becomes quite
-significant from $500$ GeV, being approximately $25\%$ there and reaching
-nearly $40\%$ at $650$ GeV. If the top quark $p_T$ is allowed to go up to $1$
-TeV, the figure is $64\%$. This result supports the fact that different ATLAS
-analyses saw considerable increases in signal acceptance as they included
-in-jet electrons in their selections.
 
-This chapter develops a method and performs the initial measurements for the
-identification efficiencies of electrons found inside $\Delta R=0.4$ of jets.
-The measurements for electrons outside jets are done by the ATLAS Egamma
-group~\cite{atlaselcid, eleffme}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Method}\label{s:eidmet}
 
-In general, to measure the identification (ID) efficiencies of electrons we
-start from a sample of reconstructed electrons. The efficiency at a particular
+The method followed to measure the identification efficiencies for in-jet
+electrons is discussed in detail in Section~\ref{ss:eidtp},~\ref{ss:eidsp}, and
+~\ref{ss:eidsr}. Background estimations will be described in
+Section~\ref{s:eidbe}.
+
+\subsection{Boosted Dilepton $e\mu$ Events}\label{ss:eidtp}
+
+In order to measure the identification efficiencies for in-jet electrons, a
+sample of reconstructed electrons (Chapter~\ref{c:susys}, Section~\ref{mbobjs})
+inside high-$p_T$ jets was obtained by selecting boosted $t\bar{t}$ dilepton
+($e\mu$) events. This is expected to result in not only a very pure $t\tbar$
+sample, but also a topology close to that of many SUSY and other
+beyond-Standard-Model searches. In contrast, the standard method for measuring
+electron identification efficiencies, the tag-and-probe method supported by the
+Egamma group at ATLAS~\cite{eleffme}, makes use of $Z\to e^+e^-$ events for
+high-energy electrons ($E_{\text{T}} > 10$ GeV). Even though a clean sample of
+electrons may be obtained in a relatively straightforward way by selecting
+events around the $Z$ mass peak, we expect, if electrons inside high $p_T$ jets
+are required, a sample unrepresentative of events with a boosted topology and
+limited in statistics.
+
+Given sample of reconstructed electrons, the efficiency at a particular
 identification operating point (section~\ref{ss:elop}) is defined by the ratio
 
 $$
@@ -206,91 +204,52 @@ $$
 			electrons}}{\text{The number of reconstructed electrons}}
 $$
 
-\vspace{3mm}
-
-The number of identified electrons, the numerator, is contaminated with
-background electrons, and so is the demoninator. As a result, part of the work
-to obtain a good sample of electrons inside high $p_T$ jets includes at the
-same time adequate background estimation methods, particularly because
-background electrons are expected to reside primarily inside jets.
-
-
-In this thesis, a sample of electrons was obtained by selecting boosted
-$t\bar{t}$ dilepton ($e\mu$) events, described below in
-Section~\ref{ss:eidtp},~\ref{ss:eidsp}, and ~\ref{ss:eidsr}. Background
-estimations will be described in Section~\ref{s:eidbe}.
-
-\subsection{Boosted Dilepton $e\mu$ Events}\label{ss:eidtp}
-
-The standard method for measuring electron identification efficiencies is the
-tag-and-probe method supported by the Egamma group at ATLAS~\cite{eleffme}.
-Such a measurement uses $Z\to e^+e^-$ events for high-energy electrons
-($E_{\text{T}} > 10$ GeV). The method is well-documented, and it is
-straight-forward to obtain a clean sample of electrons. It is expected,
-however, that because of the nature of the events, requiring electrons to be
-inside high $p_T$ jets would lead to a sample unrepresentative of events with a
-boosted topology, and moreover the resulting sample would be statistics-limited
-also.
-
-
-In this thesis, $t\bar{t}$ events at $13$ TeV centre-of-mass are used to select
-electrons inside high $p_T$ jets. In particular, dilepton $e\mu$ events will be
-selected; they are expected to be a source of reconstructed electrons that will
-be used for the measurement of the identification efficiencies. The selections
-will be such that the muon in an event will be a hard muon, while the electron
-on the other hand will remain almost untouched, i.e. it will be a reconstructed
-electron with a $p_T$ cut applied.
-
-Compared to $Z\to ee$ events, such $t\bar{t}$ events are expected to provide
-more statistics for electrons inside high $p_T$ jets. In addition, because
-they directly involve the top quarks, they will bear close topology to many
-SUSY and other beyond-the-Standard-Model searches.
-
-The remaining detail of the method is described below, including a discussion
-of the data as well as the simulations used, the definition of the signal
-region, and background subtractions.
-
+Both the numerator and the denominator are contaminated with background
+electrons, which will need to be estimated carefully (Section~\ref{s:eidbe}),
+particularly because background electrons are expected to reside primarily
+inside jets.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Data and Monte Carlo Samples}\label{ss:eidsp}
 
-The data used for this chapter was collected in the period 2015-2016. The
-integrated luminosity was $36.47~\text{fb}^{-1}$. The following simulation
-samples, all at $13$ TeV centre-of-mass, are used (Chapter~\ref{c:susys},
-Section~\ref{mbdatasm}):
+The data used for this chapter was collected in the period 2015-2016 and
+corresponds to an integrated luminosity of $36.5~\text{fb}^{-1}$. The following
+simulation samples, all at $13$~TeV centre-of-mass energy, are used
+(Chapter~\ref{c:susys}, Section~\ref{mbdatasm}):
 
-\begin{itemize}[label=\ding{109}]
+\begin{itemize}
 
-	\item PowhegPythia $t\bar{t}$. This set is used for selecting electrons inside
-	      high $p_T$ jets. As will be discussed in Section~\ref{ss:eidsr}, $t\bar{t}$
-	      events will be partitioned into a semileptonic set (a muon from one top quark
-	      and all jets from the other top) and a dileptonic set ($e\mu$ events). The
-	      former will constitute a background and the latter a source of signal events.
-	      Indeed, in the semileptonic case, jets from one of the tops constitute a source
-	      of background electrons
+	\item $t\bar{t}$ events from the Powheg+Pythia generator. As a hard muon will
+	      be required in the sample in which the identification efficiencies are measured
+	      (Section~\ref{ss:eidsr}), these events naturally partition into either a
+	      dileptonic set ($e\mu$) when truth-level electrons are present inside
+	      high-$p_T$ jets, or a semileptonic set otherwise. The latter, with jets from
+	      the fully hadronic decay of one of the tops constituting a source of background
+	      electrons, is expected to be a dominant background.
 
-	\item W+jets. This is used as a background. Indeed, as a top quark almost
-	      always decays into a $W$ and a $b$-jet, $W$+jets naturally constitutes a
-	      background where the $W$ produces a hard muon and the jets are a source of
-	      background electrons
+	\item $W$+jets, which will be used as a background. As the $W$ boson may
+	      produce a hard muon, the presence of jets make these events a source of
+	      background events to signal dilepton $e\mu$ $t\tbar$ events.
 
-	\item Single top. This includes the $Wt$ production as well as the $s$-channel
-	      and $t$-channel productions. The $Wt$ production is a source of signal
-	      electrons, while the other two productions provide a source of top+jets and are
-	      therefore background, as the top quark may be a source of a hard muon and the
-	      jets in the events are a source of background electrons.
+	\item Single top events, which include the $Wt$ production as well as the
+	      $s$-channel and $t$-channel productions. The $Wt$ production is treated as a
+	      source of signal electrons, since it contains a pair of $W$ bosons that can
+	      decay to a prompt $e\mu$ pair, whereas the remaining two productions each
+	      contains only one $W$ boson and as a result cannot produce a prompt $e\mu$
+	      pair.
 
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Signal Region}\label{ss:eidsr}
 
-The signal region will be the kinematic region in which the measurement of the
-identification efficiencies is performed. Before defining the signal region, we
-apply the following preliminary cuts, called pre-selection cuts:
+The kinematic region in which the measurement of the identification
+efficiencies is performed is called the signal region. It is defined after the
+following preliminary selections, which are called the pre-selection cuts and
+aimed at isolating $t\tbar$ $e\mu$ events, are applied.
 
 \paragraph{Pre-selection}
 
-\begin{itemize}[label=\ding{111}]
+\begin{itemize}
 	\item One primary vertex
 
 	\item Muon trigger. The following triggers were used for the periods $2015$
@@ -301,104 +260,89 @@ apply the following preliminary cuts, called pre-selection cuts:
 		      \item $2016$:  \texttt{HLT_mu26_ivarmedium || HLT_mu50}
 	      \end{itemize}
 
-	\item $p_T$-dependent overlap removal, with the option of keeping overlapping
-	      $b$-jets turned on (Section~\ref{s:eidmot})
+	\item $p_T$-dependent overlap removal, where the overlapping $b$-jets are kept
+	      (Formula~\ref{c7overlapr}).
 
-	\item Veto events with bad or cosmic muons. Highly energetic jets could reach
-	      the muon spectrometer and create hits in the latter, or jet tracks in the inner
-	      detector could be erroneously matched to muon spectrometer segments, both cases
-	      of which are sources of bad muons. Thus events with these muons, along with
-	      those with muons coming from cosmic rays, are removed.
+	\item Events with bad or cosmic muons are removed. Highly energetic jets could
+	      reach the muon spectrometer and create hits in the latter, or jet tracks in the
+	      inner detector could be erroneously matched to muon spectrometer segments, both
+	      of which cases are sources of bad muons. Events with these muon candidates,
+	      along with those with muons coming from cosmic rays, are not accepted.
 
-	\item Each event is required to have exactly one tagged muon and $\geq 1$
-	      electrons inside jets, where
+	\item Exactly one tagged muon and $\geq 1$ electrons inside jets are required
+	      for each event, where
 
 	      \begin{itemize}
 
-		      \item The muon is required to have $p_T > 30$ GeV, $d_0 / \sigma(d_0) < 3.0$,
+		      \item The muon must have $p_T > 30$ GeV, $d_0 / \sigma(d_0) < 3.0$, and
 		            $z_0 < 0.5$ in terms of the transverse impact paramater and the longitudinal
-		            impact parameter, and $\text{ptvarcone}30 / p_T < 0.06$, and be
+		            impact parameter. It must also have $\text{ptvarcone}30 / p_T < 0.06$, and be
 		            trigger-matched.
 
-		      \item The electrons have $p_T \geq 30$ GeV and must overlap with some jets,
-		            i.e. they must be found inside $\Delta R < 0.4$ of jets. There could be more
-		            than one electron in the event, however only the leading one in terms of $p_T$
-		            will be used as the probe. The $p_T$ cut is applied because it is applied in
-		            most analyses where in-jet electrons are actually used.
+		      \item The electrons must have $p_T \geq 30$ GeV, which is a common cut in most
+		            analyses where in-jet electrons are used, and must overlap within $\Delta R <
+			            0.4$ with some jets. Only the leading $p_T$ electron will be used, even though
+		            there may be more than one electron present in the event.
 
 	      \end{itemize}
 
 	\item $\geq 1$ $b$-tagged jet, instead of exactly $2$ $b$-tagged jets as is
-	      usually expected in $t\tbar$ events, since events with electrons inside jets
-	      are being selected and consequently $b$-tagging efficiency may suffer because
-	      the tracks of the electrons may confuse the $b$-tagging algorithm.
+	      usually expected in $t\tbar$ events, since we are selecting events with
+	      electrons inside jets and the $b$-tagging efficiency may suffer because the
+	      tracks of the electron, which is expected to originate from the interaction
+	      point, may confuse the $b$-tagging algorithm.
 
 \end{itemize}
 
-After these cuts, we arrive at a set of 3183 events with one hard muon and at
-least one electron found inside some jet. Several variables that were found to
-be discriminating are listed and discussed below, along with plots of their
-distributions. It is seen in the plots that the prominent source of background
-events is semileptonic events, whereas $W$+jets and single top $s$-channel and
-$t$-channel constitute two small sources of background, predicted by
-simulations to be $315.483$ and $19.120$ respectively.
+These cuts result in a set of 3183 events with one hard muon and at least one
+electron found inside some jet. In the following, we discuss several variables
+that were found to be discriminating, along with their distribution plots. The
+prominent source of background events is semileptonic events, whereas $W$+jets
+and single top $s$-channel and $t$-channel constitute two small sources of
+background, predicted by simulations to be $315.483$ and $19.120$ respectively.
 
-\begin{itemize}[label=\ding{109}]
+\begin{itemize}
 
 	\item The mass of the large radius jet that overlaps with the probe electron,
 	      shown in Figure~\ref{f:premrjet}. The large radius jet is reclustered from the
 	      small radius jets present in the events (Chapter~\ref{c:susys},
-	      Section~\ref{mbobjs}) and accordingly in semileptonic events it is expect to be
+	      Section~\ref{mbobjs}), and accordingly in semileptonic events it is expect to be
 	      more massive, as it picks up the masses of the jets from the hadronic decay of
 	      one of the tops. In dileptonic events, on the other hand, there are fewer jets
-	      due to the leptonic decays of both of the tops, and moreover there is also
-	      missing energy present from the neutrino accompanying the electron. Therefore
-	      this variable is expected to be discriminating. The figure shows a markedly
-	      higher distribution for semileptonic events, especially as we move towards the
-	      right of the distribution, where dileptonic events are seen less and less and
-	      become exceedingly small very quickly. In fact, the right side is mostly
-	      background-dominated.
+	      due to leptonic decays of both of the top quarks, and in addition the
+	      neutrio that accompanies the electron may reduce the visible mass of the
+	      reconstructed large radius jet. As is shown in the figure, the higher mass
+	      region is dominated by background events.
 
 
-	\item The number of jets, which is shown in Figure~\ref{f:prenjets}. This is a
-	      discriminating variable simply because in the case of semileptonic events there
-	      are more jets coming from hadronic decay of one of the tops (the other top
-	      quark decays leptonically), whereas in dileptonic events the daughter jets of
-	      the tops are only the two $b$-jets coming the decays of both of the tops.
-	      Accordingly the semileptonic distribution is seen to be higher everywhere.
-
-
-
+	\item The number of jets, which is shown in Figure~\ref{f:prenjets}. Three jets
+	      are expected from a fully hadronic decaying top quark, as compared to only
+	      one jet from a semileptonic decay, and as a result semileptonic events, in
+	      which one top quark decays hadronically and one decays semileptonically, is
+	      expected to have more jets than dileptonic events, where both jets decay
+	      hadronically. In the figure, the semileptonic distribution is seen to be higher
+	      everywhere.
 
 
 	\item The sum of the transverse momenta of all jets, shown in
-	      Figure~\ref{f:prehtjet}. This is also expected to be discriminating because
-	      again more jets are found in semileptonic events due to hadronic decay of one
-	      of the tops, and fewer jets in dileptonic events due to leptonic decays of both
-	      tops, and as a result a sum over all transverse momenta of the jets leads to a
-	      discriminating distribution. Indeed, the figure shows that the semileptonic
-	      distribution is higher everywhere.
-
-
+	      Figure~\ref{f:prehtjet}. As above, a larger number of jets is expected in
+	      semileptonic events due to the fully hadronic decay of one of the top quarks,
+	      and in dileptonic events fewer jets are expected because of leptonic decays of
+	      both of the top quarks. Consequently a sum over all transverse momenta of the
+	      jets is expected to lead to a discriminating distribution. As is seen in the
+	      figure, the semileptonic distribution is higher everywhere.
 
 
 	\item The transverse momenta of the jet closest to the probe, which is shown in
-	      Figure~\ref{f:preptcjet}. It is expected that jets having electrons inside
-	      $\Delta R = 0.4$ of themselves tend to be high-$p_T$ jets, as the selections
-	      are targeting boosted top quark decays. The figure not only shows that the
-	      semileptonic distribution is higher everywhere, but that there is also a class
-	      of very low $p_T$ jets closest to the probes.
+	      Figure~\ref{f:preptcjet}. This variable allows the removal of low $p_T$ jets
+	      overlapping with background electrons.
 
 
-
-
-
-	\item The fraction of the transverse momentum of the probe over that of the
-	      closest jet (Figure~\ref{f:preptfractioncjet}). This variable is discriminating
-	      because it is expected that real electrons coming directly from the $W$'s which
-	      are produced from the tops tend to have higher $p_T$ than background electrons
-	      The figure shows indeed that the low $p_T$ region is dominated by semileptonic
-	      events.
+	\item The fraction of the transverse momentum of the probe electron over that
+	      of the closest jet (Figure~\ref{f:preptfractioncjet}). We expect real electrons
+	      from the $W$'s produced from the top quarks to have higher $p_T$ than
+	      background electrons. In the figure, the low $p_T$ region can be seen to be
+	      dominated by semileptonic events.
 
 \end{itemize}
 
@@ -454,7 +398,7 @@ background, while leaving $m_{\text{rjet}}^{\text{el}}$ untouched.
 
 The cuts are as follows:
 
-\begin{itemize}[label=\ding{111}]
+\begin{itemize}
 	\item MET $> 25$ GeV, to ensure that the QCD multi-jet background is negligible.
 
 	\item The number of jets $< 5$ and sum of $p_T$ of jets $< 700$ GeV, to remove
@@ -486,104 +430,86 @@ The resulting distrution $m_{\text{rjet}}^{\text{el}}$ is shown in Figure~\ref{f
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Background Estimation}\label{s:eidbe}
 
-We are looking to measure the identification efficiency for electrons inside
-jets at a particular operating point. If $\epsilon$ denotes such an efficiency,
-then it is the ratio of a numerator and a denominator (Section~\ref{s:eidmet}),
-both of which are expected to be contaminated with background electrons that
-will need to be estimated. We will write $P$ as the number of electron
-candidates passing a particular ID operating point, $B_P$ the number of
-background electrons passing the operating point, $N$ the total number of
-reconstructed electron candidates in the sample, and $B_N$ the number of
-background electrons present in the sample, so that the efficiency $\epsilon$
-is in fact
+The identification efficiency for electrons inside jets depends on the
+particular operating point (Loose, Medium, or Tight) at which the measurement
+is carried out. Such an efficiency, which will be denoted $\epsilon$, is the
+ratio of a numerator and a denominator (Section~\ref{s:eidmet}), both of which
+are expected to be contaminated with background electrons that need to be
+estimated. If $P$ denotes the number of electron candidates passing a
+particular ID operating point, $B_P$ the number of background electrons passing
+the operating point, $N$ the total number of reconstructed electron candidates
+in the sample, and $B_N$ the number of background electrons present in the
+sample, the efficiency $\epsilon$ may be written as
 
 \begin{equation}\label{eqn:effo}
 	\epsilon = \frac{P-B_P}{N-B_N}
 \end{equation}
 
-The identification efficiencies for the Medium and Tight ID operating points
-are the mosted widely used points in ATLAS analyses, especially in SUSY
-analyses, and accordingly they are the only points that are measured in this
-thesis. Thus, either a Medium or a Tight ID selection will be applied on top of
-the sample that represents the denominator, thereby the numerator is obtained.
+Because analyses using in-jet electrons all use the Medium or Tight operating
+point, these are the only two points that will be measured in this chapter.
+Accordingly, a Medium or Tight ID selection will be applied on the sample
+representing the denominator, giving in each case the required numerator.
 Background estimations will consist of estimating the term $B_P$ separately for
 Medium and Tight in the numerator, and estimating the common term $B_N$ in the
 denominator.
 
-\paragraph{Estimating $B_P$} We expect background electrons to rarely pass the
-Medium or Tight ID points, and as a result we expect the term $B_P$ to be very
-small in either case. Thus $B_P$ may be taken directly from simulation without
-significantly affecting the measurements.
+\paragraph{Estimating $B_P$} Since we expect background electrons to rarely
+pass the Medium or Tight ID points, we expect in turn the term $B_P$ to be very
+small in either case. Thus $B_P$ is taken directly from simulation, and the
+measurements are not expected to be affected significantly.
 
-Indeed, Figure~\ref{f:eidmedium} and ~\ref{f:eidtight} show the $m_{\text{rjet}}^{\text{el}}$
-distributions for electrons that pass the Medium and Tight selections. They are
-obtained by applying either a Medium or a Tight ID selection on top of the set
-of selections that helps to arrive at the definition of the signal region
-(Section~\ref{p:eidfurthercuts}). As can be seen, the number of background
-electrons predicted by the simulation is indeed small in each case, accouting
-for only $0.3\%$ of the total number in the Medium case
-(Figure~\ref{f:eidmedium}), and $0.1\%$ in the Tight case (Figure~\ref{f:eidtight}).
+In Figure~\ref{f:eidmedium} is shown the $m_{\text{rjet}}^{\text{el}}$
+distributions for electrons that pass the Medium and Tight selections. It is
+obtained by applying a Medium or Tight ID selection in addition to the
+selections that define the signal region (Section~\ref{p:eidfurthercuts}). The
+number of background electrons predicted by the simulation can be seen to be
+indeed small in each case, accouting for only $0.3\%$ of the total number in
+the Medium case and $0.1\%$ in the Tight case.
+
 
 \begin{figure}[H]
-	\includegraphics[width=10cm]{figures/pt40_probes_cr1_medium_m0_pt100_mar05_medium_real_medium_fake_m_rjet_overlap_el_mar22}
+	\includegraphics[width=7.5cm]{figures/pt40_probes_cr1_medium_m0_pt100_mar05_medium_real_medium_fake_m_rjet_overlap_el_mar22}
+	\includegraphics[width=7.5cm]{figures/pt40_probes_cr1_tight_m0_pt100_mar05_tight_real_tight_fake_m_rjet_overlap_el_mar22}
+
 	\centering
 
 	\caption{The distribution of $m_{\text{rjet}}^{\text{el}}$ for electrons passing
-		the Medium operating point. Background electrons figure $0.3\%$.}
+		the Medium (left) and Tight (right) operating points. Background electrons figure $0.3\%$ and
+		$0.1\%$ respectively.}
 
 	\label{f:eidmedium}
 
 \end{figure}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{Estimating $B_N$}
 
-Since the term $B_P$ in Formula~\ref{eqn:effo} will be estimated by simulation
-prediction (for the Medium and Tight case separately), it remains to estimate
-the common term $B_N$ that represents background contamination from fake
-electrons found in $N$. In order to estimate this term, we will use the
-background-dominated region $> 60$ GeV in the distribution of
-$m_{\text{rjet}}^{\text{el}}$ (Figure~\ref{f:crmrjet}), as well as the set of
-electrons that fail the Loose ID selection, which we will call antiloose
-electrons from here. Antiloose electrons will be used as a fake template, to be
-normalized to the data to predict the the background in the denominator, and we
-will therefore denote them by $T$.
+\paragraph{Estimating $B_N$} The term $B_N$ represents background contamination
+from fake electrons found in $N$ (Formula~\ref{eqn:effo}). Since $N$ contains
+only reconstructed in-jet electrons with no ID applied, estimating $B_N$ is
+expected to be the most challenging part of the measurements.
 
-\begin{figure}[H]
-	\includegraphics[width=10cm]{figures/pt40_probes_cr1_tight_m0_pt100_mar05_tight_real_tight_fake_m_rjet_overlap_el_mar22}
-	\centering
+The method employed for estimating $B_N$ in the following makes use the set of
+electrons that fail the Loose ID selection, which will be called antiloose
+electrons hereafter. These electrons are made up of two parts, one in the
+signal region ($\leq 60$ GeV) and one in the background-dominated region ($>
+	60$ GeV, Figure~\ref{f:crmrjet}). The part in the background-dominated region
+will be used to obtain a normalization factor, which will then be applied on
+the part in the signal region to estimate the number of background electrons.
+In what follows, the set of antiloose electrons will also be referred to as the
+fake electron template. Its part in the signal region will be denoted by $T$,
+and that in the background-dominated region will be denoted by $T_>$.
 
-	\caption{The distribution of $m_{\text{rjet}}^{\text{el}}$ for electrons
-		passing the Medium operating point. Background electrons figure $0.1\%$.}
+In order to check if the set of antiloose electrons would be a suitable
+distribution, the set of background electrons in $N$, namely $B_N$, is plotted
+against the former and shown in Figure~\ref{f:shapebeforeafter}, both
+normalized to unity. As is seen in the figure, the antiloose selection is
+expected to be effective for classifying background electrons in the sample. On
+the other hand, Figure~\ref{f:antiloosemrjet} shows the composition of
+antiloose electrons in the $m_{\text{rjet}}^{\text{el}}$ distribution.
+Simulation predicts about $10\%$ of signal electron contamination, but
+otherwise the distribution is made up of mostly background electrons and
+dominated by semileptonic $t\tbar$.
 
-	\label{f:eidtight}
-	\centering
-\end{figure}
-
-
-\begin{figure}[H]
-	\includegraphics[width=10cm]{figures/probe_pt40_probes_contam_m0_pt100_mar05_antiloose_m_rjet_overlap_el_mar22}
-	\centering
-	\caption{The distribution $m_{\text{rjet}}^{\text{el}}$ for electrons that fail
-		the Loose ID point, also called antiloose electrons.}
-	\label{f:antiloosemrjet}
-\end{figure}
-
-
-The $m_{\text{rjet}}^{\text{el}}$ distribution of $T$ is shown in
-Figure~\ref{f:antiloosemrjet}. Simulation predicts it to be made up mostly of
-background electrons, in which semileptonic $t\tbar$ dominates, and there is
-about $10\%$ of signal electron contamination in the distribution.
-Figure~\ref{f:shapebeforeafter} shows $T$ against the set of background part in
-$N$, namely $B_N$, both normalized to unity. It shows that $T$ describes very
-well the shape of background electrons $B_N$, and therefore it is reasonable to
-estimate $B_N$ using $T$. However, instead of using the simulation distribution
-we will use the corresponding data distribution, so that in the following $T$
-will mean the corresponding distributions of $m_{\text{rjet}}^{\text{el}}$ in
-data. This is to ensure that that typical systematic uncertainties associated
-with simulation distributions could be avoided, because these systematic
-uncertainties are not small and are also often complicated to obtain.
 
 \begin{figure}[H]
 	\includegraphics[width=10cm]{figures/w_allbn_probes_m_rjet_overlap_el_m0_pt100_antiloose_m_rjet_overlap_el_mar22}
@@ -594,76 +520,84 @@ uncertainties are not small and are also often complicated to obtain.
 	\label{f:shapebeforeafter}
 \end{figure}
 
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/probe_pt40_probes_contam_m0_pt100_mar05_antiloose_m_rjet_overlap_el_mar22}
+	\centering
+	\caption{The distribution $m_{\text{rjet}}^{\text{el}}$ for electrons that fail
+		the Loose ID point, also called antiloose electrons.}
+	\label{f:antiloosemrjet}
+\end{figure}
 
-In the actual measurement of the efficiency, we need to take into account the
-fact that $T$ itself is contaminated with some signal electrons, as already
-mentioned above. Thus, let $\overline{T}$ be $T$ minus this signal
-contamination, which we will obtain by taking the distribution of $T$ in data
-minus the signal contamination predicted in the simulation distribution of $T$.
-Then, the background-dominated region will be used to find a normalization
-factor such that
+Background estimation using antiloose electrons proceeds in detail as follows:
 
-%
-$$B_N = \overline{T} \times \text{normalization factor},$$
-%
+\begin{enumerate}
 
-where the normalization factor will be found as follows. To start, to any
-quantity in the signal region $\leq 60$ GeV there corresponds a quantity in the
-background-dominated region $> 60$ GeV, which will be denoted with a subscript
-$>$. Thus to $N$ there corresponds $N_>$, and to $\overline{T}$ corresponds
-$\overline{T}_>$. The term $N_>$ is the set of reconstructed electron
-candidates in the background-dominated region. In order to use it in the
-following we will subtract any signal contamination it may have, the method of
-which will be described in the next section, and denote $\overline{N}_>$ to be
-the resulting term, i.e. $N_>$ minus the signal contamination. Then
+	\item Obtaining $T$ and $T_>$ by selecting antiloose electrons. Thus the method
+	      is data-driven, $T$ and $T_>$ from simulations are not used.
 
-%
-$$\text{normalization factor} = \frac{\overline{N}_>}{\overline{T}_>} $$
-%
+	\item In addition to $N$, the set of reconstructed electron candidates in the
+	      signal region, there is also the set of reconstructed electron candidates in the
+	      background-dominated region, which will be denoted $N_>$.
 
-so that
+	      Subtracting signal contamination from $T_>$, the resulting set of which is
+	      denoted $\overline{T}_>$, and subtract signal contamination from $N_>$, and
+	      denote the resulting set by $\overline{N}_>$. Normalizing $\overline{T}_>$ to
+	      $\overline{N}_>$ to obtain a normalization factor.
+
+	\item Subtracting signal contamination from $T$, the resulting set of which is
+	      denoted $\overline{T}$, and applying the normalization factor to $\overline{T}$
+	      to obtain the number of background electrons in the signal region.
+
+\end{enumerate}
+
+In other words, the background to be estimated in the signal region, $B_N$, is
 
 \begin{equation}\label{eid:bne}
 	B_N =  \overline{T} \times \frac{\overline{N}_>}{\overline{T}_>}
 \end{equation}
 
+The following section discusses signal contamination subtractions in $T$,
+$T_>$, and $N_>$, and the measurements of the idenfitication efficiencies.
+
 \subsection{The Measurements of the Identification Efficiency}\label{s:meffs}
 
-Formula~\ref{eqn:effo}, where $B_P$ will be taken from simulation and $B_N$
-evaluated according to Formula~\ref{eid:bne}, leads to the following formula
-for the efficiency:
+The idenfitication efficiency $\epsilon$ (Formula~\ref{eqn:effo}), in which
+$B_P$ is taken from simulation and $B_N$ evaluated according to
+Formula~\ref{eid:bne}, is
+
 
 \begin{equation}\label{eid:efff}
 	\epsilon = \frac{P-B_P}{N - \overline{T} \times \frac{\overline{N}_>}{\overline{T}_>}}.
 \end{equation}
 
 
-$\overline{T}$ will be the set of antiloose electrons, $T$, minus signal
-contamination. As already mentioned, Figure~\ref{f:shapebeforeafter} shows that
-there is a $10\%$ signal contamination expected in $T$. This signal
-contamination as predicted by simulation will be subtracted from $T$, resulting
-in $\overline{T}$. The term $\overline{T}_>$ will be obtained analogously in
-the background-dominated region of the $m_{\text{rjet}}^{\text{el}}$
-distribution.
+$\overline{T}$ is the set of antiloose electrons in the signal region, $T$,
+minus signal contamination, and $\overline{T}_>$ is the corresponding quantity
+in the background-dominated region. As there is an expected of $10\%$ of signal
+contamination in the set of antiloose electrons
+(Figure~\ref{f:shapebeforeafter}), $\overline{T}$ and $\overline{T}_>$ will be
+obtained by subtracting signal contamination as predicted by simulations from
+$T$ and $T_>$ respectively.
 
 On the other hand, signal contamination in $N_>$ (Figure~\ref{f:crmrjet}), from
 which $\overline{N}_>$ is obtained, is larger, and to reduce the contribution
 from the estimation of this signal contamination to the uncertainty in the
-efficiency we will use data directly for signal contamination subtraction.
-Specifically, from Figure~\ref{f:eidmedium} and~\ref{f:eidtight} we expect
-negligible background electrons after a Medium or Tight ID is applied. This
-means $P$, and the corresponding quantity $P_>$ in the background-dominated
-region, is expected to be relatively free of background electrons. We will
-therefore write
+efficiency we will use a data-driven approach. According to
+Figure~\ref{f:eidmedium}, the number of background electrons after a Medium or
+Tight ID selection is negligible. We expect as a result $P$, and the
+corresponding quantity $P_>$ in the background-dominated region, to be
+relatively free of background electrons. Thus $P_>$ could be used to represent
+signal contamination in $N_>$, provided the corresponding identification
+efficiency is properly taken into account. In other words,
 
 %
 $$\overline{N}_> = N_> - P_> / \epsilon $$
 %
 
-where the efficiency in~\ref{eid:efff}, which is being measured, is used again
-here. The efficiency will be evaluated iteratively, until the change from one
-iteration to the next is less than $0.5\%$. The $0.5\%$ will be taken as the
-uncertainty due to signal contamination subtraction in $N_>$.
+where the efficiency in~\ref{eid:efff}, which is being measured, is used again.
+The efficiency will be evaluated iteratively, until the change from one
+iteration to the next is less than $0.5\%$. The value of $0.5\%$ will be taken
+as the uncertainty due to signal contamination subtraction in $N_>$.
 
 The next section discusses in detail the treatment of statistical and
 systematic uncertainties.
@@ -671,8 +605,8 @@ systematic uncertainties.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Uncertainties}\label{s:eidunc}
 
-The efficiency is accompanied by statistical and systematic uncertainties, both
-of which are discussed in the following.
+The measurement of the identification efficiency is accompanied by statistical
+and systematic uncertainties, both of which are discussed in the following.
 
 \paragraph{Statistical Uncertainties} According to Formula~\ref{eid:efff}, the
 efficiency will be measured according to the formula
@@ -775,14 +709,12 @@ $$\frac{\partial \epsilon}{\partial S} = \frac{- A \overline{T}_> }{B^2},
 	\frac{\partial \epsilon}{\partial \overline{T}} = \frac{A \overline{R}_> }{B^2}.
 $$
 
-The statistical uncertainty contribution due to the term $B_P$ will be treated
-as negligible, as this term comes from simulation. Then, among the remaining
-terms, only $P$ and $S$ are present in the signal region that are not used for
-background estimation, and as a result the statistical uncertainty of the
-efficiency will be taken from the contributions of these two terms. The
-contributions to the uncertainty from other terms will be taken as
-contributions to the total systematic uncertainty, which is discussed below.
-
+Among the terms, only $P$ and $S$ are present in the signal region that are not
+used for background estimation, and as a result the statistical uncertainty of
+the efficiency will be taken from the contributions of these two terms. The
+contributions to the uncertainty from other terms, which are used for
+background estimation, will be taken as contributions to the total systematic
+uncertainty.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -792,8 +724,7 @@ contributions to the total systematic uncertainty, which is discussed below.
 uncertainty from different sources will be added in quadrature. The sources are
 listed below.
 
-\begin{itemize}[label=\ding{111}]
-
+\begin{itemize}
 
 	\item The variation of the signal region, i.e. instead of marking the signal
 	      region at $60$ GeV, we may mark it at $50$ or $80$ GeV, the asymmetry is due to
@@ -802,22 +733,24 @@ listed below.
 
 
 	\item The term $B_P$ which represents the background contamination in $P$ is
-	      taken from simulation and may be varied up and down. To be conservative, we
-	      have decided to make a $50\%$ variation.
+	      taken from simulation and may be varied up and down. Here a $50\%$ variation
+	      which will be used represents a conservative estimate of the contribution of
+	      this term.
 
 
 	\item The uncertainty due to signal contamination subtraction from $T$ and
-	      $T_>$, from which result $\overline{T}$ and $\overline{T}_>$, may be obtained
+	      $T_>$, from which result $\overline{T}$ and $\overline{T}_>$, are obtained
 	      by conservatively varying the signal contamination $25\%$ up and down.
 
-	\item The template $T$, which is the distribution of antiloose electrons, may
-	      be replaced by the distribution of antiloose electrons in events with exactly 2
+	\item The template $T$, which is the distribution of antiloose electrons,
+	      is replaced by the distribution of antiloose electrons in events with exactly 2
 	      $b$-jets.
 
 
-	\item In addition, the contributions from the counting of $\overline{T}_>$,
-	      $\overline{R}_>$, and $\overline{T}$ in Formula~\ref{eq:effco} are treated as
-	      contributions to the total systematic uncertainty as well.
+	\item In addition, the statistical uncertainties from the counting of
+	      $\overline{T}_>$, $\overline{R}_>$, and $\overline{T}$ in
+	      Formula~\ref{eq:effco} are treated as contributions to the total systematic
+	      uncertainty as well.
 
 
 \end{itemize}
@@ -855,52 +788,35 @@ associated uncertainties.
 \subsubsection{The efficiencies}
 
 The efficiencies, as well as the total statistical and systematic
-uncertainties, are listed in Table~\ref{t:inteffss}. It is seen that the
-efficiency is higher for Medium than for Tight, consistent with expectation.
-The statistical uncertainties are slightly larger for Tight, also consistent
-with expectation, as the stats for Tight is slightly less than that for Medium.
-
-\begin{table}[H]
-	\centering
-	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
-		\cline{2-3}
-		\multicolumn{1}{c |}{}  &  \thead{MEDIUM \\ \textbf{0.870}}   &  \thead{TIGHT \\ \textbf{0.784}} \\[1.0ex]
-		\hline\hline
-		\toprule
-		Statistical Uncertainty & $\pm 0.017$  & $ \pm 0.019$ \\
-		\hline\hline
-		Systematic Uncertainty  & $\pm 0.031 $ & $ \pm 0.020$ \\
-		\hline
-	\end{tabularx}
-	\caption{Efficiencies, Statistical and Systematic Uncertainties in Data for the
-		Medium and Tight operating points.}
-	\label{t:inteffss}
-\end{table}
-
-The relevant quantities in Formula~\ref{eid:efff} that are used to compute the
-efficiencies in data are listed in Table~\ref{t:inteffq}.
+uncertainties, are $\mathbf{0.870\pm 0.017 \pm 0.031}$ for Medium and
+$\mathbf{0.784 \pm 0.019 \pm 0.020}$ for Tight. As is seen, the efficiency is
+higher for Medium than for Tight, consistent with expectation. The statistical
+uncertainties are slightly larger for Tight, also consistent with expectation,
+as the stats for Tight is slightly less than that for Medium. The relevant
+quantities in Formula~\ref{eid:efff} that are used to compute the efficiencies
+in data are listed in Table~\ref{t:inteffq}.
 
 \renewcommand{\arraystretch}{1.15}
 \begin{table}[H]
 	\centering
-	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
+	\begin{tabularx}{0.6\textwidth}{| c | *{2}{Y|} }
 		\cline{2-3}
 		\multicolumn{1}{c |}{} & MEDIUM & TIGHT   \\[1.0ex]
 		\hline\hline
 		\toprule
-		~~~~~~$P$~~~~~~        & $ 392$ & $ 356$  \\
+		~~~~~~$P$~~~~~~        & $ 392$ & $ 356$  \\[1ex]
 		\hline
-		$B_P$                  & $1.47$ & $ 0.40$ \\
+		$B_P$                  & $1.47$ & $ 0.40$ \\[1ex]
 		\hline
-		$N$                    & $734$  & $ 734$  \\
+		$N$                    & $734$  & $ 734$  \\[1ex]
 		\hline
-		$\thead{\overline{N_>} \\ }$ & $368$ &  $ 368$ \\
+		$\thead{\overline{N_>} \\ }$ & $368$ &  $ 368$ \\[1ex]
 		\hline
-		$P_>$                  & $49$   & $ 48$   \\
+		$P_>$                  & $49$   & $ 48$   \\[1ex]
 		\hline
-		$\thead{\overline{T} \\ }$  & $267.35$ &  $ 267.35$ \\
+		$\thead{\overline{T} \\ }$  & \multicolumn{2}{c |}{$267.35$} \\[1ex]
 		\hline
-		$\thead{\overline{T_>} \\ }$  & $292.52$ &  $ 292.52$ \\
+		$\thead{\overline{T_>} \\ }$  &  \multicolumn{2}{c |}{$292.52$} \\[1ex]
 		\hline
 		\toprule
 	\end{tabularx}
@@ -910,53 +826,9 @@ efficiencies in data are listed in Table~\ref{t:inteffq}.
 \end{table}
 \renewcommand{\arraystretch}{1}
 
-The efficiencies in simulation for the Medium and Tight operating points
-are also computed and are listed in
-Table~\ref{t:inteffssmc} along with the statistical uncertainties. The relevant
-quantites are displayed in Table~\ref{t:inteffssmcq}.
-
-\begin{table}[H]
-	\centering
-	\begin{tabularx}{0.8\textwidth}{|*{2}{Y|} }
-		\hline
-		\thead{MEDIUM \\ \textbf{ 0.871}}   &  \thead{TIGHT \\ \textbf{0.807}} \\[1.0ex]
-		\hline\hline
-		\toprule
-		$\pm 0.010$ & $ \pm 0.011$ \\
-		\hline
-	\end{tabularx}
-	\caption{The integrated efficiencies in simulations for the Medium and Tight
-		operating points, along with the associated statistical uncertainties.}
-	\label{t:inteffssmc}
-\end{table}
-
-
-\begin{table}[H]
-	\centering
-	\begin{tabularx}{0.8\textwidth}{| c | *{2}{Y|} }
-		\cline{2-3}
-		\multicolumn{1}{c |}{} & MEDIUM & TIGHT  \\[1.0ex]
-		\hline\hline
-		\toprule
-		\multicolumn{3}{|c|}{Numerator}\\
-		\hline
-		Dilepton               & 435.45 & 403.31 \\
-		\hline
-		Single top signal      & 12.39  & 11.81  \\
-		\hline
-		\toprule
-		\multicolumn{3}{|c|}{Denominator}\\
-		\hline
-		Dilepton               & 484.53 & 484.53 \\
-		\hline
-		Single top background  & 29.66  & 29.66  \\
-		\toprule
-	\end{tabularx}
-	\caption{The relevant quantities for computing the efficiencies in simulations for
-		the Medium and Tight operating points.}
-	\label{t:inteffssmcq}
-\end{table}
-
+The efficiencies and statistical uncertainties in simulation for the Medium and
+Tight operating points are also computed and are $\mathbf{0.871\pm 0.010}$ and
+$\mathbf{0.807\pm 0.011}$ respectively.
 
 \subsubsection{Statistical Uncertainties}
 
@@ -1288,7 +1160,7 @@ In addition to the integrated efficiencies, binned efficiencies are also
 measured, to check the possible dependencies of the efficiencies on certain
 variables. The variables and their associated binnings are:
 
-\begin{itemize}[label=\ding{109}]
+\begin{itemize}
 	\item $p_T$ of the probe, in five bins
 	      \begin{itemize}
 		      \item 30-60 GeV,
@@ -1398,14 +1270,16 @@ The binned efficiencies are shown in Figure~\ref{f:binspt01} and~\ref{f:binspt02
 
 This chapter describes the work to measure the identification efficiencies for
 in-jet electrons. It was the first attempt to perform such a measurement since
-Run 2 began. The measurement used the data collected in the period 2015-2016,
-at $13$ TeV center-of-mass and totalled $36.47~\text{fb}^{-1}$ in integrated
-luminosity. A sample of electrons for the measurements was obtained by
-selecting boosted $t\bar{t}$ dilepton ($e\mu$) events. Background estimations
-used both simulations and data, and the efficiencies were evaluated
-iteratively. The efficiencies were measured for the Medium and Tight operating
-points, both on data and simulation. Efficiencies in bins were also measured.
-In all of the results, the efficiencies predicted by simulation are quite close
-to those obtained from the measurements on data.
+Run 2 began, and the first ever using dilepton $t\tbar$ events. The measurement
+used the data collected in the period 2015-2016, at $13$ TeV center-of-mass and
+totalled $36.5~\text{fb}^{-1}$ in integrated luminosity. A sample of electrons
+for the measurements was obtained by selecting boosted $t\bar{t}$ dilepton
+($e\mu$) events. Background estimations used both simulations and data, and the
+efficiencies were evaluated iteratively. The efficiencies were measured for the
+Medium and Tight operating points, both on data and simulation. The
+efficiencies as functions of the properties of the electrons and of the
+overlapping jets also measured. In all of the results, the efficiencies
+predicted by simulation agree with those obtained from the measurements on
+data.
 
 

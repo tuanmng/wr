@@ -11,16 +11,13 @@ leading candidate for beyond-the-Standard-Model physics.
 Searching for SUSY is one of the main activities at ATLAS. This chapter
 discusses a SUSY search that involves gluino pair-production, where the final
 state includes missing transverse energy and multiple jets, of which at least
-three must be $b$-jets. The search is highly motivated as the gluinos are
-expected by naturalness~\cite{Barbieri:1987fn} to have a mass around the TeV
-scale --- the LHC energy, and moreover the production cross section is high at
-the LHC. Section~\ref{mbmodel} gives an introduction to the gluino
-pair-production model. Section~\ref{mbdatasm} discusses the data and simulation
-samples that are used in the analysis. Section~\ref{mbobjs} discusses the
-physics objects involved. Section~\ref{mbselection} discusses event selection.
-Section~\ref{mbbganal} discusses analysis strategies and the results of the
-search. Section~\ref{mbinter} discusses the interpretation of the search.
-Finally, Section~\ref{mb:conc} presents some conclusions.
+three must be $b$-jets. Section~\ref{mbmodel} gives an introduction to the
+gluino pair-production model. Section~\ref{mbdatasm} discusses the data and
+simulation samples that are used in the analysis. Section~\ref{mbobjs}
+discusses the physics objects involved. Section~\ref{mbselection} discusses
+event selection. Section~\ref{mbbganal} discusses analysis strategies and the
+results of the search. Section~\ref{mbinter} discusses the interpretation of
+the search. Finally, Section~\ref{mb:conc} presents some conclusions.
 
 
 The data was collected in the period 2015--2016, at $13$ TeV centre-of-mass
@@ -29,24 +26,35 @@ energy and corresponds to an integrated luminosity of $36.1~\text{fb}^{-1}$.
 
 \section{Gluino Pair-Production}\label{mbmodel}
 
-The gluino pair-production models in this analysis, Gbb and Gtt, belong to the
-class of simplified models \cite{Alwall:2008ag,Alves:2011wf}, which are used to
-optimize search event selections as well as to interpret search results. In
-terms of signature, they always contain at least four $b$-jets that originate
-either from gluino or top quark decays, and two neutralinos.
+The hierachy problem in the Standard Model (Section~\ref{smproblems}) is solved
+in SUSY provided the superpartners of the top quarks, the stops, are relatively
+light (mass at the electroweak scale $\sim \text{O}(100)$
+GeV)~\cite{susynatural}. This in turn implies that the superpartners of the
+gluons, the gluinos, have mass $\sim \text{O}(1)$ TeV. In R-parity conserving
+SUSY theories, the gluinos are produced in pairs with a cross section much
+larger than the cross section for direct pair produced stops. As a result,
+searching for the gluinos is highly motivated at ATLAS.
+
+The gluino pair-production models used in this analysis are called Gbb and Gtt,
+and belong to the class of simplified models \cite{Alwall:2008ag,Alves:2011wf},
+which are used to optimize search event selections as well as to interpret
+search results. In terms of signature, they always contain at least four
+$b$-jets that originate either from gluino or top quark decays, and two
+neutralinos.
 
 In the models, gluinos, which are superpartners of the Standard Model gluons,
 are hypothesized to be produced in pairs (Figure~\ref{f:gttfey}). Each of the
-gluino $\glu$ in the pair $\glu\glu$ is assumed to decay into a $\sto\bar{b}$
+gluino $\glu$ in the pair $\glu\glu$ is assumed to decay into a $\sbo\bar{b}$
 pair (in Gbb) or a $\sto\tbar$ pair (in Gtt) at $100\%$ branching
 ratio\footnote{We could also consider the possibility that one gluino in the
 	pair will decay to $\sto\bar{b}$ and the other will decay to $\sto\tbar$. This
 	possibility is however not discussed in the present chapter.}. In both models
-the supersymmetric $\sto$ is assumed to be off-shell, and as a result the
-parameters of the models consist of only two parameters, the mass of $\glu$ and
-the mass of $\sneu$, simplifying the search as well as the interpretations of
-the results. The $\sneu$'s are assumed to be the lightest supersymmetric
-particles; they are stable and serve as candidates for dark matter.
+the supersymmetric $\sto$, being heavier than the gluino, is assumed to be
+off-shell, and as a result the parameters of the models consist of only two
+parameters, the mass of $\glu$ and the mass of $\sneu$, simplifying the search
+as well as the interpretations of the results. The $\sneu$'s are assumed to be
+the lightest supersymmetric particles; they are stable and serve as candidates
+for dark matter.
 
 \begin{figure}[H]
 	\includegraphics[width=6cm]{figures/ch6fig_01a}
@@ -60,34 +68,28 @@ particles; they are stable and serve as candidates for dark matter.
 	\label{f:gttfey}
 \end{figure}
 
-In the present chapter, only the Gtt model will be discussed, as it is
-connected directly with the contribution of the work of the chapter. In the
-model, due to the top decay $t\to Wb$, with subsequent decays of the four
-$W$'s, signal regions with higher jet multiplicity than those in Gbb are
-expected.
+In the present chapter, only the Gtt model will be discussed (\ref{}). Due to
+the top decay $t\to Wb$, with subsequent decays of the four $W$'s, signal
+regions in Gtt with higher jet multiplicity than those in Gbb are expected. We
+anticipate the final state to include
 
-
-Since a top quark decays almost all of
-the time into a $W$ and a $b$ jet,  we expect the final state to include
-
-\begin{itemize}[label=\ding{111}]
+\begin{itemize}
 
 	\item Four $b$-jets from the decays of four top quarks
 
 	\item As many as twelve jets if the $W$'s decay purely hadronically, or
 	      otherwise additional jets and leptons (electrons or muons, and the number of
 	      which depends on how many $W$'s would decay leptonically) along with missing
-	      transverse energy from leptonic $W$ decays and the $\sneu$'s, assuming the
-	      latter do not participate in known interactions and manifest as missing
-	      transverse energy.
+	      transverse energy from the neutrinos from $W$ decays and the $\sneu$'s,
+	      assuming the latter do not participate in known interactions and manifest
+	      themselves as missing transverse energy.
 
 \end{itemize}
 
 In this thesis we are only concerned with the leptonic channel, even though the
-hadronic channel is part of the analysis as well, because the work of this
-chapter is directly linked to the leptonic channel. The leptonic final state
-consists of one or more leptons, large missing transverse energy, and multiple
-jets in which at least three must be identified as $b$-jets.
+hadronic channel is part of the analysis as well (\ref{}). The leptonic final
+state consists of one or more leptons, large missing transverse energy, and
+multiple jets in which at least three must be identified as $b$-jets.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Data and Simulated Event Samples}\label{mbdatasm}
@@ -136,7 +138,7 @@ Smaller background contributions include $t\tbar$ plus $W/Z/h$ possibly along
 with jets, and $t\tbar t\tbar$, $W/Z$+jets, and $WW/WZ/ZZ$ events. Their
 generations are as follows.
 
-\begin{itemize}[label=\ding{111}]
+\begin{itemize}
 
 	\item $t\tbar$ plus $W/Z$: \MGMCatNLO~v2.2.2 and \PYTHIA v8.186. The PDF set is
 	      NNPDF 2.3.
@@ -153,7 +155,7 @@ generations are as follows.
 \end{itemize}
 
 Other potential sources of backgrounds, such as three top quark or three gauge
-boson processes, are negligible.
+boson processes, have been determined to be negligible.
 
 \section{Physics Objects}\label{mbobjs}
 
@@ -178,16 +180,18 @@ which they are required to pass the requirement $p_T > 30$ GeV.
 An event is rejected if it contains jets that arise from non-collision sources
 or detector noise or pile-up interactions~\cite{ATLAS-CONF-2015-029}.
 
-\paragraph{$b$-jets} A $b$-jet travels a short distance from the primary vertex
-before decaying, thereby creating a secondary vertex from which additional
-tracks originate (Figure~\ref{f:btagging}~\cite{bjetwiki}). The $b$-jets in the
-event are identified by a multivariate algorithm, which relies on three pieces
-of information, including the impact parameters of the tracks that belong to
-the jets, the secondary vertices that are present in the event, and the flight
-paths of heavy hadrons inside the
-jets~\cite{PERF-2012-04,ATL-PHYS-PUB-2016-012}. In this analysis the
-$b$-tagging working point that correponds to a $77\%$ efficiency for $b$-jets
-with $p_T >20$ GeV is chosen.
+\paragraph{$b$-jets} The hadronization of a $b$-quark in the event creates a
+physics object referred to as a $b$-jet. A $b$-hadron has a lifetime of about
+$10^{-12}$ s and decays after travelling a short distance (mm) from the primary
+vertex, creating a secondary vertex from which additional tracks originate
+(Figure~\ref{f:btagging}~\cite{bjetwiki}). The $b$-jets in the event are
+identified by a multivariate algorithm, which relies on three pieces of
+information: the impact parameters of the tracks that belong to the jets, the
+secondary vertices that are present in the event, and the flight paths of heavy
+hadrons inside the jets~\cite{PERF-2012-04,ATL-PHYS-PUB-2016-012}. In this
+analysis the $b$-tagging working point that correponds to a $77\%$ efficiency
+for $b$-jets with $p_T >20$ GeV is chosen, which means a rejection factor of
+$6$ on charm and $134$ on light-jets.
 
 \begin{figure}[H]
 	\includegraphics[width=7cm]{figures/B-tagging_diagram}
@@ -208,7 +212,8 @@ removals with electrons and muons, using the anti-$k_t$ algorithm with $R=0.8$.
 These large $R$-jets are required to have $p_T > 100$ GeV and $\abs{\eta} <
 	2.0$. They are a tool to identify boosted top quarks, as a boosted top quark
 that decays hadronically will produce jets that stay collimated to each other
-(Figure~\ref{f:boostedtop}).
+(Figure~\ref{f:boostedtop}). In Gtt, this is expected in events with a large
+mass difference between the gluino and the neutralino.
 
 
 \begin{figure}[H]
@@ -222,34 +227,30 @@ that decays hadronically will produce jets that stay collimated to each other
 \end{figure}
 
 
-\paragraph{Leptons} The leptons in the analysis include electrons and muons,
-which are initially called lepton candidates if they pass certain preliminary
-requirements discussed in the following. Below, leptons will mean lepton
-candidates, unless stated otherwise. Each electron candidate must pass the
-Loose quality criteria~\cite{PERF-2013-05,ATLAS-CONF-2016-024} and have
-$\abs{\eta} < 2.47$. On othe other hand, each muon candidate must pass the
-Medium quality criteria~\cite{PERF-2015-10} and have $\abs{\eta} < 2.5$.
+\paragraph{Leptons} The leptons in the analysis include electrons and muons.
+Initially, each electron candidate must pass the Loose quality
+criteria~\cite{PERF-2013-05,ATLAS-CONF-2016-024} and have $\abs{\eta} < 2.47$.
+On othe other hand, each muon candidate must pass the Medium quality
+criteria~\cite{PERF-2015-10} and have $\abs{\eta} < 2.5$.
 
-The leptons, if they pass overlap removal, are required to pass an isolation
-requirement, in order that fake and non-prompt leptons from jets may be
-removed. This isolation requirement uses a $p_T$-dependent cone with radius
-$\min(0.2, 10~\text{GeV} / p_T^{\text{lep}})$, where $p_T^{\text{lep}}$ is the
-$p_T$ of the lepton, to take into account the fact that the angular seperation
-between a lepton in the event and the $b$-jet narrows as $p_T$ of the top quark
-increases (Figure~\ref{f:boostedtop}).
+Subsequently, the leptons undergo overlap removal and those passing this step
+are required to pass an isolation requirement, in order that fake and
+non-prompt leptons from jets may be removed. This isolation requirement uses a
+$p_T$-dependent cone with radius $\min(0.2, 10~\text{GeV} / p_T^{\text{lep}})$,
+where $p_T^{\text{lep}}$ is the $p_T$ of the lepton, to take into account the
+fact that the angular seperation between a lepton in the event and the $b$-jet
+narrows as $p_T$ of the top quark increases (Figure~\ref{f:boostedtop}).
 
-Then, electrons are required to pass the tight quality
-criteria~\cite{PERF-2013-05,ATLAS-CONF-2016-024}. On the other hand, the lepton
-is matched to the primary vertex by requiring the ratio $\abs{d_0}
-	/\sigma_{d_0}$, where $d_0$ is the transverse impact parameter of the
-associated ID track and $\sigma_{d_0}$ is the measured uncertainty of $d_0$, to
-be $<5$ in the case of electrons and $< 3$ in the case of muons. Each lepton is
-also required to have its longitudinal impact parameter $z_0$ satisfy
-$\abs{z_0\sin\theta} < 0.5$mm. In addition, events that contain muon candidates
-with $d_0 > 0.2$ mm or $z_0 > 1$ mm are rejected to suppress cosmic muons.
-
-Lepton candidates passing the above requirements are referred to as signal
-leptons.
+Signal leptons are selected as follow. Electrons are required to pass the Tight
+quality criteria~\cite{PERF-2013-05,ATLAS-CONF-2016-024}. They are also matched
+to the primary vertex by requiring the ratio $\abs{d_0} /\sigma_{d_0}$, where
+$d_0$ is the transverse impact parameter of the associated ID track and
+$\sigma_{d_0}$ is the measured uncertainty of $d_0$, to be $<5$, as well as the
+longitudinal impact parameter $z_0$ to satisfy $\abs{z_0\sin\theta} < 0.5$ mm.
+On the other hand, muons are matched to the primary vertex by requiring
+$\abs{d_0} /\sigma_{d_0} < 3$ and $\abs{z_0\sin\theta} < 0.5$ mm. Events that
+contain muons with $d_0 > 0.2$ mm or $z_0 > 1$ mm are rejected to suppress
+cosmic muons.
 
 \paragraph{Missing Transverse Energy} This is defined as the magnitude of the
 negative vector sum of the transverse momenta of all calibrated objects in the
@@ -260,51 +261,51 @@ account for energy deposits not associated with any of the selected objects.
 \paragraph{Overlap Removal} Electrons, muons, and jets are required to undergo
 the following sequential overlap removal procedure.
 
-\begin{itemize}[label=\ding{111}]
+\begin{itemize}
 
-	\item Electrons that overlap with muons within a distance $\Delta R < 0.01$ are
-	      removed, to suppress contributions from muon bremsstrahlung.
+	\item Electrons found inside $\Delta R < 0.01$ of a muon candidate are removed,
+	      to suppress contributions from muon bremsstrahlung.
 
-	\item Overlap removal between electrons and jets are performed, to suppress the
-	      counting of electrons as jets and to remove fake electrons from hadron decays.
-	      Here, to begin, non $b$-jets\footnote{In a standard overlap removal procedure,
-		      jets within $\Delta R= 0.2$ of electrons are removed because electrons are
-		      reconstructed as jets also, but since $b$-jets are important objects in the
-		      analysis only non $b$-jets are removed.} within $\Delta R < 0.2$ of electrons
-	      are removed. Then, electrons with $E_T < 50$ GeV that are found within $\Delta
-		      R = 0.4$ of jets are removed, but the jets are kept. Electrons with higher
-	      $E_T$ are likely to be in boosted top quark decays, in which they will be found
-	      closer to the jets the higher are their $E_T$. Accordingly, a distance that
-	      takes into account this fact is used, $\Delta R = \min(0.4, 0.04+10~\text{GeV})
-		      / E_T$\footnote{This distance makes sure that as soon as an electron is found
-		      within $\Delta R = 0.4$ of a jet, it will be treated as a potential signal
-		      electron, i.e. it will be selected if its $E_T$ justifies its being found close
-		      to the jet, but not closer to what its $E_T$ warrents.}, to increase the
-	      acceptance of these electrons.
+	\item Next, overlap removal between electrons and jets are performed, in order
+	      to remove electrons reconstructed as jets, which is the case for electrons
+	      reconstructed at ATLAS, as well as fake electrons from hadron decays. Thus, non
+	      $b$-jets whose centroids lie within $\Delta R < 0.2$ of electrons are removed,
+	      unless the jets are $b$-jets, because then the electrons are likely to
+	      originate from semileptonic $b$-handron decays. Subsequently, electrons with
+	      $E_T < 50$ GeV found within $\Delta R = 0.4$ of jets are removed while the jets
+	      are kept. Electrons with higher $E_T$ are likely to be in boosted top quark
+	      decays, in which case they are expected to be found closer to the jets the
+	      higher are their $E_T$. Accordingly, a distance that takes into account this
+	      fact is used, $\Delta R = \min(0.4, 0.04+10~\text{GeV}) / E_T$, in order to
+	      make sure that any electron found within $\Delta R = 0.4$ of a jet will be
+	      treated as a potential signal electron, i.e. the electron will be selected if
+	      its $E_T$ justifies its being found close to the jet, but not closer than what
+	      its $E_T$ warrants.
 
-	\item The remaining muons and jets are subject to a removal scheme as follows.
-	      If a non $b$-jet having fewer than three inner detector tracks is found within
-	      a distance $\Delta R = 0.2$ of a muon, the jet is likely to come from
-	      high-$p_T$ muon bremsstrahlung and thus is removed. Then muons with $p_T < 50$
-	      GeV found within $\Delta R = 0.4$ of jets are removed, to suppress non-prompt
-	      muons originating from jets. Muons having $p_T > 50$ GeV are, as in the case of
-	      high $E_T$ electrons, subject to the boosted distance $\Delta R = \min(0.4,
-		      0.04+10~\text{GeV}) / p_T$.
+	\item Finally, overlap removal is applied on the remaining muons and jets. If a
+	      non $b$-jet having fewer than three inner detector tracks whose centroid is
+	      found within a distance $\Delta R = 0.2$ of a muon, the jet is likely to come
+	      from high-$p_T$ muon bremsstrahlung and is removed. Then muons with $p_T < 50$
+	      GeV that are found within $\Delta R = 0.4$ of jets are removed, to suppress
+	      non-prompt muons originating from jets. Muons having $p_T > 50$ GeV are, as in
+	      the case of high $E_T$ electrons, subject to the $p_T$-dependent overlap
+	      removal distance $\Delta R = \min(0.4, 0.04+10~\text{GeV}) / p_T$.
 
 \end{itemize}
 
 
 \paragraph{Boosted Overlap Removal Studies} The use of electrons inside jets
-had been initiated by the $t\tbar$ resonance search~\cite{ttbarres} to increase
-signal acceptance in scenarios that involve the decaying of
-beyond-Standard-Model particles into Standard-Model top quarks. Following the
-idea, the boosted distance $\Delta R = \min(0.4, 0.04+10~\text{GeV}) / p_T$ was
-introduced into the current analysis for the muons before being subsequently
-adopted for the electrons in a later version of the analysis. The studies for
-muons was carried out on three samples, a $t\tbar$ sample, a Gtt sample where
-the mass of the gluino is $1300$ GeV and that of the neutralino is $900$ GeV,
-and another Gtt sample where the mass of the gluino is $1600$ GeV and that of
-the neutralino is $100$ GeV. The last sample, due to large mass difference
+had been initiated by the $t\tbar$ resonance search~\cite{ttbarres} in order to
+gain signal electron acceptance in scenarios that involve the decays of
+beyond-Standard-Model particles into the Standard-Model top quarks. Following
+the idea, the $p_T$-dependent distance $\Delta R = \min(0.4,
+	0.04+10~\text{GeV}) / p_T$ was introduced into the current analysis
+({\color{red} $3.2\text{fb}^{-1}$}) for the muons before being subsequently adopted for the
+electrons in a later version of the analysis ({\color{red} $36.1\text{fb}^{-1}$}). The studies
+for muons was carried out on three samples, a $t\tbar$ sample, a Gtt sample
+where the mass of the gluino is $1300$ GeV and that of the neutralino is $900$
+GeV, and another Gtt sample where the mass of the gluino is $1600$ GeV and that
+of the neutralino is $100$ GeV. The last sample, due to a large mass difference
 between the gluino and the neutralino, will be called a boosted sample, since
 it is expected to be a source of boosted top quarks. Figure~\ref{f:mindrs},
 which plots the distance $\Delta R$ between the truth level muons and the
@@ -321,36 +322,22 @@ sample, the latter displays instead a mild peak in the region $\Delta R >
 	\centering
 
 	\caption{$\Delta R$ between the truth-level muons and the closest jets. The
-		boosted sample where mass of the gluino is $1600$ GeV and that of the
+		boosted sample (in pink) where mass of the gluino is $1600$ GeV and that of the
 		neutralino is $100$ GeV shows a high peak at low $\Delta R$. The other signal
-		sample also displays but not as high. $t\tbar$ sample (shown as
-		\texttt{t\_tbar} in the figure), exhibits a mild peak around $\Delta R =
-			1.0$.}
+		sample (in cyan) also displays but not as high. The $t\tbar$ sample (in green),
+		exhibits a mild peak around $\Delta R = 1.0$.}
 
 	\label{f:mindrs}
 \end{figure}
 
 Subsequent studies on the possibility of applying the $p_T$-dependent overlap
-removal distance on the muons was performed where the parameters of the formula
-are varied. Figure~\ref{f:sa} show the significances that resulted from
-different choices of the paramater of overlap removal distance. The
+removal distance on the muons was performed where the parameters of the
+formula, i.e. the numbers $0.04$ and $10$ GeV, are varied. The statistical
 significance in which a fixed $\Delta R = 0.4$ is used is $0.87$, whereas the
 significances achieved with $p_T$-dependent overlap removal could reach as high
-as $1.37$, representing a possible gain factor of $1.5$. The studies was
-performed on data that corresponds to ({\color{pink} ?? luminosity}).
-
-\begin{figure}[H]
-	\includegraphics[width=12cm]{figures/sA}
-	\centering
-
-	\caption{$p_T$-dependent overlap removal studies for the muons. Each set of
-		parameters in the formula is called a combination. The maximal gain
-		achievable a is $1.5$.}
-
-	\label{f:sa}
-\end{figure}
-
-
+as $1.37$, representing a possible gain of $50\%$. The choice of $0.04$ and
+$10$ GeV led to a gain of $15\%$ and was chosen. The studies was performed on
+data that corresponds to ({\color{red} $3.2 \text{fb}^{-1}$}).
 
 \section{Event Selection}\label{mbselection}
 
@@ -364,14 +351,14 @@ the optimization of some important variables.
 The following list of variables is found to be discriminating between signal
 and Standard Model backgrounds:
 
-\begin{itemize}[label=\ding{109}]
+\begin{itemize}
 
 	\item The effective mass $m_{\text{eff}}$, defined as the sum of missing
 	      transverse energy plus the transverse momenta of jets and leptons in the event:
 
-	      $$m_{\text{eff}} = \sum_i p_T^{\text{jet}_i} + \sum_j p_T^{l_j} + E_{\text{T}}^{\text{miss}}$$
+	      $$m_{\text{eff}} = \sum_i p_T^{\text{jet}_i} + \sum_j p_T^{l_j} + E_{\text{T}}^{\text{miss}}.$$
 
-	      $m_{\text{eff}}$ is typically much higher for signal events than for background events.
+	      This variable is typically much higher for signal events than for background events.
 
 
 	\item The transverse mass $m_{\text{T}}$, defined by
@@ -381,10 +368,11 @@ and Standard Model backgrounds:
 	      where $\Delta \phi$ is the angle between missing transverse momentum of the
 	      event and the transverse momentum of the leading lepton.
 
-	      In background events, such as in semileptonic $t\tbar$ and $W$+jets, where
-	      there is one $W$ that decays leptonically, this variable reaches a maximum at
-	      the $W$ mass. It is expected to be higher for signal events where there is more
-	      missing transverse energy due to the neutralinos.
+	      In background events in which there is one $W$ that decays leptonically,
+	      such as in semileptonic $t\tbar$ and $W$+jets, this variable reaches a
+	      maximum at the $W$ mass. It is expected to be higher for signal events
+	      where there are additional sources of missing transverse energy such as
+	      neutralinos.
 
 
 	\item The transverse mass $m_{\text{T,min}}^{\text{b-jets}}$ defined by
@@ -396,10 +384,10 @@ and Standard Model backgrounds:
 	      where $\Delta \phi$ is the angle between the missing transverse momentum and
 	      the $i$-th b-jet.
 
-	      In background $t\tbar$ events where a top quark decays leptonically, this
-	      variable reaches a maximum at the top quark mass. It is expected to be higher
-	      for signal events as there is more missing transverse energy due to the
-	      neutralinos.
+	      In background $t\tbar$ events where a single top quark decays
+	      leptonically, this variable reaches a maximum at the top quark mass. It
+	      is expected to be higher for signal events because of the additional
+	      source of missing transverse energy from the neutralinos.
 
 	\item The total jet mass $M_J^{\sum}$, defined by
 
@@ -408,7 +396,9 @@ and Standard Model backgrounds:
 	      where $m_{J, i}$ is the mass of the $i$-th large-radius re-clustered jet in the
 	      event. It is higher for signal events, because there are as many as four
 	      hadronically decaying top quarks, whereas the background is dominated by
-	      $t\tbar$ events where one or both of the tops decay leptonically.
+	      $t\tbar$ events where one or both of the tops decay leptonically. We note that
+	      dilepton $t\tbar$ becomes dominant after applying the selections on $m_T$ and
+	      $m_{\text{T,min}}^{\text{b-jets}}$ defined above.
 
 \end{itemize}
 
@@ -417,8 +407,9 @@ and Standard Model backgrounds:
 
 \paragraph{Preselection} The preselection requirements include
 $E_{\text{T}}^{\text{miss}} > 200$ GeV, in addition to the
-$E_{\text{T}}^{\text{miss}}$ trigger requirement, and at least four jets of
-which at least two must be identified as $b$-jets.
+$E_{\text{T}}^{\text{miss}}$ trigger requirement, at least one electron or
+muon, and at least four jets of which at least two must be identified as
+$b$-jets.
 
 \paragraph{Modelling of the Data} In the preselection sample, correction
 factors need to be extracted to account for shape discrepancies between data
@@ -466,9 +457,9 @@ uncertainties in the background modelling.
 
 \subsection{Optimization of Discriminating Variables}\label{mb:opt}
 
-An optimization studies was performed to optimize the selections for the
-leptonic channel of the analysis ({\color{pink} at ?? luminosity}). The
-hadronic channel was optimized separately and will not be discussed in the
+An optimization study was performed to optimize the selections for the
+leptonic channel of the analysis ({\color{pink} at 25 $\text{fb}^{-1}$ luminosity}). The
+fully hadronic channel was optimized separately and will not be discussed in the
 current section.
 
 The number of jets (Section~\ref{mbobjs}), $N_{\text{jet}}$, missing transverse
@@ -485,7 +476,7 @@ end, four samples were selected; they may be put into three groups:
 	      it is expected to be a source of boosted top quarks.
 
 	\item One sample where the mass of the gluino is $1900$ GeV and that of the
-	      neutralino is $1000$ GeV; this is a less boosted sample.
+	      neutralino is $1000$ GeV; this is a moderately boosted sample.
 
 	\item Two samples where there are small mass differences between the gluino and
 	      the neutralino. One having $1200$ GeV and $800$ GeV, one having $1500$ GeV and
@@ -515,26 +506,29 @@ All possible combinations of the values of the variables are tested. The
 optimization finds that higher jets improve the search significance, especially
 for samples where there are small mass differences between the gluino and the
 neutralino (the compressed samples). This is consistent with the fact that a
-small mass difference makes kinematic properties of the signal quite
-indistinguisable from those of the background, and consequently we have to push
-to the higher $N_{\text{jets}}$ regime. Figure~\ref{f:mbnjetsop} shows the
-significance as the number of jets is allowed to increase while all other
-variables are kept fixed, for the compressed sample number two. The red point
-indicates the best significance, and the numbers that show up below the points
-are the signal, the signal uncertainty, the background, and the background
-uncertainty, in that order. Whenever the calculations of the significance is no
-longer meaningful, such as when the number of unweighted events in the CR
-region is too small, the significance is set to $-1$.
+small mass difference makes kinematic properties of the signal, such as
+$E_{\text{T}}^{\text{miss}}$, quite indistinguisable from those of the
+background, and consequently we have to push to the higher $N_{\text{jets}}$
+regime. Figure~\ref{f:mbnjetsop} shows the significance as the number of jets
+is allowed to increase while all other variables are kept fixed, for the
+compressed sample number two. The red point indicates the best significance.
+This result was taken in the definitions of the signal regions discussed in
+Section~\ref{s:mbstra}.
+
+
 
 \begin{figure}[H]
 	\includegraphics[width=10cm]{figures/leptons_njets_d370142.pdf}
 	\centering
 
-	\caption{The significance with respect to $N_{\text{jets}}$ for the
-		compressed sample number two, where the masses are $1500$ GeV and $1000$ GeV.
-		The red point indicates the best significance, and the numbers that show up
-		below the points are the signal, the signal uncertainty, the background, and
-		the background uncertainty, in that order.}
+	\caption{The significance with respect to $N_{\text{jets}}$ for the compressed
+		sample number two, where the masses are $1500$ GeV and $1000$ GeV, at 25
+		$\text{fb}^{-1}$ luminosity. The red point indicates the best significance, and
+		the numbers that show up below the points are the signal, the signal
+		uncertainty, the background, and the background uncertainty, in that order.
+		Whenever the calculations of the significance is no longer meaningful, such as
+		when the number of unweighted background events is below $1$ event, the
+		significance is set to $-1$.}
 
 	\label{f:mbnjetsop}
 \end{figure}
@@ -563,8 +557,7 @@ more data becomes available in future LHC run. Figure~\ref{f:mbmeffsop} shows
 the significance as $m_{\text{eff}}$ is allowed to increase while all other
 variables are kept fixed, for the boosted sample.
 
-The results of the optimization were used to inform the optimal criteria for
-the signal regions defined in Section~\ref{s:mbstra}.
+
 
 \begin{figure}[H]
 	\includegraphics[width=10cm]{figures/leptons_meff_d370170.pdf}
@@ -593,7 +586,7 @@ the search.
 Each signal region that is defined is contaminated with Standard Model
 backgrounds, the dominant source of which is $t\tbar$ plus jets, which is
 estimated using a normalization factor. To this end, in addition to each signal
-region (SR), a control region (CR), orthogonal to the signal region but is
+region (SR), a control region (CR), orthogonal to the signal region, but is
 otherwise comparable with it in terms of background composition and kinematics,
 is defined. Signal contamination in the control region is suppressed by
 inverting or relaxing some kinematic variables. The normalization factor is
@@ -628,7 +621,7 @@ prediction. This strategy is called the cut-and-count strategy.
 On the other hand, if we optimize under the constraint that the signal regions
 must be non-overlapping with each other, then this constraint could mean that
 the resulting signal regions might not be as performant as those in the
-cut-and-count method, in terms of probing the existence of a signal.
+cut-and-count method, in terms of probing the existence of a signal in a single SR.
 Nevertheless, a combination of these non-overlapping signal regions would take
 into account many non-overlapping kinematic ranges at the same time, and
 accordingly would allow us to better assess if the specific model we are using
@@ -646,7 +639,7 @@ include $\geq 1$ lepton, $p_T^{\text{jet}} > 30$ GeV, and $N_{b\text{-jets}}
 classes different from one another. The definitions of the regions are shown in
 Table~\ref{tab:GttEvsel}.
 
-\begin{itemize}[label=\ding{111}]
+\begin{itemize}
 
 	\item Region B, where B stands for boosted, is optimized for signals having a
 	      large mass difference between the gluino and the neutralino ($\geq 1.5$ TeV).
@@ -660,10 +653,12 @@ Table~\ref{tab:GttEvsel}.
 \end{itemize}
 
 As is shown in the table, the selections on $m_{\text{eff}}$,
-$E_{\text{T}}^{\text{miss}}$, and $M_{\text{J}}^{\sum}$ are lower in B than in
-C, to improve signal acceptance in the latter. The increase in background as a
+$E_{\text{T}}^{\text{miss}}$, and $M_{\text{J}}^{\sum}$ are lower in SRC than in
+SRB, to improve signal acceptance in the latter. The increase in background as a
 result of the lower cuts is managed by making tighter selections on the number
-of jets, the number of $b$-jets, or $m_{\text{T, min}}^{b\text{-jets}}$.
+of jets, the number of $b$-jets, or $m_{\text{T, min}}^{b\text{-jets}}$. In
+SRM, the selections on those variables are intermediate between those of SRC and
+SRB.
 
 The CRs are defined in the low $m_{\text{T}}$ region to remove overlaps with
 the SRs. The $m_{\text{T, min}}^{b\text{-jets}}$ cut is removed, and cuts on
@@ -806,7 +801,7 @@ are obtained with cuts on $E_{\text{T}}^{\text{miss}}$ and $m_{\text{T,
 
 \subsection{Systematic Uncertainties}\label{mb:sysun}
 
-The systematic uncertainties on background estimation come from the
+The systematic uncertainties on the estimation of the backgrounds come from the
 extrapolation of the $t\tbar$ normalization from the CRs to the SRs, as well as
 from MC estimations of the minor backgrounds. The total systematic
 uncertainties vary from $20\%$ to $80\%$; they are shown in
@@ -824,23 +819,24 @@ Figure~\ref{f:fig_06}.
 Among the detector-related uncertainties, the largest contributions come from
 jet energy scale (JES), jet energy resolution (JER), and the $b$-tagging
 efficiencies and mistagging rates. The JES uncertainties are derived from
-$\sqrt{s}=13$ TeV data and simulations, whereas JER from $8$ TeV data using
-simulations~\cite{ATL-PHYS-PUB-2015-015}. These uncertainties are measured for
-small $R$-jets and are propagated to re-clustered large $R$-jets. The jet mass
-scale and resolution uncertainties make a negligible contribution to
-re-clustered jet mass. JES uncertainties contribute between $4\%$ and $35\%$ to
-background estimation, and JER uncertainties up to $26\%$.
+$\sqrt{s}=13$ TeV data and simulations, whereas the JER uncertainties are
+derived from $8$ TeV data using simulations~\cite{ATL-PHYS-PUB-2015-015}. These
+uncertainties are measured for small $R$-jets and are propagated to
+re-clustered large $R$-jets. The jet mass scale and resolution uncertainties
+make a negligible contribution to re-clustered jet mass. JES uncertainties
+contribute between $4\%$ and $35\%$ to the estimation of the backgrounds, and
+JER uncertainties up to $26\%$.
 
 The $b$-tagging and mistagging rate uncertainties contribute between $3\%$ to
-$24\%$ to background estimation. Lepton reconstructions and energy measurement
-make a negligible contribution.
+$24\%$ to the the estimation of the backgrounds. Lepton reconstructions and
+energy measurement make a negligible contribution.
 
 As $t\tbar$ normalization takes place in the CRs, uncertainties due to $t\tbar$
 simulation only make contributions to the extrapolation from the CRs to the SRs
 and the VRs. The theoretical uncertainty on the $t\tbar$ background is sum in
 quadrature of the following sources:
 
-\begin{itemize}[label=\ding{111}]
+\begin{itemize}
 
 	\item Hadronization and parton showering model uncertainties are estimated with
 	      a \POWHEG~sample, showered by \MYHERWIG++ v2.7.1 with the UEEE5
@@ -853,9 +849,9 @@ quadrature of the following sources:
 	      decreased respectively. The uncertainty in each case is taken to be the
 	      difference between the obtained value and the nominal value.
 
-	\item The uncertainty due to the choice of event generator is estimated by
-	      comparing background predictions in \MGMCatNLO~and \POWHEG~samples, both
-	      showered with \MYHERWIG++ v2.7.1.
+	\item The uncertainty due to the choice of matrix-element event generator is
+	      estimated by comparing background predictions in \MGMCatNLO~and
+	      \POWHEG~samples, both showered with \MYHERWIG++ v2.7.1.
 
 \end{itemize}
 
@@ -863,7 +859,7 @@ An additional uncertainty is assigned to $t\tbar$ heavy-flavour jets. It was
 found from simulation studies that each set of SR, CR, and VR had the same
 fractions of these events. Thus the uncertainties are similar among the
 regions, and $t\tbar$ normalization based on the predictions in the CR largely
-cancel out these uncertanties. The residual uncertainty is taken as the
+cancel out these uncertainties. The residual uncertainty is taken as the
 difference between the $t\tbar$ nominal prediction and that obtained after
 varying the cross-section of $t\tbar$ events with additional heavy-flavor jets
 by $30\%$~\cite{TOPQ-2014-10}. It contributes up to $8\%$ to the total $t\tbar$
@@ -871,7 +867,7 @@ background uncertainty (background expectation ranges from $5\%$ to $76\%$ in
 the regions). The statistical uncertainty of the CRs is included in the
 systematic uncertainties and varies from $10\%$ to $30\%$.
 
-The single-top simulation suffers from inteference between $t\tbar$ and $Wt$
+The single-top simulation suffers from interference between $t\tbar$ and $Wt$
 processes. This uncertainty is estimated using $WWbb$ events, generated using
 \MGMCatNLO, where a comparison is made with the sum of $t\tbar$ and $Wt$
 processes. Also, uncertainties due to initial- and final-state radiation are
@@ -907,19 +903,28 @@ distributions.
 
 Figure~\ref{f:fig_07ab} shows the values of the normalization factors resulting
 from the fit, the expected numbers of background events and observed data in
-all the CRs for the cut-and-count and multi-bin analyses.
+all the CRs for the cut-and-count and multi-bin analyses. They can be seen to
+be mostly consistent with one within uncertainties. The normalization factors
+for the hadronic Gtt channel and Gbb, not discussed in detail in this chapter,
+are also shown.
+
 
 Figure~\ref{f:fig_08ab} shows the results of the fit to the CRs, extrapolated
 to the VRs for the cut-and-count and multi-bin analyses. The background
 predicted by the fit is compared to the data in the upper panel. The figure
 also shows in the lower panel the pull, which is the difference between the
 observed number of events and the predicted background divided by the total
-uncertainty.
+uncertainty. None of the pulls exceeds $2\sigma$ and thus no significant
+mis-modelling is indicated.
 
+Since the agreements in the VRs are good, the SRs have been unblinded.
 Figure~\ref{f:fig_09ab} shows the SRs for the cut-and-count and multi-bin
 analyses. The pull is shown in the lower panel. No significant excess relative
-to the predicted background is seen. The background is dominated by $t\tbar$ in
-all SRs.
+to the predicted background is seen. The largest excess is observed in
+$\texttt{SR-OL-HH}$ that belongs to the multi-bin anlaysis, showing a
+$2.3\sigma$ excess~\footnote{This excess was followed up in a subsequent
+analysis at $80\textbf{ fb}^{-1}$ but it disappeared.}. The background is
+dominated by $t\tbar$ in all SRs.
 
 Table~\ref{tab:yield_discovery} shows the observed number of events and
 predicted number of background events from the background fit for the
@@ -991,9 +996,9 @@ processes in the simulation.
 		1-lepton SRs in the cut-and-count analysis, for the total background
 		prediction and breakdown of the main background sources. The uncertainties
 		shown include all systematic uncertainties. The data in the SRs are not
-		included in the fit. The background $t\tbar+X$ include $t\tbar W/Z$,
+		included in the fit. The background $t\tbar+X$ includes $t\tbar W/Z$,
 		$t\tbar H$, and $t\tbar t\tbar$ events. The row MC-only background provides
-		the total background prediction when the $t\tbar$ normalisation is obtained
+		the total background prediction when the $t\tbar$ normalization is obtained
 		from a theoretical calculation~\cite{Czakon:2011xx}. }
 
 	\label{tab:yield_discovery}
@@ -1004,15 +1009,24 @@ processes in the simulation.
 	\includegraphics[width=10cm]{figures/fig_09a}
 	\includegraphics[width=10cm]{figures/fig_09b}
 	\centering
-	\caption{}
-	\label{f:fig_09ab}
-\end{figure}
+
+	\caption{Background-only fits extrapolated to the SRs for the cut-and-count
+		analysis (top) and multi-bin analysis (bottom). The data in the SRs are not
+		included in the fit. In each figure the upper panel shows the observed number
+		of events and the predicted background yield. All uncertainties discussed in
+		Section~\ref{mb:sysun} are included. The background $t\tbar+X$ includes $t\tbar
+			W/Z$, $t\tbar H$, and $t\tbar t\tbar$ events.The lower panel shows the pulls in
+		each SR.} 
+	
+	\label{f:fig_09ab} 
+	
+  \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Interpretation}\label{mbinter}
 
-As no discovery can be claimed, one-sided upper limits at $95\%$ confidence
+No discovery can be claimed and one-sided upper limits at $95\%$ confidence
 level (CL) are derived from the data. Section~\ref{mb:midel} discusses
 model-independent exclusion limits and Section~\ref{mb:midel} discusses
 model-dependent exclusion limits.
@@ -1022,12 +1036,12 @@ model-dependent exclusion limits.
 
 For each SR, model-independent limits on the number of beyond-the-SM events are
 derived. Pseudoexperiments in the CL$_{\text{s}}$
-prescription~\cite{Read:2002hq} are used, neglecting possible signal
-contamination in the CR. Here, only the single-bin regions in the cut-and-count
-are used. Table~\ref{mod-ind-lim} shows the results. It includes the visible
-beyond the Standard Model cross-section ($\sigma_{\text{vis}}^{95}$) obtained
-by dividing the observed upper limits on the number of beyond the Standard
-Model events with the integrated luminosity, as well as the $p_0$-values, which
+prescription~\cite{Read:2002hq} are employed, neglecting possible signal
+contamination in the CR. Only the single-bin regions in the cut-and-count are
+used. Table~\ref{mod-ind-lim} shows the results. It includes the visible beyond
+the Standard Model cross-section ($\sigma_{\text{vis}}^{95}$) obtained by
+dividing the observed upper limits on the number of beyond the Standard Model
+events with the integrated luminosity, as well as the $p_0$-values, which
 represent the probability that the SM background alone would fluctuate to the
 observed number of events or higher.
 
@@ -1056,11 +1070,11 @@ observed number of events or higher.
 
 \subsection{Model-dependent Exclusion Limits}\label{mb:mdel}
 
-The regions in the multi-bin analysis, from both leptonic hadronic channels,
-are statistically combined to set model-dependent upper limits, using the
-CL$_{\text{s}}$ prescription in the asymptotic approximation
-\cite{Cowan:2010js}. The expected and observed limits are found to be
-compatible with the CL$_{\text{s}}$ calculated from pseudoexperiments.
+Multi-bin analysis regions from the leptonic and hadronic channels are
+statistically combined, using the CL$_{\text{s}}$ prescription in the
+asymptotic approximation \cite{Cowan:2010js}, to set model-dependent upper
+limits, The expected and observed limits are found to be compatible with the
+CL$_{\text{s}}$ calculated from pseudoexperiments.
 
 Figure~\ref{f:fig_10a} shows the $95\%$ CL observed and expected exclusion
 limits in the neutralino and the gluino mass plane. The $\pm 1
@@ -1069,25 +1083,27 @@ SUSY cross-section by one standard deviation up and down
 (Section~\ref{mbdatasm}). The yellow band around the expected limit shows the
 $\pm 1\sigma$ uncertainty, including all statistical and systematatic
 uncertainties, except the theoretical uncertainties in the SUSY cross-section.
-The current search shows an improvement, compared to the previous
-result~\cite{Aad:2016eki}, of $450$ GeV in gluino mass sensitivity, assuming
-massless neutralino. Gluinos having masses below $1.97$ TeV are excluded at
-$95\%$ CL for neutralino masses lower than $300$ GeV. The red line shows the
-observed limit; at high gluino mass it is weaker than the expected limits, due
-to a mild excess observed in the region SR-1L-HI (and a mild excess in a region
-in the hadronic channel) of the multi-bin analysis.
+The current search shows an improvement, compared to the previous result
+performed at $\sqrt{s}=13$ TeV and $3.2 \text{ fb}^{-1}$ integrated
+luminosity~\cite{Aad:2016eki}, of $450$ GeV in gluino mass sensitivity,
+assuming massless neutralino. Gluinos having masses below $1.97$ TeV are
+excluded at $95\%$ CL for neutralino masses lower than $300$ GeV. The red line
+shows the observed limit; at high gluino mass it is weaker than the expected
+limits, due to a mild excess observed in the region SR-1L-HI (and a mild excess
+in a region in the hadronic channel) of the multi-bin analysis.
 
 
 \begin{figure}[H]
 	\includegraphics[width=10cm]{figures/fig_10a}
 	\centering
 
-	\caption{Exclusion limits in the context of the multi-bin analysis. The dashed line shows
-		the $95\%$ Cl expected limit, and the solid bold line the $95\%$ Cl observed limit. The shaded
-		bands around the expected limits show the impact of experimental and background uncertainties.
-		The dotted lines show the impact on the observed limit of the variation of the nominal signal
-		cross-section by $\pm 1 \sigma$ of its theoretical uncertainty. Also shown are the
-		$95\%$ CL expected and observed limits from the ATLAS search based on 2015 data \cite{Aad:2016eki}.}
+	\caption{Exclusion limits in the multi-bin analysis. The dashed line shows the
+		$95\%$ CL expected limit, and the solid bold line the $95\%$ CL observed limit.
+		The shaded bands around the expected limits show the impact of experimental and
+		background uncertainties. The dotted lines show the impact on the observed
+		limit of the variation of the nominal signal cross-section by $\pm 1 \sigma$ of
+		its theoretical uncertainty. Also shown are the $95\%$ CL expected and observed
+		limits from the ATLAS search based on 2015 data \cite{Aad:2016eki}.}
 
 	\label{f:fig_10a}
 \end{figure}
@@ -1096,19 +1112,21 @@ in the hadronic channel) of the multi-bin analysis.
 
 \section{Conclusions}\label{mb:conc}
 
-The analysis in this chapter presents a search for pair-produced gluinos, using
-$\sqrt{s}=13$ TeV data collected at the LHC in the 2015-2016 data taking period
-that correponds to an integrated luminosity of $36.1~\text{fb}^{-1}$. The
-signal model discussed is Gtt, of which the leptonic final state involves at
-least one lepton, large $E_{T}^{\text{miss}}$, and multiple jets among which at
-least three must be $b$-jets. Several signal regions are defined to
-accommondate alternative ranges of mass differences between the gluino and the
-neutralino. Two analysis strategies are followed, the cut-and-count strategy in
-which possibly overlapping signal regions are optimized for discovery, and the
-multi-bin strategy in which non-overlapping signal regions are optimized for
-model-dependent exclusions. The dominant source of background is $t\tbar+$jets,
-whose normalization factors are obtained in dedicated control regions. No
-excess relative to the Standard Model background can be claimed.
+The analysis in this chapter presents a search for pair-produced gluinos, which
+is highly motivated at ATLAS as gluinos are expected to have a mass around the
+TeV scale by naturalness, as well as a high production cross section at the
+LHC. The data used was collected at the LHC in the 2015-2016 data taking
+period, at $\sqrt{s}=13$ TeV and correponded to an integrated luminosity of
+$36.1~\text{fb}^{-1}$. The signal model is Gtt, of which the leptonic final
+state involves at least one lepton, large $E_{T}^{\text{miss}}$, and multiple
+jets among which at least three must be $b$-jets. Several signal regions are
+defined to accommodate several ranges of mass differences between the gluino
+and the neutralino. Two analysis strategies are followed, the cut-and-count
+strategy in which possibly overlapping signal regions are optimized for
+discovery, and the multi-bin strategy in which non-overlapping signal regions
+are optimized for model-dependent exclusions. The dominant source of background
+is $t\tbar+$jets, whose normalization factors are obtained in dedicated control
+regions. No excess relative to the Standard Model background can be claimed.
 Model-independent limits are set on the visible cross-section for new physics
 processes. The multibin regions in the leptonic channel are combined with those
 in the hadronic channel to set model-dependent limits on gluino and neutralino
