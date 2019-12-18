@@ -3,27 +3,28 @@
   \\MIS-IDENTIFICATION}\label{c:cid}
 
 Many physics analyses involve charged leptons in their final states, where
-leptons typically refer to electrons or muons. The curvatures of the tracks of
-these particles, which exist because of the detector magnetic fields, are used
-to determine the particles' charges. As will be discussed below, the measured
-charges are not always correct, causing what is called charge
-mis-identification.
+leptons typically refer to electrons or muons. Not only are the kinematic
+quantities associated with these particles measured, their charges have to be
+determined as well, using the curvatures of the tracks which result from the
+inner detector magnetic field. As will be discussed below, the measured charges
+are not always correct, causing what is called charge mis-identification.
 
 Charge mis-identification is important for analyses that involve same-sign
-electrons~\footnote{Muon charge mis-identification is negligible~\cite{muonchargemid}.
-	Compared to electrons, muons are much less likely to undergo bremsstrahlung and
-	pair-production in the detector. Moreover, muon tracks are measured in the
-	inner detector as well as in the muon spectrometer, prodiving a larger lever
-	arm for curvature measurements.} in the final state, such as measurements of
-the same-sign $WW$ scattering~\cite{sswwscatting}, Higgs production in
-association with a $t\tbar$ pair ($t\tbar H$), or SUSY search with two
-same-sign leptons~\cite{ssssleptons}. In general, charge mis-identification
-rates occur on the order of $\text{O}(1\%)$, while Standard Model processes
-that provide opposite-sign dileptons, dominantly $Z\to e^+e^-$, occur
-approximately $10^3$ times more commonly than genuine Standard Model sources of
-same-sign leptons (dominantly $WZ$ production). Thus, opposite-sign sources of
-dileptons that suffer from charge mis-identification can constitute a large
-background in these searches.
+leptons~\footnote{Muon charge mis-identification is negligible at
+	ATLAS~\cite{muonchargemid}. Compared to electrons, muons are much less likely
+	to undergo bremsstrahlung and pair-production in the detector. Moreover, muon
+	tracks are measured in the inner detector as well as in the muon spectrometer,
+	prodiving a larger lever arm for curvature measurements.} in the final state,
+such as measurements of the same-sign $WW$ scattering~\cite{sswwscatting},
+Higgs production in association with a $t\tbar$ pair ($t\tbar H$), or SUSY
+search with two same-sign leptons~\cite{ssssleptons}. In general, electron
+charge mis-identification rates occur on the order of $\text{O}(1\%)$, whereas
+Standard Model processes that provide opposite-sign dileptons, dominantly $Z\to
+	e^+e^-$, occur approximately $10^3$ times more commonly than genuine Standard
+Model sources of same-sign leptons (dominantly $WZ$ production). Accordingly,
+opposite-sign sources of dileptons that suffer from charge mis-identification
+can constitute a significant background in these searches, and must therefore
+be estimated as precisely as possible.
 
 
 This chapter describes a method for estimating the rate of charge
@@ -36,27 +37,28 @@ provides some conclusions.
 
 The data used was collected with the ATLAS detector in $2012$, at $8$ TeV
 center-of-mass energy and corresponds to an integrated luminosity of $20.3$
-$\text{fb}^-1$.
+$\text{fb}^{-1}$.
 
 \section{Electron Charge Mis-identification}\label{s:chargereasons}
 
 At ATLAS, the sign of the charge of an electron is determined from the
 curvature of its track in the inner detector~(Section~\ref{s:decinner}). Charge
-mis-identification, where the charge of the electron is identified incorrectly,
-occurs mainly because of two reasons:
+mis-identification occurs mainly because of two reasons:
 
 \begin{itemize}
 
 	\item The electron may radiate photons as it passes through the detector and
 	      interacts with the detector materials. These radiated photons may in turn
 	      convert to electron-positron pairs. A charge mis-identification occurs when the
-				electron candidate is matched to the wrong track. This is the dominant source 
-				of charge mis-identification. 
+	      electron candidate is matched to the wrong track. This is
+	      the dominant source of charge mis-identification.
 
-	\item The reconstructed track of the electron appears rather straight, i.e. the
-	      curvature of the track is small, which may happen at very high momentum or at
-	      large pseudorapidity, the latter case because the lever arm of the tracker is
-	      limited.
+	\item The reconstructed track associated with the electron has a small
+	      curvature, which may happen at very high momentum or at large pseudorapidity,
+	      the latter case because of the limit of the lever arm of the tracker. Indeed,
+	      for $\abs{\eta}\geq 2.0$, the track is oriented in the endcap region of the
+	      ATLAS detector and will not reach the full available lever arm of $\sim 1.2$
+	      m transverse to the beam of the inner detector.
 
 \end{itemize}
 
@@ -69,18 +71,87 @@ seek to determine this rate in a sample of electrons. At ATLAS, $Z\to e^+e^-$
 events are used for this purpose because they are a dominant source of
 opposite-sign electrons as compared to other Standard Model sources. A very
 clean and high-statistics sample of electrons may be obtained by selecting two
-isolated electrons around the invariant $Z$ mass peak. The mis-identification
-rates to be extracted are parameters of a Poisson likelihood function discussed
-below.
+isolated electrons around the invariant $Z$ mass peak. Due to charge
+mis-identification, not only are opposite-sign pair of electrons observed,
+same-sign pairs will be encountered as well, from which the charge
+mis-identification rates could be determined. More specically, the
+mis-identification rates to be extracted are parameters of a Poisson likelihood
+function that will be discussed below.
+
+The rates obtained will be applied to an opposite-sign control sample in data,
+or to correct the MC simulation, to estimate the electron charge
+mis-identification background in a same-sign lepton analysis.
+
+\subsection{The $Z\to e^+e^-$ Sample}\label{s:zeerates}
+
+At ATLAS, electron charge mis-identification rates are extracted from $Z\to
+	e^+e^-$ events using a likelihood function (Section~\ref{s:cpllh}). These
+events, which are also called tag-and-probe $Z\to e^+e^-$ events, are selected
+by applying the following selections.
+
+\paragraph{Event selections}
+
+\begin{itemize}
+
+	\item A logical OR between two single-electron triggers, one with $E_T > 24$
+	      GeV plus Medium identification, and one with $E_T > 60$ GeV plus Loose
+	      identification.
+
+	\item At least two reconstructed electron candidates with $\abs{\eta} < 2.47$.
+	      One electron, called the tag candidate, is required to pass the Tight
+	      identification requirement; it must also have $E_T > 25$ GeV and $1.37 <
+		      \abs{\eta} < 1.52$, and must be associated to a triggered electron within
+	      $\Delta R < 0.15$. The other electron, called the probe candidate, is required
+	      to have $E_T > 10$ GeV; moreover, the tracks associated with the electron must
+	      have at least one hit in the pixel detector and at least seven hits in the
+	      pixel and SCT detectors. The invariant mass of the tag-probe pair must be
+	      within $\pm 15$ GeV of the $Z$ mass.
+
+\end{itemize}
+
+Figure~\ref{f:meea}~\cite{atlaselcid} shows the invariant mass distribution
+$m_{ee}$ in data and simulation for $E_T$ between $25$ GeV and $50$ GeV and
+$0.0 < \eta < 0.8$ (left) or $2.0 < \eta < 2.47$ (right). Due to charge
+mis-identification same-sign electron pairs also exist in addition to
+opposite-sign pairs, indicating a charge mis-identification rate of $\sim
+10^{-3}$ in the central region and $\sim 10\%$ in the high $\eta$ region. The
+higher rates in the latter is expected because of the larger amount of material
+and the limited lever arm in the forward region. In both cases, same-sign pairs
+show a broader peak that is also slightly shifted towards lower values,
+consistent with the fact that the radiation that causes charge
+mis-identification also results in energy loss.
+
+
+\begin{figure}[H]
+	\includegraphics[width=7cm]{figures/fig_16a}
+	\includegraphics[width=7cm]{figures/fig_16b}
+	\centering
+
+	\caption{Distribution of the invariant mass $m_{ee}$ for $E_T$ between $25$
+		and $50$ GeV and $\abs{\eta} $ between $0.0$ and $0.8$ \cite{atlaselcid}. Due
+		to charge mis-identification same-sign pairs as well as opposite-sign pairs
+		are observed.}
+
+	\label{f:meea}
+
+\end{figure}
+
+The next section discusses the Poisson likelihood function that is used to
+fit the data.
+
 
 \subsection{The Poisson Likelihood}\label{s:cpllh}
 
-In a truth-level pair $e^+e^-$ whose charges are to be measured, which we will
-call an opposite-sign pair, if the charge of any one of the electrons is
-mis-identified, then a same-sign pair will be seen instead. Assuming a
-probability $p$ that an opposite-pair will be identified as a same-sign pair,
-then in considering $n$ pairs $e^+e^-$, the probability that exactly $n_{ss}$
-same-sign pairs will be counted follows the binomial distribution
+In a truth-level $e^+e^-$ pair, which will also be called a truth-level
+opposite-sign pair, if the charge of any one of the electrons is
+mis-identified, then a same-sign pair will be observed instead\footnote{ In
+	order to distinguish between truth-level electron pairs and identified ones, we
+	will always write truth-level to indicate the former. Thus if a pair is not
+	preceded by truth-level, it is tacitly understood to be an identified pair. }.
+Assuming a probability $p$ that a truth-level opposite-pair will be identified
+as a same-sign pair, then in considering $n$ truth-level pairs $e^+e^-$, the
+probability that exactly $n_{ss}$ same-sign pairs will be counted follows the
+binomial distribution
 
 $$
 	P(n_{ss}) = \binom{n}{n_{ss}}p^{n_{ss}}(1-p)^{n-n_{ss}}.
@@ -89,28 +160,28 @@ $$
 The charge mis-identification probability $p$ is typically small while the
 sample of $n$ pairs of electrons considered is typically very large, and
 therefore the Poisson distribution may be used instead. Thus, let
-
+%%
 \begin{equation}\label{eq:cmss}
 	m_{ss} = np
 \end{equation}
-
+%%
 denote the expected number of same-sign pairs, then the Poisson distribution
-
-
+%%
 \begin{equation}\label{eq:cpoissonn}
 	P(n_{ss}) = \frac{m_{ss}^{n_{ss}} e^{-m_{ss}}}{n_{ss}!}
 \end{equation}
-
+%%
 gives the probability of counting $n_{\text{ss}}$ same-sign pairs, given the
-average number of same-sign pairs $m_{\text{ss}}$. This will also be called a
-likelihood function.
-
+expected number of same-sign pairs $m_{\text{ss}}$. This will be used as
+a likelihood function, to be maximized to extract the charge mis-identification
+rates, as will be explained further below.
 
 The probability $p$ that a truth-level opposite-pair will be identified as a
 same-sign pair may be written directly in term of the probability of charge
 mis-identification associated to an individual electron. If $\epsilon$ denotes
-the latter probability, then because a same-sign pair will be seen when exactly
-one of the electrons has its charge mis-identified, we may write
+the latter probability, then because a same-sign pair will be observed
+precisely when only one of the electrons has its charge mis-identified, we may
+write
 
 \begin{equation}\label{eq:cprobpair}
 	p = (1-\epsilon)\epsilon +  \epsilon(1-\epsilon).
@@ -125,78 +196,17 @@ depend explicitly on $\epsilon$:
 	m_{ss} = np = n(1-\epsilon)\epsilon +  \epsilon(1-\epsilon).
 \end{equation}
 
-\subsection{Estimating Charge Mis-Identification Rates on $Z\to e^+e^-$
-	events}\label{s:zeerates}
+The maximization of this function gives the mis-identification rates
+$\epsilon$'s.
 
-Electron charge mis-identification rates are extracted from $Z\to e^+e^-$
-events using the likelihood function~\ref{eq:cpoisson}. These events, which are
-also called tag-and-probe $Z\to e^+e^-$ events, are selected by applying the
-following selections.
-
-\paragraph{Event selections}
-
-\begin{itemize}
-
-	\item A logical OR between two single-electron triggers, one with $E_T > 24$
-	      GeV plus Medium identification, and one with $E_T > 60$ GeV plus Loose
-	      identification.
-
-	\item At least two reconstructed electron candidates with $\abs{\eta} < 2.47$.
-
-	\item One electron, called the tag candidate, is required to:
-	      \begin{itemize}
-		      \item Pass the Tight identification requirement.
-		      \item Have $E_T > 25$ GeV.
-		      \item Be matched to a trigger electron within $\Delta < 0.15$.
-		      \item Have $1.37 < \abs{\eta} < 1.52$.
-	      \end{itemize}
-
-	      The other electron, called the probe candidate, must
-	      \begin{itemize}
-		      \item Have $E_T > 10$ GeV.
-		      \item Satisfy the track quality criteria (the tracks associated with the
-		            electron must have at least one hit in the pixel detector and at least seven
-		            hits in the pixel and SCT detectors).
-	      \end{itemize}
-
-	\item Finally, the invariant mass of the tag-probe pair must be within $\pm 15$
-	      GeV of the $Z$ mass.
-
-\end{itemize}
-
-Figure~\ref{f:meea}~\cite{atlaselcid} shows the invariant mass distribution
-$m_{ee}$ in data and simulation for $E_T$ between $25$ GeV and $50$ GeV and
-$0.0 < \eta < 0.8$ (left) or $2.0 < \eta < 2.47$ (right). Due to charge
-mis-identification same-sign electron pairs also exist in addition to
-opposite-sign pairs. It is seen that same-sign pairs have a broader peak which
-is also slightly shifted to lower values, consistent with the fact that
-radiation which causes charge mis-identification also causes energy loss. It is
-also seen that the number of same-sign pairs is larger at the high $\eta$
-range, which is expected because charge mis-identification rates are expected
-to be higher here because of the difficulty of curvature measurements.
-
-\begin{figure}[H]
-	\includegraphics[width=7cm]{figures/fig_16a}
-	\includegraphics[width=7cm]{figures/fig_16b}
-	\centering
-
-	\caption{Distribution of the invariant mass $m_{ee}$ for $E_T$ between $25$
-		and $50$ GeV and $\abs{\eta} $ between $0.0$ and $0.8$ \cite{atlaselcid}. Due
-		to charge mis-identification same-sign pairs as well as opposite-sign pairs
-		are seen.}
-
-	\label{f:meea}
-
-\end{figure}
-
-
-Since charge mis-identification rates are expected to show strong dependencies
-on $p_T$ and $\eta$ of the electrons (Section~\ref{s:chargereasons}), they are
-often measured in bins of these two quantities. In such a situation the
-electrons in a pair generally belong to different bins and that needs to be
-taken into account in the likelihood function. Thus, the electrons are assigned
-charge mis-identification probabilities $\epsilon_i$ and $\epsilon_j$, where
-the indices $i$ and $j$ indicate the bins, and we write
+On the other hand, because charge mis-identification rates are expected to show
+strong dependencies on $p_T$ and $\eta$ of the electrons
+(Section~\ref{s:chargereasons}), they are often measured in bins of these two
+quantities. In such a situation the electrons in a pair generally belong to
+different bins and that needs to be taken into account in the likelihood
+function. Thus, the electrons are assigned charge mis-identification
+probabilities $\epsilon_i$ and $\epsilon_j$, where the indices $i$ and $j$
+indicate the bins, and we write
 
 
 \begin{itemize}
@@ -264,9 +274,9 @@ $(m_l,m_h)$. The side intervals are assumed to be dominated by background
 events and are used to compute the backgrounds in the $(m_l,m_h)$ interval,
 i.e. to subtract background contamination in $n_{ij}$ and $n_{ss,ij}$,
 quantities that need to be counted in the $(m_l,m_h)$ interval. We will write
-$b(n_{ij})$ for the the background contamination in $n_{ij}$, and
-$b(n_{ss,ij})$ for the background contamination in $n_{ss,ij}$; they will be
-computed as weighted quantities:
+$b(n_{ij})$ for the background contamination in $n_{ij}$, and $b(n_{ss,ij})$
+for the background contamination in $n_{ss,ij}$; they will be computed as
+weighted quantities:
 
 $$
 	b(n_{ij}) = \frac{w_l\times n_{ij}^l + w_h\times n_{ij}^h}{w_l + w_h}, \qquad
@@ -304,7 +314,7 @@ the statistical tool that maximizes the Poisson likelihood.
 
 The following sources of systematic uncertainties are evaluated:
 
-\begin{itemize}[label=\ding{111}]
+\begin{itemize}
 
 
 	\item Systematic uncertainty that comes from background subtraction, which is
@@ -314,20 +324,20 @@ The following sources of systematic uncertainties are evaluated:
 	      because the background is small.
 
 
-	\item The invariant mass interval $(m_l,m_h)$ may be varied, from $15$ GeV
-	      around the $Z$ mass to $10$ and $20$ GeV additionally. In this way an idea of
-	      how the selection of an interval may affect the rates may be obtained.
+\item The invariant mass interval $(m_l,m_h)$ may be varied, from $15$ GeV
+around the $Z$ mass to $10$ and $20$ GeV additionally. This provides an
+estimation of the impact of the choice of mass window on the measure rates.
 
 
 	\item The invariant mass widths $w_l$ and $w_h$ may be varied, taking values
-	      $20$, $25$, or $30$ GeV. This takes into account the uncertainty on the rates
-	      due to the choice of a mass width.
+	      $20$, $25$, or $30$ GeV. Thus, the uncertainty on the rates
+	      due to the choice of a mass width is taken into account. 
 
 \end{itemize}
 
 The actual rates are estimated for the following three sets of requirements:
 
-\begin{itemize}[label=\ding{109}]
+\begin{itemize}
 	\item Medium: Medium identification requirements
 
 	\item Tight + isolation: Tight identification requirements plus track isolation
@@ -341,12 +351,28 @@ The actual rates are estimated for the following three sets of requirements:
 
 \end{itemize}
 
-Figure~\ref{f:meerates} \cite{atlaselcid} show the estimated rates in data and
-simulation. The dashed lines indicate the bins in which the rates are
-calculated. Total uncertainty, which is computed as the sum in quadrature of
-statistical and systematic uncertainties, is also showed. In most bins,
-simulation over-estimates the rates as compared to the data by 5-$20\%$
-depending on $\eta$ and electron requirements.
+Figure~\ref{f:meerates} \cite{atlaselcid} shows the estimated rates in data and
+simulation, for electron $E_T$ between 25 and 50 GeV as a function of $\eta$, the
+variable upon which they depend the most. The dashed lines indicate the bins
+in which the rates are calculated. The total uncertainty, which is computed as
+the sum in quadrature of statistical and systematic uncertainties, is also
+showed. Charge mis-identification rates vary from below $1\%$ in the central
+region to $\sim 10\%$ in high $\eta$ region, reflecting the correlation of the
+rates with bremsstrahlung, and thus a dependency on the amount of the material
+traversed. On the other hand, tighter selection criteria, in particular
+requirements on the isolation or track parameters, may decrease the charge
+misidentification probability by a factor of up to four, depending on the
+additional selection requirements\footnote{The energy in the cone around an
+electron could indicate the amount of energy deposited by bremsstrahlung, and
+large values of the track impact parameters could mean that the track matched
+to the electron is not a prompt track from the primary vertex but from a
+secondary interaction or bremsstrahlung and a subsequent
+conversion~\cite{atlaselcid}.}. Moreover, as is seen, simulation over-estimates
+the rates as compared to the data by 5-$20\%$ depending on $\eta$ and electron
+requirements.
+
+Charge mis-identification rates are known to show a positive correlation with 
+$p_T$ as well (Figure~\ref{f:meeratesbdt}).
 
 \begin{figure}[H]
 	\includegraphics[width=10cm]{figures/fig_17}
@@ -378,12 +404,12 @@ mis-identification contribution to it.
 
 
 To begin, the number of same-sign electron pairs $n_{\text{ss,ij}}$ that has
-been selected is to be distinguished from the number of genuine same-sign
-electron pairs. The latter is what would be counted in the bin pairs $(i,j)$ if
-there were no charge mis-identification. In the following we will write it by
-$\bar{n}_{\text{ss,ij}}$.
+been selected under a set of selection requirements is to be distinguished from
+the number of truth-level same-sign electron pairs. The latter is what would be
+counted in the bin pairs $(i,j)$ if there were no charge mis-identification. In
+the following we will write it by $\bar{n}_{\text{ss,ij}}$.
 
-A charge mis-identification contribution occurs whenever there is a genuine
+A charge mis-identification contribution occurs whenever there is a truth-level
 opposite-sign pair of electrons in which one of the electron has its charge
 mis-identified. The probability for this to happen is, according to
 Equation~\ref{eq:cijw},
@@ -392,12 +418,13 @@ $$p_{ij} = (1-\epsilon_i)\epsilon_j +  \epsilon_i(1-\epsilon_j,)$$
 
 where $\epsilon_i$ and $\epsilon_j$ are the charge mis-identification rates in
 the bins. Now, in the same bin pair $(i,j)$ the number of opposite-sign pairs
-may be counted as well, we will write it as $n_{\text{os,ij}}$. Moreover, as
-for the same-sign case, this has to be distinguished from the number of genuine
-opposite-sign pairs, which will be denoted $\bar{n}_{\text{os,ij}}$. The number
-of interest is $\bar{n}_{\text{os,ij}}$, because given the mis-identification
-rate $p_{ij}$, the charge mis-identification contribution to $n_{\text{ss,ij}}$
-is simply $\bar{n}_{\text{os,ij}}\times p_{ij}$.
+obtained from the same selection requirements may be counted as well, we will write
+it as $n_{\text{os,ij}}$. Moreover, as for the same-sign case, this has to be
+distinguished from the number of truth-level opposite-sign pairs, which will be
+denoted $\bar{n}_{\text{os,ij}}$. The number of interest is
+$\bar{n}_{\text{os,ij}}$, because given the mis-identification rate $p_{ij}$,
+the charge mis-identification contribution to $n_{\text{ss,ij}}$ is simply
+$\bar{n}_{\text{os,ij}}\times p_{ij}$.
 
 
 The only quantities known are $n_{\text{ss,ij}}$, $n_{\text{os,ij}}$, and the
@@ -409,27 +436,28 @@ $$n_{\text{os,ij}} = \bar{n}_{\text{os,ij}} - \bar{n}_{\text{os,ij}}\times
 	p_{ij} + \bar{n}_{\text{ss,ij}}\times p_{ij},$$
 
 which reflects the fact that the number of opposite-sign lepton pairs counted
-in the bin pair $(i,j)$ is the corresponding genuine number minus the portion
-that is identified as same-sign plus the contribution from genuine same-sign
+in the bin pair $(i,j)$ is the corresponding truth-level number minus the portion
+that is identified as same-sign plus the contribution from truth-level same-sign
 pairs. This may be re-written as
-
+%%
 $$ n_{\text{os,ij}} = \bar{n}_{\text{os,ij}}\times (1 - p_{ij}) +
 	\bar{n}_{\text{ss,ij}} \times p_{ij}. $$
-
+%%
 Similarly we have the following relation
-
+%%
 $$ n_{\text{ss,ij}} = \bar{n}_{\text{ss,ij}}\times (1 - p_{ij}) +
 	\bar{n}_{\text{os,ij}} \times p_{ij} $$
-
+%%
 Thus there are two equations in two unknowns and as a result
 $\bar{n}_{\text{os,ij}}$ and $\bar{n}_{\text{ss,ij}}$ may be solved.
 
 At ATLAS, charge mis-identification rates are also provided to different
-analyses as scale factors, to be applied to charge mis-identification rates in
-simulations to match the data. If charge mis-identification rates on data are
-provided directly instead of the scale factors we can avoid the need for the
-use of all systematic uncertainties that are associated with the use of
-simulation samples.
+analyses as scale factors\footnote{These are the ratios of charge
+mis-identification rates in data over those in simulation.}, to be applied to
+charge mis-identification rates in simulations to match the data. If charge
+mis-identification rates on data are provided directly instead of the scale
+factors we can avoid the need for the use of all systematic uncertainties that
+are associated with the use of simulation samples.
 
 
 \section{Conclusions}\label{s:chargecon}
@@ -437,31 +465,34 @@ simulation samples.
 This chapter describes the electron charge mis-identification problem at ATLAS
 and how the charge mis-identification rates are extracted by fitting a Poisson
 likelihood function using the $Z\to e^+e^-$ data sample, collected at $8$ TeV
-LHC center-of-mass energy in $2012$ with the ATLAS detector and corresponds to
-an integrated luminosity of $20.3$ $\text{fb}^{-1}$. Three sets of charge
+LHC center-of-mass energy in $2012$ with the ATLAS detector and corresponding
+to an integrated luminosity of $20.3$ $\text{fb}^{-1}$. Three sets of charge
 mis-identification rates are measured and provided to ATLAS analyses,
 corresponding to three different sets of selection requirements (Medium, Tight
 + Isolation, and Tight + Isolation + impact parameter). The rates show a
-variation from less than $1\%$ to nearly $10\%$ depending on the bins. It is
-also observed from the measurements that in general simulation underestimates
-the charge mis-identification rates as compared to those in the data.
+variation from less than $1\%$ to nearly $10\%$ depending on $\eta$ and $p_T$.
+It is also observed from the measurements that, in general, simulation
+underestimates the charge mis-identification rates as compared to those in the
+data.
 
 In Run 2, in addition to measuring the charge mis-identification rates, a
 separate effort was started by the physics team at Universit\'{e} de
 Montr\'{e}al, aiming at reducing charge mis-identification. The technique
 relies on the output of a boosted decision tree using a simulated sample of
 single electrons. Figure~\ref{f:meeratesbdt} shows the impact of applying the
-BDT requirement on charge mis-identification rates. More details may be found
-in~\cite{atlaselcid}.
+BDT requirement on charge mis-identification rates; it has been demonstrated to
+reduce charge mis-identification rates by about a factor of 10 while
+maintaining a $97\%$ efficiency on signal electrons. More details may be found
+in Ref.~\cite{atlaselcid}.
 
 \begin{figure}[H]
 	\includegraphics[width=10cm]{figures/ch5fig_15a}
 	\includegraphics[width=10cm]{figures/ch5fig_15b}
 	\centering
 
-	\caption{Charge mis-identification probabilities in 2016 data and $Z\to e^+e^-$ 
-	events as a function of $E_T$ (top) and $\abs{eta}$ (bottom) that shows also 
-	the impact of applying the BDT requirement (in blue) to suppress charge mis-identification. 
+	\caption{Charge mis-identification probabilities in 2016 data and $Z\to e^+e^-$
+		events as a function of $E_T$ (top) and $\abs{\eta}$ (bottom) that shows also
+		the impact of applying the BDT requirement (in blue) to suppress charge mis-identification.
 	}
 
 	\label{f:meeratesbdt}
