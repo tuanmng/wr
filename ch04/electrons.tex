@@ -1,28 +1,31 @@
 
 \chapter{ELECTRON RECONSTRUCTION AND IDENTIFICATION AT ATLAS}\label{c:ereid}
 
-The central theme of this thesis is the improvement of the selection of signal
-electrons in SUSY searches. In particular, Chapter~\ref{c:cid} deals with the
-estimation of electron charge mis-identification, Chapter~\ref{c:susys}
-discusses a supersymmetry seach that involves leptons (electrons or muons) in
-the final state, and Chapter~\ref{c:eid} measures the identification
-efficiencies for in-jet electrons\footnote{These refer to electrons that are
-	found within $\Delta R = 0.4$ of high $p_T$ jets.}. This chapter presents a
-more extended discussion of electron reconstruction and identification at
-ATLAS~\cite{atlaselcid}.
+The central theme of this thesis is the improvement of the reconstruction and
+identification of signal electrons in SUSY searches. In particular,
+Chapter~\ref{c:cid} deals with the estimation of electron charge
+mis-identification, Chapter~\ref{c:susys} discusses a supersymmetry search that
+involves leptons (electrons or muons) in the final state where work on
+improving the lepton selection will be presented, and Chapter~\ref{c:eid}
+presents a measurement of the identification efficiencies for in-jet
+electrons\footnote{These refer to electrons that are found within $\Delta R =
+0.4$ of high $p_T$ jets.}. This chapter introduces electron reconstruction and
+identification at ATLAS~\cite{atlaselcid}.
 
-At ATLAS, a signal electron that has been selected passes through two major
-steps, reconstruction and identification. Electron reconstruction, discussed in
-Section~\ref{s:ereco}, is the selection, using information from the inner
-detector and the electromagnetic calorimeter, of a set of objects which are
-called electron candidates. Electron identification, on the other hand, refers
-to the selection from a pool of electron candidates; it is discussed in
-Section~\ref{s:eid}.
+At ATLAS, a signal (prompt) electron\footnote{This is an electron that
+originates from the prompt decays of particles such as $W$, $Z$, and other
+beyond the Standard Model particles.} that has been selected passes through two
+major steps, reconstruction and identification. Electron reconstruction,
+discussed in Section~\ref{s:ereco}, is the selection, using information from
+the inner detector and the electromagnetic calorimeter, of a set of objects
+which are called electron candidates. Electron identification, on the other
+hand, applies criteria on tracking and calorimeter variables to select signal
+electrons; it is discussed in Section~\ref{s:eid}.
 
 Figure~\ref{f:elcid}\cite{atlaselcid} shows the hypothetical path of an
-electron, in red trajectory, through the ATLAS detector. The electron emerges
-near the collision point, passes the tracking system (made up of the pixel
-detectors, the silicon-strip detectors, and the TRT) before entering the
+electron, in the red trajectory, through the ATLAS detector. The electron
+emerges near the collision point, passes the tracking system (made up of the
+pixel detectors, the silicon-strip detectors, and the TRT) before entering the
 electromagnetic calorimeter. Also shown in the figure is the path of a photon,
 in dashed trajectory, produced by the interaction of the electron with the
 material in the tracking system.
@@ -46,10 +49,16 @@ material in the tracking system.
 
 At ATLAS, we expect most electrons passing through the detector to interact
 with the material of the latter and lose a significant amount of energy through
-bremsstrahlung. These interactions, which may happen along the path of the
-electrons, typically cause radiated photons and consequently electron-position
-pairs, all of which tend to collimate. Thus, electron reconstruction at ATLAS
-consists of three fundamental components:
+bremsstrahlung. Such a process could take place at different points along the
+path of an electron and typically causes radiated photons and consequently
+electron-position pairs, all of which tend to collimate and are normally
+reconstructed as part of the same electromagnetic cluster. These interactions,
+initiated by the primary electron, could generate multiple tracks in the inner
+detector or impact the electromagnetic shower in the electromagnetic
+calorimeter.
+
+Electron reconstruction at ATLAS consists of three fundamental components that
+characterize the signature of electrons:
 
 \begin{itemize}
 	\item Localized clusters of energy deposits in the electromagnetic calorimeter;
@@ -57,10 +66,12 @@ consists of three fundamental components:
 	\item Matching of tracks to the clusters.
 \end{itemize}
 
-These components will be discussed in some detail in the following. The
-discussion will focus on what was done before a new electron and photon
-reconstruction method, dynamic and topological cell clustering-based, was
-introduced at ATLAS~\cite{atlaselscluster}.
+These components will be discussed in some detail in the following. As this
+thesis is based on 2015-2016 data (analyzed by release 20 of the ATLAS
+software), the discussion focuses on the methods used prior to the introduction
+of a new electron and photon reconstruction method, dynamic and topological
+cell clustering-based~\cite{atlaselscluster} (in release 21 of the ATLAS
+software).
 
 
 \subsection{Seed-cluster reconstruction}
@@ -89,22 +100,22 @@ $0.025 \times 0.025$, both will undergo a selection process in which
 
 \end{itemize}
 
-The reconstruction efficiency is found to depend on $\eta$ and on the
-transverse energy. Figure~\ref{f:elcidseed} shows the dependency on $E_T$.
-The efficiency ranges from $96\%$ at $E_T = 7$ GeV to more than $99\%$
-above $E_T = 15$ GeV.
+The reconstruction efficiency of this seed-cluster algorithm is found to depend
+on $\eta$ and on the transverse energy. Figure~\ref{f:elcidtrackeff} shows the
+dependency on $E_T$. The efficiency ranges from $96\%$ at $E_T = 7$ GeV to more
+than $99\%$ above $E_T = 15$ GeV.
 
 
-\begin{figure}[h]
-	\includegraphics[width=12cm]{figures/fig_02b}
-	\centering
+% \begin{figure}[h]
+% 	\includegraphics[width=12cm]{figures/fig_02b}
+% 	\centering
 
-	\caption{The reconstruction efficiency relative to reconstructed clusters
-		as a function of $E_T$ for $Z\to ee$ events.}
+% 	\caption{The reconstruction efficiency relative to reconstructed clusters
+% 		as a function of $E_T$ for $Z\to ee$ events.}
 
-	\label{f:elcidseed}
+% 	\label{f:elcidseed}
 
-\end{figure}
+% \end{figure}
 
 \subsection{Track reconstruction}
 
@@ -127,8 +138,8 @@ Track candidates with $p_T > 400$ MeV are fit using the ATLAS Global $\chi^2$
 Track Fitter \cite{globalchisqfit}, taking into account which
 pattern-recognition algorithm was used. Ambiguities arising from track
 candidates sharing hits are also resolved in this step.
-Figure~\ref{f:elcidtrackeff} shows that the reconstruction efficiency ranges
-from $80\%$ at $E_T=1$ GeV to more than $98\%$ above $E_T = 10$ GeV.
+Figure~\ref{f:elcidtrackeff} shows that the reconstruction efficiency of the
+track-fitting step reaches more than $98\%$ above $E_T = 10$ GeV.
 
 An additional fit, using the Gaussian-sum filter (GSF)~\cite{gsffit} method to
 better model energy loss of the particle, is applied on tracks having at least
@@ -141,9 +152,10 @@ models experimental noise by a sum of Gaussian functions.
 	\includegraphics[width=12cm]{figures/fig_02a}
 	\centering
 
-	\caption{The total reconstruction efficiency for simulated electrons in a single-electron
+	\caption{The efficiencies for simulated electrons in a single-electron
 		sample as a function of the true generator $E_T$ for each step in the reconstruction
-		process: $\Delta \eta\times \Delta \phi=3\times 5$ seed-cluster reconstruction (red triangles),
+		process, as well as the total efficiency: $\Delta \eta\times \Delta \phi=3\times 5$ seed-cluster
+		reconstruction (red triangles),
 		seed-track reconstruction using the Global $\chi^2$ Track Fitter (blue open circles), both
 		steps but using GST tracking (yellow squares), and the final reconstructed electron
 		candidate (black closed circles).}
@@ -159,7 +171,7 @@ In this final step, the GSF-track candidate is matched to the candidate
 calorimeter seed cluster and the final cluster size is determined. If during
 the matching procedure several tracks may be matched to a same cluster then an
 algorithm using such information as the number of hits in the silicon
-detectors, the number of hits in the innermost sillicon layer, and others, is
+detectors, the number of hits in the innermost silicon layer, and others, is
 applied to select out the primary track. The resulting object is called an
 electron candidate if it has an associated track with at least four hits in the
 silicon layers and no association with a vertex from photon conversion. If on
@@ -177,12 +189,15 @@ energy of the extended-window cluster, which is formed from the original seed
 cluster by expanding the size of the latter of $\phi$ or $\eta$. The
 calibration uses multivariate techniques~\cite{elclusecal1, elclusecal2}.
 
-Figure~\ref{f:elcidtrackeff} and~\ref{f:elcidreceff} show the reconstruction
-efficiency as a function of $E_T$ and as a function of $\eta$ in bins of $E_T$,
-respectively, from $Z\to e^+e^-$ events. They show that for $E_T > 15$ GeV, the
+Figure~\ref{f:elcidtrackeff} and~\ref{f:elcidreceff} show the total
+reconstruction efficiency as a function of $E_T$ and as a function of $\eta$ in
+bins of $E_T$, respectively, from $Z\to e^+e^-$ events. This efficiency is
+defined as the ratio of the number of reconstructed electron candiates and the
+number of electromagnetic-cluster candidates. For $E_T > 15$ GeV, the
 reconstruction efficiency varies from approximately $97\%$ to $99\%$. Moreover,
-simulation efficiency is lower than data efficiency in the low $E_T$ region
-($E_T < 30$ GeV) but is higher in the higher $E_T$ region ($E_T > 30$ GeV).
+simulation efficiency is lower than data efficiency (up to $\sim 25\%$) in the
+low $E_T$ region ($E_T < 30$ GeV) but is higher (up to a few percents) in the
+higher $E_T$ region ($E_T > 30$ GeV).
 
 \begin{figure}[H]
 	\includegraphics[width=7cm]{figures/c4fig_04a}
@@ -194,8 +209,9 @@ simulation efficiency is lower than data efficiency in the low $E_T$ region
 
 	\centering
 
-	\caption{Reconstruction efficiencies relative to reconstructed clusters
-		evalued in the 2015-2016 dataset (closed points) and in simulation (open
+	\caption{The total reconstruction efficiencies, defined as the ratio of the 
+	number of reconstructed electron candiates and the number of electromagnetic-cluster 
+	candidates, evalued in the 2015-2016 dataset (closed points) and in simulation (open
 		points) and the ratios between the two in $Z\to ee$ events. The efficiencies
 		are shown as a function of $\eta$ in four $E_T$ bins: 15-20 GeV (top left),
 		25-30 GeV (top right), 40-45 GeV (bottom left), and 80-150 GeV (bottom
@@ -216,17 +232,20 @@ these background electrons are reduced.
 
 \subsection{Likelihood Identification}
 
-Prompt electrons\footnote{These refer to electrons that originate from the
-	prompt decays of particles such as $W$, $Z$, and other beyond the Standard
-	Model particles.} that enter the central region ($\abs{\eta} < 2.47$) are
+Prompt electrons that enter the central region ($\abs{\eta} < 2.47$) are
 selected using a method called the likelihood identification. In this method,
 the differences in shower shapes, in track conditions, penetration depth, and
 others between prompt electrons and background electrons are analyzed in
-detail. Specifically, the following quantities~\cite{atlaselcid}, which are classified into seven
-types, are used:
+detail. Specifically, there are seven types of variables, hadronic leakage,
+third layer of the EM calorimeter, second layer of the EM calorimeter, first
+layer of the EM calorimeter, track conditions, TRT, and track-cluster
+matching~\cite{atlaselcid}. Hadronic leakage, for instance, includes quantities
+that exploit the fact that hadrons reconstructed as electron candiates will
+reach the hadronic calorimeter.
+
 
 \begin{itemize}
-	\item Hadronic leakage:
+	\item Hadronic leakage. 
 	      \begin{itemize}
 		      \item $R_{\text{had1}}$: Ratio of the transverse momentum in the first layer
 		            of the Hadronic Calorimeter to that of the Electromagnetic Calorimeter.
@@ -254,22 +273,25 @@ types, are used:
 	      \end{itemize}
 	\item First layer of EM calorimeter
 	      \begin{itemize}
-		      \item $\omega_{\text{stot}}$
-		      \item $E_{\text{ratio}}$
-		      \item $f_1$
+		      \item $\omega_{\text{stot}}$: Shower width. 
+		      \item $E_{\text{ratio}}$: Ratio of the energy difference between the maximum energy deposit 
+		      and the energy deposit in a secondary maximum in the cluster to the sum of these energies. 
+		      \item $f_1$: Ratio of the energy in the first layer to the total energy in the EM calorimeter. 
 	      \end{itemize}
 	\item Track conditions
 	      \begin{itemize}
-		      \item $n_{\text{Blayer}}$: the number of hits in the innermost pixel layer.
-		      \item $n_{\text{Pixel}}$: the number of hits in the Pixel detector.
-		      \item $n_{\text{Si}}$: the total number of hits in the pixel and SCT detectors.
-		      \item $d_0$
-		      \item $\abs{d_0/ \sigma(d_0)}$
-		      \item $\Delta p / p$
+		      \item $n_{\text{Blayer}}$: The number of hits in the innermost pixel layer.
+		      \item $n_{\text{Pixel}}$: The number of hits in the Pixel detector.
+		      \item $n_{\text{Si}}$: The total number of hits in the pixel and SCT detectors.
+		      \item $d_0$: Transverse impact parameter relative to the beam-line. 
+		      \item $\abs{d_0/ \sigma(d_0)}$: Significance of transverse impact parameter defined 
+		      as the ratio of $d_0$ to its uncertainty. 
+		      \item $\Delta p / p$: Momentum lost by the track between the perigee and the last 
+		      measurement point divided by the momentum at perigee. 
 	      \end{itemize}
 	\item TRT
 	      \begin{itemize}
-		      \item eProbabilityHT
+		      \item eProbabilityHT: Likelihood probability based on transition radition in the TRT. 
 	      \end{itemize}
 	\item Track-cluster matching
 	      \begin{itemize}
@@ -277,7 +299,9 @@ types, are used:
 		      \item $\Delta\eta_1$: $\Delta \eta$ between the cluster position in the
 		            first layer and the extrapolated track
 
-		      \item $\Delta \Phi_{\text{res}}$
+		      \item $\Delta \phi_{\text{res}}$: $\Delta \phi$ between the cluster position 
+					in the second layer of the EM calorimeter and the momentum-rescaled track, 
+					extrapolated from the perigee, times the charge $q$
 
 		      \item $E/p$: ratio of the cluster energy to the track momentum (for $E_T > 150$ GeV)
 	      \end{itemize}
@@ -314,14 +338,14 @@ This discriminant is actually transformed into
 
 which then serves as a quantity to assess if an electron candidate should be
 considered a prompt electron. The parameter $\tau$ is set to
-$15$~\cite{c4taup}. Figure~\ref{f:elcidllhd} shows a comparison of $d_L$ and
+$15$~\cite{c4taup}. Figure~\ref{f:elcidllhd} shows the transformed discriminant
 $d'_L$ for prompt electrons from $Z$-boson decays and for background,
 illustrating the effective separation between the two.
 
 
 \subsection{Operating Points}\label{ss:elop}
 
-In general, background rejection and identification efficiency are inversely
+Background rejection and identification efficiency are inversely
 related i.e. the higher is one, the lower is the other, and vice versa. In
 order to cover various signal efficiencies and background rejection factors as
 needed by physics analyses, ATLAS has defined four so-called identification
@@ -372,7 +396,14 @@ Specifically, the variations of the efficiencies in $E_T$ and $\eta$ for the
 Loose, Medium, and Tight operating points are displayed. The efficiency ranges
 from $55\%$ at $E_T= 4.5$ GeV to $90\%$ at $E_T=100$ GeV for the Tight point,
 and from $85\%$ at $E_T = 20$ GeV to $96\%$ at $E_T = 100$ GeV for the Loose
-point.
+point. On the other hand, the efficiency decreases as we move to higher
+$\abs{\eta}$, the decreases could be as big as $~ 10\%$.
+
+The lower efficiencies of the Medium and Tight operating points result in an
+increased rejection of background. In the $E_T$ range of $4-50$ GeV, the
+rejection factors for misidentified electrons from multijet production increase
+by factors of $\sim 2.5$ for the Medium point and $\sim 5$ for the Tight point
+compared to the Loose point~\cite{atlaselcid}.
 
 \begin{figure}[H]
 	\includegraphics[width=10cm]{figures/c4fig_08a}

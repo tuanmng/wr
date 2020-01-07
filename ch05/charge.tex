@@ -10,21 +10,22 @@ inner detector magnetic field. As will be discussed below, the measured charges
 are not always correct, causing what is called charge mis-identification.
 
 Charge mis-identification is important for analyses that involve same-sign
-leptons~\footnote{Muon charge mis-identification is negligible at
-	ATLAS~\cite{muonchargemid}. Compared to electrons, muons are much less likely
-	to undergo bremsstrahlung and pair-production in the detector. Moreover, muon
-	tracks are measured in the inner detector as well as in the muon spectrometer,
-	prodiving a larger lever arm for curvature measurements.} in the final state,
-such as measurements of the same-sign $WW$ scattering~\cite{sswwscatting},
-Higgs production in association with a $t\tbar$ pair ($t\tbar H$), or SUSY
-search with two same-sign leptons~\cite{ssssleptons}. In general, electron
-charge mis-identification rates occur on the order of $\text{O}(1\%)$, whereas
-Standard Model processes that provide opposite-sign dileptons, dominantly $Z\to
-	e^+e^-$, occur approximately $10^3$ times more commonly than genuine Standard
-Model sources of same-sign leptons (dominantly $WZ$ production). Accordingly,
-opposite-sign sources of dileptons that suffer from charge mis-identification
-can constitute a significant background in these searches, and must therefore
-be estimated as precisely as possible.
+leptons~\footnote{For all practical purposes, muon charge mis-identification is
+negligible at ATLAS~\cite{muonchargemid}. Compared to electrons, muons are much
+less likely to undergo bremsstrahlung and pair-production in the detector.
+Moreover, muon tracks are measured in the inner detector as well as in the muon
+spectrometer, prodiving a larger lever arm for curvature measurements.} in the
+final state, such as measurements of the same-sign $WW$
+scattering~\cite{sswwscatting}, Higgs production in association with a $t\tbar$
+pair ($t\tbar H$), or SUSY search with two same-sign
+leptons~\cite{ssssleptons}. In general, electron charge mis-identification
+rates occur on the order of $\text{O}(1\%)$, whereas Standard Model processes
+that provide opposite-sign dileptons, dominantly $Z\to e^+e^-$, occur
+approximately $10^3$ times more commonly than genuine Standard Model sources of
+same-sign leptons (dominantly $WZ$ production). Accordingly, opposite-sign
+sources of dileptons that suffer from charge mis-identification can constitute
+a significant background in these searches, and must therefore be estimated as
+precisely as possible.
 
 
 This chapter describes a method for estimating the rate of charge
@@ -66,15 +67,15 @@ mis-identification occurs mainly because of two reasons:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The Likelihood Method}\label{s:cllhmethod}
 
-We assume there is a probability associated to charge mis-identification and
-seek to determine this rate in a sample of electrons. At ATLAS, $Z\to e^+e^-$
-events are used for this purpose because they are a dominant source of
+We assume that there is a probability associated to charge mis-identification
+and seek to determine this rate in a sample of electrons. At ATLAS, $Z\to
+e^+e^-$ events are used for this purpose because they are a dominant source of
 opposite-sign electrons as compared to other Standard Model sources. A very
 clean and high-statistics sample of electrons may be obtained by selecting two
 isolated electrons around the invariant $Z$ mass peak. Due to charge
 mis-identification, not only are opposite-sign pair of electrons observed,
 same-sign pairs will be encountered as well, from which the charge
-mis-identification rates could be determined. More specically, the
+mis-identification rates could be determined. More specifically, the
 mis-identification rates to be extracted are parameters of a Poisson likelihood
 function that will be discussed below.
 
@@ -85,11 +86,12 @@ mis-identification background in a same-sign lepton analysis.
 \subsection{The $Z\to e^+e^-$ Sample}\label{s:zeerates}
 
 At ATLAS, electron charge mis-identification rates are extracted from $Z\to
-	e^+e^-$ events using a likelihood function (Section~\ref{s:cpllh}). These
-events, which are also called tag-and-probe $Z\to e^+e^-$ events, are selected
-by applying the following selections.
+e^+e^-$ events using a likelihood function (Section~\ref{s:cpllh}). These
+events are required to undergo the following preliminary selections. Further
+selections that will be applied before the rates are extracted are discussed 
+in Section~\ref{s:crates}.
 
-\paragraph{Event selections}
+\paragraph{Preliminary event selections}
 
 \begin{itemize}
 
@@ -98,14 +100,7 @@ by applying the following selections.
 	      identification.
 
 	\item At least two reconstructed electron candidates with $\abs{\eta} < 2.47$.
-	      One electron, called the tag candidate, is required to pass the Tight
-	      identification requirement; it must also have $E_T > 25$ GeV and $1.37 <
-		      \abs{\eta} < 1.52$, and must be associated to a triggered electron within
-	      $\Delta R < 0.15$. The other electron, called the probe candidate, is required
-	      to have $E_T > 10$ GeV; moreover, the tracks associated with the electron must
-	      have at least one hit in the pixel detector and at least seven hits in the
-	      pixel and SCT detectors. The invariant mass of the tag-probe pair must be
-	      within $\pm 15$ GeV of the $Z$ mass.
+	      The invariant mass of the electron pair must be within $\pm 15$ GeV of the $Z$ mass.
 
 \end{itemize}
 
@@ -147,7 +142,7 @@ opposite-sign pair, if the charge of any one of the electrons is
 mis-identified, then a same-sign pair will be observed instead\footnote{ In
 	order to distinguish between truth-level electron pairs and identified ones, we
 	will always write truth-level to indicate the former. Thus if a pair is not
-	preceded by truth-level, it is tacitly understood to be an identified pair. }.
+	preceded by ``truth-level'', it is tacitly understood to be an identified pair. }.
 Assuming a probability $p$ that a truth-level opposite-pair will be identified
 as a same-sign pair, then in considering $n$ truth-level pairs $e^+e^-$, the
 probability that exactly $n_{ss}$ same-sign pairs will be counted follows the
@@ -237,7 +232,7 @@ indicate the bins, and we write
 		      P(n_{ss,ij} | \epsilon_i, \epsilon_j) = \frac{m_{ss,ij}^{n_{ss,ij}} e^{-m_{ss,ij}}}{n_{ss,ij}!}
 		      , \quad
 		      \text{ where } \quad
-		      m_{ss,ij} = n_{ij} p_{ij} = (1-\epsilon_i)\epsilon_j +  \epsilon_i(1-\epsilon_j).
+		      m_{ss,ij} = n_{ij} p_{ij} = (1-\epsilon_i)\epsilon_j +  \epsilon_i(1-\epsilon_j),
 	      \end{equation}
 
 	      in place of the Poisson likelihood in Equation~\ref{eq:cpoisson}. This will also
@@ -251,12 +246,11 @@ two-dimensional bins may be treated as a long one-dimensional sequence of bins.
 On the other hand, all the possible bin pairs $(i,j)$ need to be used and
 therefore, assuming statistically-independent rates, the rates $\epsilon_i$ to
 be extracted come from the maximization of the likelihood function
-
-
+%
 $$
 	L = \prod_{i,j}L_{ij},
 $$
-
+%
 the data being $n_{ij}$, the numbers of electrons observed in the bin pair
 $(i,j)$, and $n_{ss,ij}$, the number of same-sign electron pairs observed in
 the bin pair $(i,j)$.
@@ -285,25 +279,25 @@ $$
 
 The terms $n_{ij}$ and $n_{ss,ij}$ and the background terms $b(n_{ij})$ and
 $b(n_{ss,ij})$ are put into the Poisson likelihood (Equation~\ref{eq:cpoissonij}):
-
+%
 $$
 	P(n_{ss,ij} | \epsilon_i, \epsilon_j) = \frac{m_{ss,ij}^{n_{ss,ij}} e^{-m_{ss,ij}}}{n_{ss,ij}!}
 $$
-
+%
 in which the background terms make a contribution to the expected number of
 same-sign $m_{ss,ij}$ in the likelihood, modifying it from $m_{ss,ij} = n_{ij}
 	p_{ij}$ (Equation~\ref{eq:cmssij}) to
-
+%
 $$
-	m_{ss,ij} = (n_{ij} - b(n_{ij})) \times p_{ij} + b(n_{ss,ij})
+	m_{ss,ij} = (n_{ij} - b(n_{ij})) \times p_{ij} + b(n_{ss,ij}).
 $$
-
+%
 The first quantity on the right in the equation above is the same-sign
 contribution from signal events where the background events have to be
 subtracted, and the second quantity is the contribution from background events.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Charge Mis-identification Rates and Uncertainties}
+\subsection{Charge Mis-identification Rates and Uncertainties}\label{s:crates}
 
 The rates are obtained upon the maximization of the likelihood function
 discussed in the previous section. The statistical uncertainties associated
@@ -397,7 +391,8 @@ $p_T$ as well (Figure~\ref{f:meeratesbdt}).
 
 In this section we give an example of how the charge mis-identification rates
 may be used to estimate the charge mis-identification background in analysis
-with a same-sign lepton pair signature. Thus, given $n_{\text{ss,ij}}$ of
+with a same-sign lepton pair signature. This technique is used in the SUSY
+same-sign leptons search~\cite{ssssleptons}. Thus, given $n_{\text{ss,ij}}$ of
 same-sign electron pairs that has been selected in the bin pairs $(i,j)$
 (Section~\ref{s:cllhmethod}), we want to determine the charge
 mis-identification contribution to it.
@@ -413,9 +408,9 @@ A charge mis-identification contribution occurs whenever there is a truth-level
 opposite-sign pair of electrons in which one of the electron has its charge
 mis-identified. The probability for this to happen is, according to
 Equation~\ref{eq:cijw},
-
-$$p_{ij} = (1-\epsilon_i)\epsilon_j +  \epsilon_i(1-\epsilon_j,)$$
-
+%
+$$p_{ij} = (1-\epsilon_i)\epsilon_j +  \epsilon_i(1-\epsilon_j,),$$
+%
 where $\epsilon_i$ and $\epsilon_j$ are the charge mis-identification rates in
 the bins. Now, in the same bin pair $(i,j)$ the number of opposite-sign pairs
 obtained from the same selection requirements may be counted as well, we will write
@@ -431,10 +426,10 @@ The only quantities known are $n_{\text{ss,ij}}$, $n_{\text{os,ij}}$, and the
 mis-identification rates $\epsilon_i$ and $\epsilon_j$, while
 $\bar{n}_{\text{ss,ij}}$ and $\bar{n}_{\text{os,ij}}$ are unknown. However, the
 following relation holds
-
+%
 $$n_{\text{os,ij}} = \bar{n}_{\text{os,ij}} - \bar{n}_{\text{os,ij}}\times
 	p_{ij} + \bar{n}_{\text{ss,ij}}\times p_{ij},$$
-
+%
 which reflects the fact that the number of opposite-sign lepton pairs counted
 in the bin pair $(i,j)$ is the corresponding truth-level number minus the portion
 that is identified as same-sign plus the contribution from truth-level same-sign
@@ -446,18 +441,18 @@ $$ n_{\text{os,ij}} = \bar{n}_{\text{os,ij}}\times (1 - p_{ij}) +
 Similarly we have the following relation
 %%
 $$ n_{\text{ss,ij}} = \bar{n}_{\text{ss,ij}}\times (1 - p_{ij}) +
-	\bar{n}_{\text{os,ij}} \times p_{ij} $$
+	\bar{n}_{\text{os,ij}} \times p_{ij}.$$
 %%
 Thus there are two equations in two unknowns and as a result
 $\bar{n}_{\text{os,ij}}$ and $\bar{n}_{\text{ss,ij}}$ may be solved.
 
 At ATLAS, charge mis-identification rates are also provided to different
-analyses as scale factors\footnote{These are the ratios of charge
-mis-identification rates in data over those in simulation.}, to be applied to
-charge mis-identification rates in simulations to match the data. If charge
-mis-identification rates on data are provided directly instead of the scale
-factors we can avoid the need for the use of all systematic uncertainties that
-are associated with the use of simulation samples.
+analyses as scale factors (the ratios of charge mis-identification rates in
+data over those in simulation), to be applied to charge mis-identification
+rates in simulations to match the data. If charge mis-identification rates on
+data are provided directly instead of the scale factors we can avoid the need
+for the use of all systematic uncertainties that are associated with the use of
+simulation samples.
 
 
 \section{Conclusions}\label{s:chargecon}
